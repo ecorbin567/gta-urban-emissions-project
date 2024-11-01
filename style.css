@@ -14,11 +14,11 @@ h1 {
   color: #ffffff;
   background: rgba(0, 0, 0, .5);
   text-align: center;
-	padding: 10px;
+	padding: 20px;
 }
 
 h2 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 700;
   color: #123785;
   background-color: #B5D4FB;
@@ -27,15 +27,16 @@ h2 {
 }
 
 h3 {
-  font-size: 60px;
+  font-size: 30px;
   font-weight: 700;
   color: #123785;
-  text-align: center;
-	padding: 10px;
+  text-align: left;
+	/* padding: 5px 30px 5px; */
 }
 
 a {
   text-decoration: underline;
+  color: #000000;
 }
 
 .navbar{
@@ -96,6 +97,7 @@ a {
 
 .text-section {
   font-size: 20;
+  padding: 0px 30px 30px;
 }
 
 .home-title-image {
@@ -108,4 +110,31 @@ a {
   background-image: url("images/image2.png");
   background-size: cover;
   min-height: 45%;
+}
+
+footer {
+  background-color: #B5D4FB;
+  padding: 0px 30px 30px;
+}
+
+.footer-text-left {
+  font-size: 20;
+  padding: 0px;
+}
+
+.footer-text-right {
+  font-size: 40;
+  font-weight: 700;
+  line-height: 40px;
+  padding: 0px 0px 0px 290px;
+  text-align: right;
+}
+
+.footer-text-right a {
+  color: #123785;
+  text-decoration: underline;
+}
+
+.table {
+  width: fit-content;
 }
