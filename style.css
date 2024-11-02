@@ -27,11 +27,17 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: 35px;
   font-weight: 700;
   color: #123785;
   text-align: left;
-	/* padding: 5px 30px 5px; */
+}
+
+h4{
+  font-size: 25px;
+  font-weight: 700;
+  color: #123785;
+  text-align: left;
 }
 
 a {
@@ -96,7 +102,7 @@ a {
 }
 
 .text-section {
-  font-size: 20;
+  font-size: 20px;
   padding: 0px 30px 30px;
 }
 
@@ -135,10 +141,26 @@ footer {
   text-decoration: underline;
 }
 
-td:nth-child(1) {
+table {
+  width: 100%;
+}
+
+.home-heading:nth-child(1) {
+  width: 33%;
+}
+
+.home-heading:nth-child(2) {
+  width: 33%;
+}
+
+.home-heading:nth-child(3) {
+  width: 33%;
+}
+
+.home-cell:nth-child(1) {
   width: 50%;
 }
 
-td:nth-child(2) {
+.home-cell:nth-child(2) {
   width: 50%;
 }
