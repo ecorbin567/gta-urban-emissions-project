@@ -126,7 +126,7 @@ footer {
   font-size: 40;
   font-weight: 700;
   line-height: 40px;
-  padding: 0px 0px 0px 290px;
+  padding: 0px 0px 0px 180px;
   text-align: right;
 }
 
@@ -135,6 +135,10 @@ footer {
   text-decoration: underline;
 }
 
-.table {
-  width: fit-content;
+td:nth-child(1) {
+  width: 50%;
+}
+
+td:nth-child(2) {
+  width: 50%;
 }
