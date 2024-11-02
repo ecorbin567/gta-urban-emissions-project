@@ -1,40 +1,42 @@
+/* In the interest of responsive web design, every size is in terms of vw (viewport width). */
+/* default style */
 body,
 html {
-  height: 100%;
-  font-size: 20px;                
+  height: 100%;               
   font-family: 'Inter', sans-serif;              
   color: #000000;                        
   background-color: 
   #ffffff;
 }
 
+/* text styles */
 h1 {
-  font-size: 50px;
+  font-size: 4.5vw;
   font-weight: 700;
   color: #ffffff;
   background: rgba(0, 0, 0, .5);
   text-align: center;
-	padding: 20px;
+	padding: 2vw;
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 2.25vw;
   font-weight: 700;
   color: #123785;
   background-color: #B5D4FB;
   text-align: center;
-	padding: 10px;
+	padding: 1vw;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 3vw;
   font-weight: 700;
   color: #123785;
   text-align: left;
 }
 
 h4{
-  font-size: 25px;
+  font-size: 2vw;
   font-weight: 700;
   color: #123785;
   text-align: left;
@@ -45,6 +47,12 @@ a {
   color: #000000;
 }
 
+.text-section {
+  font-size: 1.75vw;
+  padding: 0vw 3vw 3vw;
+}
+
+/* navigation menus */
 .navbar{
   background-color: #B5D4FB;
   overflow: hidden;
@@ -55,9 +63,9 @@ a {
   float: left;
 	text-decoration: none;
 	color: #123785;
-	font-size: 25px;
+	font-size: 2vw;
   font-weight: 700;
-	padding: 15px;
+	padding: 1vw;
 }
 
 .subnav {
@@ -66,12 +74,12 @@ a {
 }
 
 .subnav .subnavbtn {
-  font-size: 25px;
+  font-size: 2vw;
   font-weight: 700;
   border: none;
   outline: none;
   color: #123785;
-  padding: 15px;
+  padding: 1vw;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
@@ -89,7 +97,7 @@ a {
 .subnav-content a {
   float: left;
   color: white;
-  font-size: 20px;
+  font-size: 2vw;
   text-decoration: none;
 }
 
@@ -101,38 +109,77 @@ a {
   display: block;
 }
 
-.text-section {
-  font-size: 20px;
-  padding: 0px 30px 30px;
-}
-
+/* images and associated links */
 .home-title-image {
   background-image: url("images/image1.png");
   background-size: cover;
-  min-height: 45%;
+  height: 20vw;
+  alt: "An image of white clouds against a blue sky.";
 }
 
 .about-title-image {
   background-image: url("images/image2.png");
   background-size: cover;
-  min-height: 45%;
+  height: 20vw;
+  alt: "An image of a GTA Urban Emissions Project researcher riding a bike on the streets of Toronto.";
 }
 
-footer {
-  background-color: #B5D4FB;
-  padding: 0px 30px 30px;
+.lgr-analyzer-image {
+  background-image: url("images/lgr_analyzer.png");
+  background-size: cover;
+  height: 18vw;
+  width: 18vw;
+  padding-left: 7vw;
+  alt: "An image of the LGR Ultraportable Greenhouse Gas Analyzer.";
+}
+
+.spectrometer-image {
+  background-image: url("images/em27_sun_spectrometer.png");
+  background-size: cover;
+  height: 18vw;
+  width: 25vw;
+  alt: "An image of the EM27/SUN Fourier Transform Spectrometer set up with the Toronto skyline in the background.";
+}
+
+.warming-potential-image {
+  background-image: url("images/methane_warming_potential.png");
+  background-size: cover;
+  height: 29vw;
+  width: 28vw;
+  padding-left: 2vw;
+  alt: "A bar chart showing that methane's warming potential is 32 times higher than that of carbon dioxide.";
+}
+
+.warming-potential-link {
+  text-align: center;
+  font-size: 1vw;
+}
+
+/* footer */
+@media (min-width: 768px) {
+  footer {
+    background-color: #B5D4FB;
+    padding: 0vw 3vw 3vw;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    background-color: #B5D4FB;
+    padding: 0vw 1vw 1vw;
+  }
 }
 
 .footer-text-left {
-  font-size: 20;
-  padding: 0px;
+  font-size: 1.75vw;
+  padding: 0vw;
 }
 
 .footer-text-right {
-  font-size: 40;
+  font-size: 2vw;
   font-weight: 700;
-  line-height: 40px;
-  padding: 0px 0px 0px 180px;
+  line-height: 4vw;
+  padding: 0vw 0vw 0vw 1vw;
   text-align: right;
 }
 
@@ -141,6 +188,7 @@ footer {
   text-decoration: underline;
 }
 
+/* tables */
 table {
   width: 100%;
 }
