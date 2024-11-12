@@ -7,37 +7,79 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- import the webpage's stylesheet -->
+	<!-- general stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
+	<!-- leaflet -->
+	<link rel="stylesheet" href="gta-emissions-webpage-master/LiveMaps/leaflet/leaflet.css" />
+	<!-- js files -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.7.0/moment.min.js" type="text/javascript"></script>
+	<script src="gta-emissions-webpage-master/LiveMaps/script/jquery.min.js"></script>
+	<script src="gta-emissions-webpage-master/LiveMaps/leaflet/leaflet.js"></script>   
+	<script src="gta-emissions-webpage-master/LiveMaps/leaflet/leaflet.rotatedMarker.js"></script>
+	<script src="gta-emissions-webpage-master/LiveMaps/script/live_script.js"></script>
+	<script src="gta-emissions-webpage-master/LiveMaps/script/script.js"></script>
 </head>
 
 <header>
 	<div class="navbar">
-		<a href="index.html">Home</a>
-		<a href="about.html">About</a>
+		<a href="./index.html">Home</a>
+		<a href="./about.html">About</a>
 		<div class="subnav">
 			<button class="subnavbtn">Maps<i class="fa fa-caret-down"></i></button>
 			<div class="subnav-content">
-				<a href="live measurements.html">Live Measurements</a>
-				<a href="past measurements.html">Past Measurements</a>
-				<a href="emissions cluster map.html">Emissions Cluster Map</a>
-				<a href="emissions reporting tool map.html">Emissions Reporting Tool Map</a>
+				<a href="./live measurements.html">Live Measurements</a>
+				<a href="./past measurements.html">Past Measurements</a>
+				<a href="./emissions cluster map.html">Emissions Cluster Map</a>
+				<a href="./emissions reporting tool map.html">Emissions Reporting Tool Map</a>
 			</div>
 		</div>
 		<div class="subnav">
 			<button class="subnavbtn">Emissions Reporting Tool<i class="fa fa-caret-down"></i></button>
 			<div class="subnav-content">
-				<a href="about the ert.html">About the ERT</a>
-				<a href="submit an emissions report.html">Submit an Emissions Report</a>
-				<a href="submit a cause report.html">Submit a Cause Report</a>
+				<a href="./about the ert.html">About the ERT</a>
+				<a href="./submit an emissions report.html">Submit an Emissions Report</a>
+				<a href="./submit a cause report.html">Submit a Cause Report</a>
 			</div>
 		</div>
 	</div>
 </header>
 
 <body>
+	<div class="text-section">
+		<h3>Live Measurements</h3>
+		This map displays real-time data from GTA Urban Emissions Project sensors. 
+		If a survey is happening now, data from that survey will appear here.
+	</div>
+	
 	<div id="map" class="map"></div>
+	<br><br>
+  </body>
 </body>
-<!-- import the webpage's javascript file -->
-	<script src="./script.js" defer></script>
+
+<footer>
+	<table>
+		<tr>
+			<td class="footer-text-left">
+				<h3>Contact Us</h3>
+				Debra Wunch
+				<br>University of Toronto
+				<br>Department of Physics, Rm 707A
+				<br>60 St. George Street Toronto, ON M5S 1A7
+				<br>Website: <a href="https://sites.physics.utoronto.ca/debrawunch">https://sites.physics.utoronto.ca/debrawunch</a>
+				<br>Phone: (416) 946-0408
+				<br>Fax: (416) 978-8905
+				<br>Email: dwunch@atmosp.physics.utoronto.ca
+			</td>
+			<td class="footer-text-right">
+				<br> Download our data on our <a href="https://borealisdata.ca/dataverse/wunchlab">Dataverse</a> page
+				<br> View our map and website code on <a href="https://github.com/WunchLab/">Github</a>
+				<br> Follow us on social media: <!-- add social media links when/if they exist -->
+				<br> Facebook
+				<br> Twitter
+				<br> Instagram
+			</td>
+		</tr>
+	</table>
+</footer>
+
 </html>
