@@ -38,25 +38,25 @@ legend.addTo(map);
   // Poll Data from datasource.txt
   (function pollDataSource() {
     $.ajax({                                     // Do one initial poll using ajax, that way the first dots show up 
-        url: "./datasource.txt",               // as soon as the page is loaded. If successful, we pass the polled
+        url: "datasource.txt",               // as soon as the page is loaded. If successful, we pass the polled
         cache: false,                            // data to processdata(). Next, we do the same thing iteratively with
         success: function(data) {                // a time delay between iterations.
           processData(map, mapMarkers, data);     
         },
         error: function() {           
-          alert("Error 1 encountered while polling data source.");
+          alert("Error encountered while polling data source.");
         },      
       });
     setTimeout(function() {
       j = j + 1
       $.ajax({                                    // This block does the bulk of the work:
-        url: "./datasource.txt",                 // "Ajax" tells the browser to perform these tasks
+        url: "datasource.txt",                 // "Ajax" tells the browser to perform these tasks
         cache: false,                             // behind the scenes. If successful, the information
         success: function(data) {                 // polled from datasource.txt is passed to the processData
           processData(map, mapMarkers, data);     // function.
         },
         error: function() {                       // If polling unsuccessful, return the following error
-          alert("Error 2 encountered while polling data source.");
+          alert("Error encountered while polling data source.");
         },
         complete: pollDataSource                  // This calls the pollDataSource function again,
       });                                         // leading to an infinite loop.

@@ -12,7 +12,6 @@ used as overalys.
 ****---------------------------------------------****
 */
 
-
 // Get text to put in legend based on variable being plotted
 var txt2 = "2";
 var txto = "o";
@@ -48,6 +47,7 @@ var j = 1;
 
   
 function initializeMap() {
+  console.log("Initializing map");
   //List of facilities for overalay
   var targets = L.layerGroup();
     L.marker([43.648349, -79.386162]).addTo(targets).bindPopup("Pearl Power Station");
@@ -253,7 +253,7 @@ function initializeMap() {
   legend.addTo(map);
 
   $.ajax({                                     // Do one initial poll using ajax, that way the first dots show up 
-      url: "datasource.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
+      url: "corr_datasource.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
       cache: false,                            // data to processdata(). Next, we do the same thing iteratively with
       success: function(data) {
         processData(map, baseLayers, overlays, data);
@@ -268,7 +268,7 @@ function initializeMap() {
     setTimeout(function() {
       j = j + 1
       $.ajax({                                    // This block does the bulk of the work:
-        url: "datasource.txt",                    // "Ajax" tells the browser to perform these tasks
+        url: "corr_datasource.txt",                    // "Ajax" tells the browser to perform these tasks
         cache: false,                             // behind the scenes. If successful, the information
         success: function(data) {                 // polled from datasource.txt is passed to the processData
           processData(map, baseLayers, overlays, data);     // function.
