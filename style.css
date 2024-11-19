@@ -230,6 +230,7 @@ table {
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
     border-radius: 5px;
 }
+
 .info h4 {
     margin: 0 0 5px;
     color: #777;
@@ -239,6 +240,7 @@ table {
     line-height: 18px;
     color: #555;
 }
+
 .legend i {
     width: 18px;
     height: 18px;
@@ -246,9 +248,11 @@ table {
     margin-right: 8px;
     opacity: 0.7;
 }
-/* Bring Alert to front */
+
 .container {
     z-index: 9999;
     position: fixed;
     bottom: 0;
 }
+
+.leaflet-container { font-size: 1rem; }
