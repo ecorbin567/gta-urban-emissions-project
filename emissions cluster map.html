@@ -62,9 +62,44 @@
 		A cluster not near a downward triangle may indicate an unknown (to us) source of methane 
 		emissions. If you live in the area and/or have any information about what the source of 
 		a cluster might be, please submit a cause report.
+		<br><br>
+		<button id="show_cluster_centres">Show/Hide Cluster Centres</button>
 	</div>
-    
-    <div class="map" id="map_c0a827379a3e92ac42793ff5128f9960"></div>
+    <table>
+		<tr>
+			<td class="cluster-map" id="map_c0a827379a3e92ac42793ff5128f9960">
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+			</td>
+			<td class="text-section-cluster-map">
+				<table>
+					<tr>
+						<td colspan="2">
+							<h4>Map Information</h4>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/circle.png">
+						</td>
+						<td>
+							One circle represents a high level of methane measured in that spot, and a larger 
+							circle means a higher level of methane. A set of circles that are all the same colour 
+							represents a cluster. Clicking on each circle will show you the date that measurement was taken.
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<img src="images/blueicon.png">
+						</td>
+						<td>
+							A light blue icon represents a known source of methane emissions. Clicking on each 
+							icon will tell you the name of the source and the type of emitter it is.  
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
     <br><br> 
 </body>
 
@@ -93,5 +128,5 @@
 		</tr>
 	</table>
 </footer>
-
+<script src="./GTA-Emissions-Gaussian-Clusters-Updated-main/gaussianclusters.js"></script>
 </html>

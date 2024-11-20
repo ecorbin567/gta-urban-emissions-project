@@ -30,7 +30,7 @@ var popup_26d621d6e3bd81bba71f71b5c3b1427e = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_075c4672846e71c051d0f3c88ab65462 = $(`<div id="html_075c4672846e71c051d0f3c88ab65462" style="width: 100.0%; height: 100.0%;">Ashbridges Bay Type: Wastewater </div>`)[0];
+var html_075c4672846e71c051d0f3c88ab65462 = $(`<div id="html_075c4672846e71c051d0f3c88ab65462" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Ashbridges Bay <br> Type: Wastewater </div>`)[0];
 popup_26d621d6e3bd81bba71f71b5c3b1427e.setContent(html_075c4672846e71c051d0f3c88ab65462);
 
 
@@ -53,11 +53,11 @@ var icon_67d44ece1e6835a40911d944afdb80a6 = L.AwesomeMarkers.icon(
 marker_d125e1ed520a180d3a7a566f69eb8907.setIcon(icon_67d44ece1e6835a40911d944afdb80a6);
 
 
-var popup_875f4fe048d431cf80d05df56d3b6397 = L.popup({ "maxWidth": "100%" });
+var popup_875f4fe048d431cf80d05df56d3b6397 = L.popup({ "width": "200%" });
 
 
 
-var html_24c7f55c5c24c3b8bf91aee1a01912ef = $(`<div id="html_24c7f55c5c24c3b8bf91aee1a01912ef" style="width: 100.0%; height: 100.0%;">Humber Bay Type: Wastewater </div>`)[0];
+var html_24c7f55c5c24c3b8bf91aee1a01912ef = $(`<div id="html_24c7f55c5c24c3b8bf91aee1a01912ef" style="width: 100.0%; height: 100.0%; padding: 0.25vw;">Known Emitter <br> Name: Humber Bay <br> Type: Wastewater</div>`)[0];
 popup_875f4fe048d431cf80d05df56d3b6397.setContent(html_24c7f55c5c24c3b8bf91aee1a01912ef);
 
 
@@ -84,7 +84,7 @@ var popup_762888a9b388bd3ed63e9e7122bf7fd6 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_e1897af1c51a2956dbec53d2a5544026 = $(`<div id="html_e1897af1c51a2956dbec53d2a5544026" style="width: 100.0%; height: 100.0%;">Clarkson  Type: Wastewater </div>`)[0];
+var html_e1897af1c51a2956dbec53d2a5544026 = $(`<div id="html_e1897af1c51a2956dbec53d2a5544026" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Clarkson <br> Type: Wastewater </div>`)[0];
 popup_762888a9b388bd3ed63e9e7122bf7fd6.setContent(html_e1897af1c51a2956dbec53d2a5544026);
 
 
@@ -111,7 +111,7 @@ var popup_20db857f0a736266bb2705ed80a6949f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_3fdecfac51c5d6a03b2d95afa0d7da4e = $(`<div id="html_3fdecfac51c5d6a03b2d95afa0d7da4e" style="width: 100.0%; height: 100.0%;">Highland Creek Type: Wastewater </div>`)[0];
+var html_3fdecfac51c5d6a03b2d95afa0d7da4e = $(`<div id="html_3fdecfac51c5d6a03b2d95afa0d7da4e" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Highland Creek <br> Type: Wastewater </div>`)[0];
 popup_20db857f0a736266bb2705ed80a6949f.setContent(html_3fdecfac51c5d6a03b2d95afa0d7da4e);
 
 
@@ -138,7 +138,7 @@ var popup_83eba7fb2b4f34a1ee983173fd521cff = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_2d60e2411d4dcdcb26a7c5fd4ca37b1b = $(`<div id="html_2d60e2411d4dcdcb26a7c5fd4ca37b1b" style="width: 100.0%; height: 100.0%;">GE Booth  Type: Wastewater </div>`)[0];
+var html_2d60e2411d4dcdcb26a7c5fd4ca37b1b = $(`<div id="html_2d60e2411d4dcdcb26a7c5fd4ca37b1b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: GE Booth <br> Type: Wastewater </div>`)[0];
 popup_83eba7fb2b4f34a1ee983173fd521cff.setContent(html_2d60e2411d4dcdcb26a7c5fd4ca37b1b);
 
 
@@ -165,7 +165,7 @@ var popup_4b21b03cc3f329e5fba4ebdd4b4fa6ed = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_6025837fcb3d0c2ee1361ca1f338e02b = $(`<div id="html_6025837fcb3d0c2ee1361ca1f338e02b" style="width: 100.0%; height: 100.0%;">Burlington Skyway Type: Wastewater </div>`)[0];
+var html_6025837fcb3d0c2ee1361ca1f338e02b = $(`<div id="html_6025837fcb3d0c2ee1361ca1f338e02b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Burlington Skyway <br> Type: Wastewater </div>`)[0];
 popup_4b21b03cc3f329e5fba4ebdd4b4fa6ed.setContent(html_6025837fcb3d0c2ee1361ca1f338e02b);
 
 
@@ -192,7 +192,7 @@ var popup_2671779b532a2c3c49729fda21a4ad04 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_cc2b04570d2ce13dce650d3be729a5c3 = $(`<div id="html_cc2b04570d2ce13dce650d3be729a5c3" style="width: 100.0%; height: 100.0%;">Courtice Type: Wastewater </div>`)[0];
+var html_cc2b04570d2ce13dce650d3be729a5c3 = $(`<div id="html_cc2b04570d2ce13dce650d3be729a5c3" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Courtice <br> Type: Wastewater </div>`)[0];
 popup_2671779b532a2c3c49729fda21a4ad04.setContent(html_cc2b04570d2ce13dce650d3be729a5c3);
 
 
@@ -219,7 +219,7 @@ var popup_9bd260ec881cc175ebb88cc70a5011be = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_48f07dbd9aa2264678a6df7b109fff2a = $(`<div id="html_48f07dbd9aa2264678a6df7b109fff2a" style="width: 100.0%; height: 100.0%;">Oakville Mid Halton Type: Wastewater </div>`)[0];
+var html_48f07dbd9aa2264678a6df7b109fff2a = $(`<div id="html_48f07dbd9aa2264678a6df7b109fff2a" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Oakville Mid Halton <br> Type: Wastewater </div>`)[0];
 popup_9bd260ec881cc175ebb88cc70a5011be.setContent(html_48f07dbd9aa2264678a6df7b109fff2a);
 
 
@@ -246,7 +246,7 @@ var popup_cf3219d95a625a60d1252d3f58fdbee2 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_8ade6e91285816b3636572503a0e5bf9 = $(`<div id="html_8ade6e91285816b3636572503a0e5bf9" style="width: 100.0%; height: 100.0%;">Duffin Creek Type: Wastewater </div>`)[0];
+var html_8ade6e91285816b3636572503a0e5bf9 = $(`<div id="html_8ade6e91285816b3636572503a0e5bf9" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Duffin Creek <br> Type: Wastewater </div>`)[0];
 popup_cf3219d95a625a60d1252d3f58fdbee2.setContent(html_8ade6e91285816b3636572503a0e5bf9);
 
 
@@ -273,7 +273,7 @@ var popup_2c17911358eba1f7ab7075a06e170c5e = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_643a904d6fa84dd9d8f3ca3cfe087ad4 = $(`<div id="html_643a904d6fa84dd9d8f3ca3cfe087ad4" style="width: 100.0%; height: 100.0%;">Harmony Creek Type: Wastewater </div>`)[0];
+var html_643a904d6fa84dd9d8f3ca3cfe087ad4 = $(`<div id="html_643a904d6fa84dd9d8f3ca3cfe087ad4" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Harmony Creek <br> Type: Wastewater </div>`)[0];
 popup_2c17911358eba1f7ab7075a06e170c5e.setContent(html_643a904d6fa84dd9d8f3ca3cfe087ad4);
 
 
@@ -300,7 +300,7 @@ var popup_5ad84d168542d5554a96334478048e6f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_3cddd8b2467e8c40f64114376f18c50b = $(`<div id="html_3cddd8b2467e8c40f64114376f18c50b" style="width: 100.0%; height: 100.0%;">Corbett Type: Wastewater </div>`)[0];
+var html_3cddd8b2467e8c40f64114376f18c50b = $(`<div id="html_3cddd8b2467e8c40f64114376f18c50b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Corbett <br> Type: Wastewater </div>`)[0];
 popup_5ad84d168542d5554a96334478048e6f.setContent(html_3cddd8b2467e8c40f64114376f18c50b);
 
 
@@ -327,7 +327,7 @@ var popup_49e4f06b2a701c47b8fdf2ca38f5740d = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_be486b8870ee388ca6a978590867a2fc = $(`<div id="html_be486b8870ee388ca6a978590867a2fc" style="width: 100.0%; height: 100.0%;">Cannington Type: Wastewater </div>`)[0];
+var html_be486b8870ee388ca6a978590867a2fc = $(`<div id="html_be486b8870ee388ca6a978590867a2fc" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Cannington <br> Type: Wastewater </div>`)[0];
 popup_49e4f06b2a701c47b8fdf2ca38f5740d.setContent(html_be486b8870ee388ca6a978590867a2fc);
 
 
@@ -354,7 +354,7 @@ var popup_73cf22e05f89a159b7fc4e371de771bf = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_8b96ae49867daabe678287fd0406a4e8 = $(`<div id="html_8b96ae49867daabe678287fd0406a4e8" style="width: 100.0%; height: 100.0%;">Inglewood  Type: Wastewater </div>`)[0];
+var html_8b96ae49867daabe678287fd0406a4e8 = $(`<div id="html_8b96ae49867daabe678287fd0406a4e8" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Inglewood <br> Type: Wastewater </div>`)[0];
 popup_73cf22e05f89a159b7fc4e371de771bf.setContent(html_8b96ae49867daabe678287fd0406a4e8);
 
 
@@ -381,7 +381,7 @@ var popup_ecc2966c57cfbcf7d692a0b0c3e906ec = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_acf967f68de0c31eac42dfde2c6f0d76 = $(`<div id="html_acf967f68de0c31eac42dfde2c6f0d76" style="width: 100.0%; height: 100.0%;">Oakville South West Type: Wastewater </div>`)[0];
+var html_acf967f68de0c31eac42dfde2c6f0d76 = $(`<div id="html_acf967f68de0c31eac42dfde2c6f0d76" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Oakville South West <br> Type: Wastewater </div>`)[0];
 popup_ecc2966c57cfbcf7d692a0b0c3e906ec.setContent(html_acf967f68de0c31eac42dfde2c6f0d76);
 
 
@@ -408,7 +408,7 @@ var popup_8874020574241db3b38a36351d7dc807 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_727e1a86aefc72a5d38339d7000b45db = $(`<div id="html_727e1a86aefc72a5d38339d7000b45db" style="width: 100.0%; height: 100.0%;">Georgetown Type: Wastewater </div>`)[0];
+var html_727e1a86aefc72a5d38339d7000b45db = $(`<div id="html_727e1a86aefc72a5d38339d7000b45db" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Georgetown <br> Type: Wastewater </div>`)[0];
 popup_8874020574241db3b38a36351d7dc807.setContent(html_727e1a86aefc72a5d38339d7000b45db);
 
 
@@ -435,7 +435,7 @@ var popup_f3e176ff96dea46f9116e27984682fc5 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_51c83d5380e4071d740935cf60258ae1 = $(`<div id="html_51c83d5380e4071d740935cf60258ae1" style="width: 100.0%; height: 100.0%;">Oakville South East Type: Wastewater </div>`)[0];
+var html_51c83d5380e4071d740935cf60258ae1 = $(`<div id="html_51c83d5380e4071d740935cf60258ae1" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Oakville South East <br> Type: Wastewater </div>`)[0];
 popup_f3e176ff96dea46f9116e27984682fc5.setContent(html_51c83d5380e4071d740935cf60258ae1);
 
 
@@ -462,7 +462,7 @@ var popup_79ed2b760782f7e9746d14aaf15f8728 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_35c0db469e0de6047f4e882eab6d17c4 = $(`<div id="html_35c0db469e0de6047f4e882eab6d17c4" style="width: 100.0%; height: 100.0%;">Sunderland Type: Wastewater </div>`)[0];
+var html_35c0db469e0de6047f4e882eab6d17c4 = $(`<div id="html_35c0db469e0de6047f4e882eab6d17c4" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Sunderland <br> Type: Wastewater </div>`)[0];
 popup_79ed2b760782f7e9746d14aaf15f8728.setContent(html_35c0db469e0de6047f4e882eab6d17c4);
 
 
@@ -489,7 +489,7 @@ var popup_391bbf3571a979c64c346a15e6d858c7 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_61e21a7a90ed35242a2fbb36e543f587 = $(`<div id="html_61e21a7a90ed35242a2fbb36e543f587" style="width: 100.0%; height: 100.0%;">Acton Type: Wastewater </div>`)[0];
+var html_61e21a7a90ed35242a2fbb36e543f587 = $(`<div id="html_61e21a7a90ed35242a2fbb36e543f587" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Acton <br> Type: Wastewater </div>`)[0];
 popup_391bbf3571a979c64c346a15e6d858c7.setContent(html_61e21a7a90ed35242a2fbb36e543f587);
 
 
@@ -516,7 +516,7 @@ var popup_e9c53026d13815e240dc0786a0ef9d64 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_19c6711ef14f716cf2e97d56baff92fa = $(`<div id="html_19c6711ef14f716cf2e97d56baff92fa" style="width: 100.0%; height: 100.0%;">Port Darlingtion Type: Wastewater </div>`)[0];
+var html_19c6711ef14f716cf2e97d56baff92fa = $(`<div id="html_19c6711ef14f716cf2e97d56baff92fa" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Port Darlingtion <br> Type: Wastewater </div>`)[0];
 popup_e9c53026d13815e240dc0786a0ef9d64.setContent(html_19c6711ef14f716cf2e97d56baff92fa);
 
 
@@ -543,7 +543,7 @@ var popup_5a52ad065c6b839b8a3d97dd6c64ed8f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_892562f6cb46c582aeaa9c701440fc93 = $(`<div id="html_892562f6cb46c582aeaa9c701440fc93" style="width: 100.0%; height: 100.0%;">Holland Landing Lagoons Type: Wastewater </div>`)[0];
+var html_892562f6cb46c582aeaa9c701440fc93 = $(`<div id="html_892562f6cb46c582aeaa9c701440fc93" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Holland Landing Lagoons <br> Type: Wastewater </div>`)[0];
 popup_5a52ad065c6b839b8a3d97dd6c64ed8f.setContent(html_892562f6cb46c582aeaa9c701440fc93);
 
 
@@ -570,7 +570,7 @@ var popup_fdda7e24b96c49b86b5ca72a5075f86d = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_f6c8a73b474899dd223758e3384062e7 = $(`<div id="html_f6c8a73b474899dd223758e3384062e7" style="width: 100.0%; height: 100.0%;">Milton Type: Wastewater </div>`)[0];
+var html_f6c8a73b474899dd223758e3384062e7 = $(`<div id="html_f6c8a73b474899dd223758e3384062e7" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Milton <br> Type: Wastewater </div>`)[0];
 popup_fdda7e24b96c49b86b5ca72a5075f86d.setContent(html_f6c8a73b474899dd223758e3384062e7);
 
 
@@ -597,7 +597,7 @@ var popup_5a942e6862430844d5d60962fe53269c = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_d2d0bb90350833c649be4d1c41dde1f9 = $(`<div id="html_d2d0bb90350833c649be4d1c41dde1f9" style="width: 100.0%; height: 100.0%;">Beare Road Type: solid waste</div>`)[0];
+var html_d2d0bb90350833c649be4d1c41dde1f9 = $(`<div id="html_d2d0bb90350833c649be4d1c41dde1f9" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Beare Road <br> Type: solid waste</div>`)[0];
 popup_5a942e6862430844d5d60962fe53269c.setContent(html_d2d0bb90350833c649be4d1c41dde1f9);
 
 
@@ -624,7 +624,7 @@ var popup_c18c17b63e8c174341bb84807755e5df = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_e539df83086e05ff3e8c4c6cf455a844 = $(`<div id="html_e539df83086e05ff3e8c4c6cf455a844" style="width: 100.0%; height: 100.0%;">Dufferin Organics Processing Type: solid waste</div>`)[0];
+var html_e539df83086e05ff3e8c4c6cf455a844 = $(`<div id="html_e539df83086e05ff3e8c4c6cf455a844" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Dufferin Organics Processing <br> Type: solid waste</div>`)[0];
 popup_c18c17b63e8c174341bb84807755e5df.setContent(html_e539df83086e05ff3e8c4c6cf455a844);
 
 
@@ -651,7 +651,7 @@ var popup_507a35d831c14ed6b54c824bcea86459 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_282a61977e3e77d89c20191aed92c3c7 = $(`<div id="html_282a61977e3e77d89c20191aed92c3c7" style="width: 100.0%; height: 100.0%;">Disco Road Organics Processing Type: solid waste</div>`)[0];
+var html_282a61977e3e77d89c20191aed92c3c7 = $(`<div id="html_282a61977e3e77d89c20191aed92c3c7" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Disco Road Organics Processing <br> Type: solid waste</div>`)[0];
 popup_507a35d831c14ed6b54c824bcea86459.setContent(html_282a61977e3e77d89c20191aed92c3c7);
 
 
@@ -678,7 +678,7 @@ var popup_6b50c8563108f5de88b88f41b5ba5c34 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_0d7365538a20bb737fc746a09a2f0541 = $(`<div id="html_0d7365538a20bb737fc746a09a2f0541" style="width: 100.0%; height: 100.0%;">Highland creek Type: solid waste</div>`)[0];
+var html_0d7365538a20bb737fc746a09a2f0541 = $(`<div id="html_0d7365538a20bb737fc746a09a2f0541" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Highland Creek <br> Type: solid waste</div>`)[0];
 popup_6b50c8563108f5de88b88f41b5ba5c34.setContent(html_0d7365538a20bb737fc746a09a2f0541);
 
 
@@ -705,7 +705,7 @@ var popup_25770ebcc1ff75d8082ba8bda838f225 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_94dc5aa060b7ba669e9cd533e9e47fa0 = $(`<div id="html_94dc5aa060b7ba669e9cd533e9e47fa0" style="width: 100.0%; height: 100.0%;">Keele Valley Type: solid waste</div>`)[0];
+var html_94dc5aa060b7ba669e9cd533e9e47fa0 = $(`<div id="html_94dc5aa060b7ba669e9cd533e9e47fa0" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Keele Valley <br> Type: solid waste</div>`)[0];
 popup_25770ebcc1ff75d8082ba8bda838f225.setContent(html_94dc5aa060b7ba669e9cd533e9e47fa0);
 
 
@@ -732,7 +732,7 @@ var popup_a817cb43bc5d237e6251d2c9c7ae95c9 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_558bc3925bd939cc1d644a5fc7b97baa = $(`<div id="html_558bc3925bd939cc1d644a5fc7b97baa" style="width: 100.0%; height: 100.0%;">Thackeray Type: solid waste</div>`)[0];
+var html_558bc3925bd939cc1d644a5fc7b97baa = $(`<div id="html_558bc3925bd939cc1d644a5fc7b97baa" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Thackeray <br> Type: solid waste</div>`)[0];
 popup_a817cb43bc5d237e6251d2c9c7ae95c9.setContent(html_558bc3925bd939cc1d644a5fc7b97baa);
 
 
@@ -759,7 +759,7 @@ var popup_2f30dee32557af5879f98aec7f09d539 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_84bfc2d492e68f257bafc443b3304669 = $(`<div id="html_84bfc2d492e68f257bafc443b3304669" style="width: 100.0%; height: 100.0%;">Richmond Hill Compost Facility Type: solid waste</div>`)[0];
+var html_84bfc2d492e68f257bafc443b3304669 = $(`<div id="html_84bfc2d492e68f257bafc443b3304669" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Richmond Hill Compost Facility <br> Type: solid waste</div>`)[0];
 popup_2f30dee32557af5879f98aec7f09d539.setContent(html_84bfc2d492e68f257bafc443b3304669);
 
 
@@ -786,7 +786,7 @@ var popup_ac55bdd4ec14425045d3d2dbc9415932 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_78780a5dacdb96fd4937b44f9ca2df8b = $(`<div id="html_78780a5dacdb96fd4937b44f9ca2df8b" style="width: 100.0%; height: 100.0%;">Halton Regional Landfill – Milton Type: solid waste</div>`)[0];
+var html_78780a5dacdb96fd4937b44f9ca2df8b = $(`<div id="html_78780a5dacdb96fd4937b44f9ca2df8b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Halton Regional Landfill - Milton <br> Type: solid waste</div>`)[0];
 popup_ac55bdd4ec14425045d3d2dbc9415932.setContent(html_78780a5dacdb96fd4937b44f9ca2df8b);
 
 
@@ -813,7 +813,7 @@ var popup_81427717f6a413648909a96172cdc0fc = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_0203c7ccb4c9a50627a800f2ea19fc45 = $(`<div id="html_0203c7ccb4c9a50627a800f2ea19fc45" style="width: 100.0%; height: 100.0%;">Duffin Creek Type: solid waste</div>`)[0];
+var html_0203c7ccb4c9a50627a800f2ea19fc45 = $(`<div id="html_0203c7ccb4c9a50627a800f2ea19fc45" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Duffin Creek <br> Type: solid waste</div>`)[0];
 popup_81427717f6a413648909a96172cdc0fc.setContent(html_0203c7ccb4c9a50627a800f2ea19fc45);
 
 
@@ -840,7 +840,7 @@ var popup_868f62760abd8f12420727a2023b89a3 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_ca027ffa6d93762f48852e5e83ea27d4 = $(`<div id="html_ca027ffa6d93762f48852e5e83ea27d4" style="width: 100.0%; height: 100.0%;">Scott Type: solid waste</div>`)[0];
+var html_ca027ffa6d93762f48852e5e83ea27d4 = $(`<div id="html_ca027ffa6d93762f48852e5e83ea27d4" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Scott <br> Type: solid waste</div>`)[0];
 popup_868f62760abd8f12420727a2023b89a3.setContent(html_ca027ffa6d93762f48852e5e83ea27d4);
 
 
@@ -867,7 +867,7 @@ var popup_c3bc3dab528ded4462b7ada6912606f7 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_620ad787ea61414c9e5ee92d5d8a1c94 = $(`<div id="html_620ad787ea61414c9e5ee92d5d8a1c94" style="width: 100.0%; height: 100.0%;">Oshawa Type: solid waste</div>`)[0];
+var html_620ad787ea61414c9e5ee92d5d8a1c94 = $(`<div id="html_620ad787ea61414c9e5ee92d5d8a1c94" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Oshawa <br> Type: solid waste</div>`)[0];
 popup_c3bc3dab528ded4462b7ada6912606f7.setContent(html_620ad787ea61414c9e5ee92d5d8a1c94);
 
 
@@ -894,7 +894,7 @@ var popup_92fada13380bc111b29f517ad29712d3 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_bb91eb23500ce48067f2834ab6068ab1 = $(`<div id="html_bb91eb23500ce48067f2834ab6068ab1" style="width: 100.0%; height: 100.0%;">Brock Type: solid waste</div>`)[0];
+var html_bb91eb23500ce48067f2834ab6068ab1 = $(`<div id="html_bb91eb23500ce48067f2834ab6068ab1" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Brock <br> Type: solid waste</div>`)[0];
 popup_92fada13380bc111b29f517ad29712d3.setContent(html_bb91eb23500ce48067f2834ab6068ab1);
 
 
@@ -921,7 +921,7 @@ var popup_e4d190c30f938135bd7410efff0eb0f1 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_6e16c0106af122ddd856f9ac4d842537 = $(`<div id="html_6e16c0106af122ddd856f9ac4d842537" style="width: 100.0%; height: 100.0%;">Darlington Type: solid waste</div>`)[0];
+var html_6e16c0106af122ddd856f9ac4d842537 = $(`<div id="html_6e16c0106af122ddd856f9ac4d842537" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Darlington <br> Type: solid waste</div>`)[0];
 popup_e4d190c30f938135bd7410efff0eb0f1.setContent(html_6e16c0106af122ddd856f9ac4d842537);
 
 
@@ -948,7 +948,7 @@ var popup_a28735ef53eac4fdcca5872ebb7acfdc = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_cdacd6428d0ff924c742efcacb7c699b = $(`<div id="html_cdacd6428d0ff924c742efcacb7c699b" style="width: 100.0%; height: 100.0%;">Scugog Type: solid waste</div>`)[0];
+var html_cdacd6428d0ff924c742efcacb7c699b = $(`<div id="html_cdacd6428d0ff924c742efcacb7c699b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Scugog <br> Type: solid waste</div>`)[0];
 popup_a28735ef53eac4fdcca5872ebb7acfdc.setContent(html_cdacd6428d0ff924c742efcacb7c699b);
 
 
@@ -975,7 +975,7 @@ var popup_8a398d6201ebcd4569e367bd5f591a95 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_2576c378578817f760af1ad3906a01f0 = $(`<div id="html_2576c378578817f760af1ad3906a01f0" style="width: 100.0%; height: 100.0%;">Blackstock Type: solid waste</div>`)[0];
+var html_2576c378578817f760af1ad3906a01f0 = $(`<div id="html_2576c378578817f760af1ad3906a01f0" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Blackstock <br> Type: solid waste</div>`)[0];
 popup_8a398d6201ebcd4569e367bd5f591a95.setContent(html_2576c378578817f760af1ad3906a01f0);
 
 
@@ -1002,7 +1002,7 @@ var popup_eed84687c9eda216cfbf24d5bb29676e = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_022f63d513657783ab64430d743f8c6d = $(`<div id="html_022f63d513657783ab64430d743f8c6d" style="width: 100.0%; height: 100.0%;">Miller Waste Pickering Type: solid waste</div>`)[0];
+var html_022f63d513657783ab64430d743f8c6d = $(`<div id="html_022f63d513657783ab64430d743f8c6d" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Miller Waste Pickering <br> Type: solid waste</div>`)[0];
 popup_eed84687c9eda216cfbf24d5bb29676e.setContent(html_022f63d513657783ab64430d743f8c6d);
 
 
@@ -1029,7 +1029,7 @@ var popup_0dcb3afa9d0191dc95c7aec3611fbf63 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a054d9ea6a65b5d5523aa6b86f2ada34 = $(`<div id="html_a054d9ea6a65b5d5523aa6b86f2ada34" style="width: 100.0%; height: 100.0%;">Miller Waste Clarington Type: solid waste</div>`)[0];
+var html_a054d9ea6a65b5d5523aa6b86f2ada34 = $(`<div id="html_a054d9ea6a65b5d5523aa6b86f2ada34" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Miller Waste Clarington <br> Type: solid waste</div>`)[0];
 popup_0dcb3afa9d0191dc95c7aec3611fbf63.setContent(html_a054d9ea6a65b5d5523aa6b86f2ada34);
 
 
@@ -1056,7 +1056,7 @@ var popup_53a5e904d55a31e67ef8be4db52118b5 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_4681ef4d1bd963719cbdc5a411097a0a = $(`<div id="html_4681ef4d1bd963719cbdc5a411097a0a" style="width: 100.0%; height: 100.0%;">Brock West Type: solid waste</div>`)[0];
+var html_4681ef4d1bd963719cbdc5a411097a0a = $(`<div id="html_4681ef4d1bd963719cbdc5a411097a0a" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Brock West <br> Type: solid waste</div>`)[0];
 popup_53a5e904d55a31e67ef8be4db52118b5.setContent(html_4681ef4d1bd963719cbdc5a411097a0a);
 
 
@@ -1083,7 +1083,7 @@ var popup_ba005da4fb909f69a7a5173d6e2b64de = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_01103b7c906cc56ef4ddcb527bdf4374 = $(`<div id="html_01103b7c906cc56ef4ddcb527bdf4374" style="width: 100.0%; height: 100.0%;">Port Perry Type: solid waste</div>`)[0];
+var html_01103b7c906cc56ef4ddcb527bdf4374 = $(`<div id="html_01103b7c906cc56ef4ddcb527bdf4374" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Port Perry <br> Type: solid waste</div>`)[0];
 popup_ba005da4fb909f69a7a5173d6e2b64de.setContent(html_01103b7c906cc56ef4ddcb527bdf4374);
 
 
@@ -1110,7 +1110,7 @@ var popup_805dd10f9b83ec1232511ca92df27251 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_46a4016703e9e739a9d3cabcd6863790 = $(`<div id="html_46a4016703e9e739a9d3cabcd6863790" style="width: 100.0%; height: 100.0%;">Palgrave Landfill Site Type: solid waste</div>`)[0];
+var html_46a4016703e9e739a9d3cabcd6863790 = $(`<div id="html_46a4016703e9e739a9d3cabcd6863790" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Palgrave Landfill Site <br> Type: solid waste</div>`)[0];
 popup_805dd10f9b83ec1232511ca92df27251.setContent(html_46a4016703e9e739a9d3cabcd6863790);
 
 
@@ -1137,7 +1137,7 @@ var popup_ee5677d9da9ce41d331978bbe9b257af = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_502fbf3c6baf2e57a5d290aed0793dba = $(`<div id="html_502fbf3c6baf2e57a5d290aed0793dba" style="width: 100.0%; height: 100.0%;">Port Credit Memorial Park Type: solid waste</div>`)[0];
+var html_502fbf3c6baf2e57a5d290aed0793dba = $(`<div id="html_502fbf3c6baf2e57a5d290aed0793dba" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Port Credit Memorial Park <br> Type: solid waste</div>`)[0];
 popup_ee5677d9da9ce41d331978bbe9b257af.setContent(html_502fbf3c6baf2e57a5d290aed0793dba);
 
 
@@ -1164,7 +1164,7 @@ var popup_114ef71c9bf4c220bdb324f0e38bcfdb = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_fb65f10af5b325fbcebbf0991df65355 = $(`<div id="html_fb65f10af5b325fbcebbf0991df65355" style="width: 100.0%; height: 100.0%;">Centennial Park Type: solid waste</div>`)[0];
+var html_fb65f10af5b325fbcebbf0991df65355 = $(`<div id="html_fb65f10af5b325fbcebbf0991df65355" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Centennial Park <br> Type: solid waste</div>`)[0];
 popup_114ef71c9bf4c220bdb324f0e38bcfdb.setContent(html_fb65f10af5b325fbcebbf0991df65355);
 
 
@@ -1191,7 +1191,7 @@ var popup_19a9df54970f1ab970d185b2d96003c1 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_1ed8149ea3b6125c00dfc8aecf6c50af = $(`<div id="html_1ed8149ea3b6125c00dfc8aecf6c50af" style="width: 100.0%; height: 100.0%;">Professor’s Lake Park Type: solid waste</div>`)[0];
+var html_1ed8149ea3b6125c00dfc8aecf6c50af = $(`<div id="html_1ed8149ea3b6125c00dfc8aecf6c50af" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Professor's Lake Park <br> Type: solid waste</div>`)[0];
 popup_19a9df54970f1ab970d185b2d96003c1.setContent(html_1ed8149ea3b6125c00dfc8aecf6c50af);
 
 
@@ -1218,7 +1218,7 @@ var popup_d9c2a91b14e7a2599865b16cda0cd8ad = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a4d1de942765e667a682015849f7a31b = $(`<div id="html_a4d1de942765e667a682015849f7a31b" style="width: 100.0%; height: 100.0%;">Centre Street Type: solid waste</div>`)[0];
+var html_a4d1de942765e667a682015849f7a31b = $(`<div id="html_a4d1de942765e667a682015849f7a31b" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Centre Street <br> Type: solid waste</div>`)[0];
 popup_d9c2a91b14e7a2599865b16cda0cd8ad.setContent(html_a4d1de942765e667a682015849f7a31b);
 
 
@@ -1245,7 +1245,7 @@ var popup_9b4e3d5b687b3c308d302d4dc79b6826 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_17ac936820d63d7af62d0b9c1fbd40d4 = $(`<div id="html_17ac936820d63d7af62d0b9c1fbd40d4" style="width: 100.0%; height: 100.0%;">Bolton Landfill Site Type: solid waste</div>`)[0];
+var html_17ac936820d63d7af62d0b9c1fbd40d4 = $(`<div id="html_17ac936820d63d7af62d0b9c1fbd40d4" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Bolton Landfill Site <br> Type: solid waste</div>`)[0];
 popup_9b4e3d5b687b3c308d302d4dc79b6826.setContent(html_17ac936820d63d7af62d0b9c1fbd40d4);
 
 
@@ -1272,7 +1272,7 @@ var popup_572a85a531983906995f2e39286f99a2 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_7fa739b297db287c92ffe6f8fdf028df = $(`<div id="html_7fa739b297db287c92ffe6f8fdf028df" style="width: 100.0%; height: 100.0%;">Streetsville Type: solid waste</div>`)[0];
+var html_7fa739b297db287c92ffe6f8fdf028df = $(`<div id="html_7fa739b297db287c92ffe6f8fdf028df" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Streetsville <br> Type: solid waste</div>`)[0];
 popup_572a85a531983906995f2e39286f99a2.setContent(html_7fa739b297db287c92ffe6f8fdf028df);
 
 
@@ -1299,7 +1299,7 @@ var popup_c27d0afdc7d565f2ace3d0c9ba97db51 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_348dca050d0b8301f762cca6e4999d33 = $(`<div id="html_348dca050d0b8301f762cca6e4999d33" style="width: 100.0%; height: 100.0%;">Mavis Road Type: solid waste</div>`)[0];
+var html_348dca050d0b8301f762cca6e4999d33 = $(`<div id="html_348dca050d0b8301f762cca6e4999d33" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Mavis Road <br> Type: solid waste</div>`)[0];
 popup_c27d0afdc7d565f2ace3d0c9ba97db51.setContent(html_348dca050d0b8301f762cca6e4999d33);
 
 
@@ -1326,7 +1326,7 @@ var popup_24aff34e00833c1559c3639e7f6fcf45 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_cd100f46e0d175da3d322ad93e1115c4 = $(`<div id="html_cd100f46e0d175da3d322ad93e1115c4" style="width: 100.0%; height: 100.0%;">Newman Landfill Site Type: solid waste</div>`)[0];
+var html_cd100f46e0d175da3d322ad93e1115c4 = $(`<div id="html_cd100f46e0d175da3d322ad93e1115c4" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Newman Landfill Site <br> Type: solid waste</div>`)[0];
 popup_24aff34e00833c1559c3639e7f6fcf45.setContent(html_cd100f46e0d175da3d322ad93e1115c4);
 
 
@@ -1353,7 +1353,7 @@ var popup_d6babf3584e025d08867836292784de0 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_72e7a28de8f9fb26923517322d2308fc = $(`<div id="html_72e7a28de8f9fb26923517322d2308fc" style="width: 100.0%; height: 100.0%;">Saddington Park Type: solid waste</div>`)[0];
+var html_72e7a28de8f9fb26923517322d2308fc = $(`<div id="html_72e7a28de8f9fb26923517322d2308fc" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Saddington Park <br> Type: solid waste</div>`)[0];
 popup_d6babf3584e025d08867836292784de0.setContent(html_72e7a28de8f9fb26923517322d2308fc);
 
 
@@ -1380,7 +1380,7 @@ var popup_06e444f6559b67b3ee0de232f8cae3fc = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_bf98746ad3d0ba9739e67c336de71d93 = $(`<div id="html_bf98746ad3d0ba9739e67c336de71d93" style="width: 100.0%; height: 100.0%;">North Sheridan Landfill Site Type: solid waste</div>`)[0];
+var html_bf98746ad3d0ba9739e67c336de71d93 = $(`<div id="html_bf98746ad3d0ba9739e67c336de71d93" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: North Sheridan Landfill Site <br> Type: solid waste</div>`)[0];
 popup_06e444f6559b67b3ee0de232f8cae3fc.setContent(html_bf98746ad3d0ba9739e67c336de71d93);
 
 
@@ -1407,7 +1407,7 @@ var popup_4cb1faff7ef01493bd8e8f1ead43eb3f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_c878e6023b109039f52cc9d9896c17a5 = $(`<div id="html_c878e6023b109039f52cc9d9896c17a5" style="width: 100.0%; height: 100.0%;">Chinguacousy Landfill Type: solid waste</div>`)[0];
+var html_c878e6023b109039f52cc9d9896c17a5 = $(`<div id="html_c878e6023b109039f52cc9d9896c17a5" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Chinguacousy Landfill <br> Type: solid waste</div>`)[0];
 popup_4cb1faff7ef01493bd8e8f1ead43eb3f.setContent(html_c878e6023b109039f52cc9d9896c17a5);
 
 
@@ -1434,7 +1434,7 @@ var popup_fe454d8e0302bd7feea270c2eb2df9fb = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_f33952cb29f16fc2936571f2c6795dd0 = $(`<div id="html_f33952cb29f16fc2936571f2c6795dd0" style="width: 100.0%; height: 100.0%;">Erindale Park Type: solid waste</div>`)[0];
+var html_f33952cb29f16fc2936571f2c6795dd0 = $(`<div id="html_f33952cb29f16fc2936571f2c6795dd0" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Erindale Park <br> Type: solid waste</div>`)[0];
 popup_fe454d8e0302bd7feea270c2eb2df9fb.setContent(html_f33952cb29f16fc2936571f2c6795dd0);
 
 
@@ -1461,7 +1461,7 @@ var popup_b44bcafb7750fa20695355fd0509d432 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_5a14b33aaa4c54289ddfbdfabdd9ef33 = $(`<div id="html_5a14b33aaa4c54289ddfbdfabdd9ef33" style="width: 100.0%; height: 100.0%;">Albion Landfill Type: solid waste</div>`)[0];
+var html_5a14b33aaa4c54289ddfbdfabdd9ef33 = $(`<div id="html_5a14b33aaa4c54289ddfbdfabdd9ef33" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Albion Landfill <br> Type: solid waste</div>`)[0];
 popup_b44bcafb7750fa20695355fd0509d432.setContent(html_5a14b33aaa4c54289ddfbdfabdd9ef33);
 
 
@@ -1488,7 +1488,7 @@ var popup_848291371358ed3c87cdc441e1bab084 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_7dd6c4ce7140c0ac0929d4808b8db7d9 = $(`<div id="html_7dd6c4ce7140c0ac0929d4808b8db7d9" style="width: 100.0%; height: 100.0%;">Caledon Sanitary Landfill Site Type: solid waste</div>`)[0];
+var html_7dd6c4ce7140c0ac0929d4808b8db7d9 = $(`<div id="html_7dd6c4ce7140c0ac0929d4808b8db7d9" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Caledon Sanitary Landfill Site <br> Type: solid waste</div>`)[0];
 popup_848291371358ed3c87cdc441e1bab084.setContent(html_7dd6c4ce7140c0ac0929d4808b8db7d9);
 
 
@@ -1515,7 +1515,7 @@ var popup_b68d153a3688b3088e300abac6579d99 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_978df87d33f883400eb181b32ed7630f = $(`<div id="html_978df87d33f883400eb181b32ed7630f" style="width: 100.0%; height: 100.0%;">Britannia Sanitary Landfill Site Type: solid waste</div>`)[0];
+var html_978df87d33f883400eb181b32ed7630f = $(`<div id="html_978df87d33f883400eb181b32ed7630f" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Britannia Sanitary Landfill Site <br> Type: solid waste</div>`)[0];
 popup_b68d153a3688b3088e300abac6579d99.setContent(html_978df87d33f883400eb181b32ed7630f);
 
 
@@ -1542,7 +1542,7 @@ var popup_dc33bdb6b67eb7c5910f571c440ec406 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a4074c1f64405befeb2569530328c99a = $(`<div id="html_a4074c1f64405befeb2569530328c99a" style="width: 100.0%; height: 100.0%;">Peel Integrated Waste Management Facility Type: solid waste</div>`)[0];
+var html_a4074c1f64405befeb2569530328c99a = $(`<div id="html_a4074c1f64405befeb2569530328c99a" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Peel Integrated Waste Management Facility <br> Type: solid waste</div>`)[0];
 popup_dc33bdb6b67eb7c5910f571c440ec406.setContent(html_a4074c1f64405befeb2569530328c99a);
 
 
@@ -1569,7 +1569,7 @@ var popup_aefd9212919edc7f6fab499767575aab = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_b2f53d55bc0af2466549c88fd525aaed = $(`<div id="html_b2f53d55bc0af2466549c88fd525aaed" style="width: 100.0%; height: 100.0%;">Caledon Public Waste Type: solid waste</div>`)[0];
+var html_b2f53d55bc0af2466549c88fd525aaed = $(`<div id="html_b2f53d55bc0af2466549c88fd525aaed" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Caledon Public Waste <br> Type: solid waste</div>`)[0];
 popup_aefd9212919edc7f6fab499767575aab.setContent(html_b2f53d55bc0af2466549c88fd525aaed);
 
 
@@ -1596,7 +1596,7 @@ var popup_2629e9c297b79d84eb9c4c3e67e4acc4 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_144b5fa89dc76571fb26285f3198ba94 = $(`<div id="html_144b5fa89dc76571fb26285f3198ba94" style="width: 100.0%; height: 100.0%;">Peel Curing Facility Type: solid waste</div>`)[0];
+var html_144b5fa89dc76571fb26285f3198ba94 = $(`<div id="html_144b5fa89dc76571fb26285f3198ba94" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Peel Curing Facility <br>Type: solid waste</div>`)[0];
 popup_2629e9c297b79d84eb9c4c3e67e4acc4.setContent(html_144b5fa89dc76571fb26285f3198ba94);
 
 
@@ -1623,7 +1623,7 @@ var popup_263277d31bfb101a2bbcb836dbc6be4f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_904ebe6192eba5eeb12363d23f934d70 = $(`<div id="html_904ebe6192eba5eeb12363d23f934d70" style="width: 100.0%; height: 100.0%;">Portlands Energy Centre LP - Portlands Energy Centre Type: Power Plant</div>`)[0];
+var html_904ebe6192eba5eeb12363d23f934d70 = $(`<div id="html_904ebe6192eba5eeb12363d23f934d70" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Portlands Energy Centre <br> Type: Power Plant</div>`)[0];
 popup_263277d31bfb101a2bbcb836dbc6be4f.setContent(html_904ebe6192eba5eeb12363d23f934d70);
 
 
@@ -1650,7 +1650,7 @@ var popup_2b270d3ce893eda0ff42edbee1348524 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_1f7d8277491dda071ce83c14e0576e11 = $(`<div id="html_1f7d8277491dda071ce83c14e0576e11" style="width: 100.0%; height: 100.0%;">Sanofi Pasteur Limited - Sanofi Pasteur Limited -Connaught Campus Type: Manufacturing</div>`)[0];
+var html_1f7d8277491dda071ce83c14e0576e11 = $(`<div id="html_1f7d8277491dda071ce83c14e0576e11" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Sanofi Pasteur Limited -Connaught Campus <br> Type: Manufacturing</div>`)[0];
 popup_2b270d3ce893eda0ff42edbee1348524.setContent(html_1f7d8277491dda071ce83c14e0576e11);
 
 
@@ -1677,7 +1677,7 @@ var popup_1f952b17c8474e0e8db612e17925a43f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_69ba6bc02e7bf54ba16b7ae7d4660928 = $(`<div id="html_69ba6bc02e7bf54ba16b7ae7d4660928" style="width: 100.0%; height: 100.0%;">York University - Keele Campus Type: Power Plant</div>`)[0];
+var html_69ba6bc02e7bf54ba16b7ae7d4660928 = $(`<div id="html_69ba6bc02e7bf54ba16b7ae7d4660928" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: York University - Keele Campus <br> Type: Power Plant</div>`)[0];
 popup_1f952b17c8474e0e8db612e17925a43f.setContent(html_69ba6bc02e7bf54ba16b7ae7d4660928);
 
 
@@ -1704,7 +1704,7 @@ var popup_5347f335b53b4e738e24ee4f3a3962cb = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_bcd3e89615f64c9161b82d317311d0ad = $(`<div id="html_bcd3e89615f64c9161b82d317311d0ad" style="width: 100.0%; height: 100.0%;">York Energy Centre LP Type: Power Plant</div>`)[0];
+var html_bcd3e89615f64c9161b82d317311d0ad = $(`<div id="html_bcd3e89615f64c9161b82d317311d0ad" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: York Energy Centre LP <br> Type: Power Plant</div>`)[0];
 popup_5347f335b53b4e738e24ee4f3a3962cb.setContent(html_bcd3e89615f64c9161b82d317311d0ad);
 
 
@@ -1731,7 +1731,7 @@ var popup_cc309d7f78a70dbde818b60a74d1df22 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_6dea9e9b8a7c5cce8b23a7d4a12ad576 = $(`<div id="html_6dea9e9b8a7c5cce8b23a7d4a12ad576" style="width: 100.0%; height: 100.0%;">Markham District Energy Inc. - Warden Energy Centre Type: Power Plant</div>`)[0];
+var html_6dea9e9b8a7c5cce8b23a7d4a12ad576 = $(`<div id="html_6dea9e9b8a7c5cce8b23a7d4a12ad576" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Markham District Energy Inc. - Warden Energy Centre <br> Type: Power Plant</div>`)[0];
 popup_cc309d7f78a70dbde818b60a74d1df22.setContent(html_6dea9e9b8a7c5cce8b23a7d4a12ad576);
 
 
@@ -1758,7 +1758,7 @@ var popup_9759408908ffd892e6fb28ce58b6bc09 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_ad1a174f158499120f82a06c000ee495 = $(`<div id="html_ad1a174f158499120f82a06c000ee495" style="width: 100.0%; height: 100.0%;">Descor Industries Inc. Type: Manufacturing</div>`)[0];
+var html_ad1a174f158499120f82a06c000ee495 = $(`<div id="html_ad1a174f158499120f82a06c000ee495" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Descor Industries Inc. <br> Type: Manufacturing</div>`)[0];
 popup_9759408908ffd892e6fb28ce58b6bc09.setContent(html_ad1a174f158499120f82a06c000ee495);
 
 
@@ -1785,7 +1785,7 @@ var popup_045c889535603838ce8f18683c33b201 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a8cc73ab834d74c9609168133384347f = $(`<div id="html_a8cc73ab834d74c9609168133384347f" style="width: 100.0%; height: 100.0%;">TransCanada Energy Ltd. - Halton Hills Generating Station Type: Power Plant</div>`)[0];
+var html_a8cc73ab834d74c9609168133384347f = $(`<div id="html_a8cc73ab834d74c9609168133384347f" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: TransCanada Energy Ltd. - Halton Hills Generating Station <br> Type: Power Plant</div>`)[0];
 popup_045c889535603838ce8f18683c33b201.setContent(html_a8cc73ab834d74c9609168133384347f);
 
 
@@ -1812,7 +1812,7 @@ var popup_64637edf01ec5ed852dedc9745f312ba = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_8910760947e1d4ce0c6e4a93f9d48306 = $(`<div id="html_8910760947e1d4ce0c6e4a93f9d48306" style="width: 100.0%; height: 100.0%;">Whitby Cogeneration L.P. Type: Power Plant</div>`)[0];
+var html_8910760947e1d4ce0c6e4a93f9d48306 = $(`<div id="html_8910760947e1d4ce0c6e4a93f9d48306" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Whitby Cogeneration L.P. <br> Type: Power Plant</div>`)[0];
 popup_64637edf01ec5ed852dedc9745f312ba.setContent(html_8910760947e1d4ce0c6e4a93f9d48306);
 
 
@@ -1839,7 +1839,7 @@ var popup_c23a749688b0a0adfecf5b8240092100 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_fd84f8bc586e29cfb906580b86fc2da9 = $(`<div id="html_fd84f8bc586e29cfb906580b86fc2da9" style="width: 100.0%; height: 100.0%;">St. Marys Cement Inc. (Canada) - Bowmanville Cement Plant Type: Manufacturing</div>`)[0];
+var html_fd84f8bc586e29cfb906580b86fc2da9 = $(`<div id="html_fd84f8bc586e29cfb906580b86fc2da9" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: St. Marys Cement Inc. (Canada) - Bowmanville Cement Plant <br> Type: Manufacturing</div>`)[0];
 popup_c23a749688b0a0adfecf5b8240092100.setContent(html_fd84f8bc586e29cfb906580b86fc2da9);
 
 
@@ -1866,7 +1866,7 @@ var popup_0bba98d83458e3f76142fa2fc55726d8 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_df9e85438a04486cda45396a88ec8e34 = $(`<div id="html_df9e85438a04486cda45396a88ec8e34" style="width: 100.0%; height: 100.0%;">CRH Canada Group Inc. - Mississauga Cement Plant Type: Manufacturing</div>`)[0];
+var html_df9e85438a04486cda45396a88ec8e34 = $(`<div id="html_df9e85438a04486cda45396a88ec8e34" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: CRH Canada Group Inc. - Mississauga Cement Plant <br> Type: Manufacturing</div>`)[0];
 popup_0bba98d83458e3f76142fa2fc55726d8.setContent(html_df9e85438a04486cda45396a88ec8e34);
 
 
@@ -1893,7 +1893,7 @@ var popup_15c0ec7b1d837ff71656d3c35be17027 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_03571ec87ba46247dabac5612f8d1646 = $(`<div id="html_03571ec87ba46247dabac5612f8d1646" style="width: 100.0%; height: 100.0%;">Goreway Station Partnership - Goreway Power Station Type: Power Plant</div>`)[0];
+var html_03571ec87ba46247dabac5612f8d1646 = $(`<div id="html_03571ec87ba46247dabac5612f8d1646" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Goreway Station Partnership - Goreway Power Station <br> Type: Power Plant</div>`)[0];
 popup_15c0ec7b1d837ff71656d3c35be17027.setContent(html_03571ec87ba46247dabac5612f8d1646);
 
 
@@ -1920,7 +1920,7 @@ var popup_4604a93417f1241ee99db51836a2873a = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_4fe7c07466511651314b9b911c07eb04 = $(`<div id="html_4fe7c07466511651314b9b911c07eb04" style="width: 100.0%; height: 100.0%;">Emerald Energy From Waste Inc. - Emerald Energy from Waste Inc. Type: Power Plant</div>`)[0];
+var html_4fe7c07466511651314b9b911c07eb04 = $(`<div id="html_4fe7c07466511651314b9b911c07eb04" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Emerald Energy From Waste Inc. <br> Type: Power Plant</div>`)[0];
 popup_4604a93417f1241ee99db51836a2873a.setContent(html_4fe7c07466511651314b9b911c07eb04);
 
 
@@ -1947,7 +1947,7 @@ var popup_eebe8138cf8128481d04876101679981 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_9325ff9ae183a7a3a109273b18ec3ddd = $(`<div id="html_9325ff9ae183a7a3a109273b18ec3ddd" style="width: 100.0%; height: 100.0%;">Petro-Canada Lubricants Inc. - Mississauga Lubricants Centre Type: Manufacturing</div>`)[0];
+var html_9325ff9ae183a7a3a109273b18ec3ddd = $(`<div id="html_9325ff9ae183a7a3a109273b18ec3ddd" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Petro-Canada Lubricants Inc. - Mississauga Lubricants Centre <br> Type: Manufacturing</div>`)[0];
 popup_eebe8138cf8128481d04876101679981.setContent(html_9325ff9ae183a7a3a109273b18ec3ddd);
 
 
@@ -1974,7 +1974,7 @@ var popup_135096965d1018247e03f40e720fe3a4 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_4ad35966e61bd2281709cef6541341f2 = $(`<div id="html_4ad35966e61bd2281709cef6541341f2" style="width: 100.0%; height: 100.0%;">TransAlta Generation Partnership - Mississauga Cogeneration Plant Type: Power Plant</div>`)[0];
+var html_4ad35966e61bd2281709cef6541341f2 = $(`<div id="html_4ad35966e61bd2281709cef6541341f2" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: TransAlta Generation Partnership - Mississauga Cogeneration Plant <br> Type: Power Plant</div>`)[0];
 popup_135096965d1018247e03f40e720fe3a4.setContent(html_4ad35966e61bd2281709cef6541341f2);
 
 
@@ -2001,7 +2001,7 @@ var popup_d1fbf3b30efbd48b12032aa17334cc76 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_45b0dbaf51cbfdf9ea7412bff1a078a2 = $(`<div id="html_45b0dbaf51cbfdf9ea7412bff1a078a2" style="width: 100.0%; height: 100.0%;">The University of Toronto Central Steam Plant Type: Power Plant</div>`)[0];
+var html_45b0dbaf51cbfdf9ea7412bff1a078a2 = $(`<div id="html_45b0dbaf51cbfdf9ea7412bff1a078a2" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: The University of Toronto Central Steam Plant <br> Type: Power Plant</div>`)[0];
 popup_d1fbf3b30efbd48b12032aa17334cc76.setContent(html_45b0dbaf51cbfdf9ea7412bff1a078a2);
 
 
@@ -2028,7 +2028,7 @@ var popup_288a712417dce7b9f402d96b5461224f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_d7381a6fffe59204510edae926ce4d01 = $(`<div id="html_d7381a6fffe59204510edae926ce4d01" style="width: 100.0%; height: 100.0%;">Pearl Street Steam Plant- Enwave Energy Corporation Type: Power Plant</div>`)[0];
+var html_d7381a6fffe59204510edae926ce4d01 = $(`<div id="html_d7381a6fffe59204510edae926ce4d01" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Pearl Street Steam Plant- Enwave Energy Corporation <br> Type: Power Plant</div>`)[0];
 popup_288a712417dce7b9f402d96b5461224f.setContent(html_d7381a6fffe59204510edae926ce4d01);
 
 
@@ -2055,7 +2055,7 @@ var popup_6452cf61cb6d3e9db6db11a7ec052208 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_2d5496ead1e7747005a4f63061a503dc = $(`<div id="html_2d5496ead1e7747005a4f63061a503dc" style="width: 100.0%; height: 100.0%;">Walton Street Steam Plant - Enwave Energy Corporation Type: Power Plant</div>`)[0];
+var html_2d5496ead1e7747005a4f63061a503dc = $(`<div id="html_2d5496ead1e7747005a4f63061a503dc" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Walton Street Steam Plant - Enwave Energy Corporation <br> Type: Power Plant</div>`)[0];
 popup_6452cf61cb6d3e9db6db11a7ec052208.setContent(html_2d5496ead1e7747005a4f63061a503dc);
 
 
@@ -2082,7 +2082,7 @@ var popup_4055271ca3022e2e4f2bb6df7852fe99 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_5826dc3a137699425f1fbeda8f1631d1 = $(`<div id="html_5826dc3a137699425f1fbeda8f1631d1" style="width: 100.0%; height: 100.0%;">Redpath Sugar Refinery Type: Manufacturing</div>`)[0];
+var html_5826dc3a137699425f1fbeda8f1631d1 = $(`<div id="html_5826dc3a137699425f1fbeda8f1631d1" style="width: 100.0%; height: 100.0%;">Known Emitter <br> Name: Redpath Sugar Refinery <br> Type: Manufacturing</div>`)[0];
 popup_4055271ca3022e2e4f2bb6df7852fe99.setContent(html_5826dc3a137699425f1fbeda8f1631d1);
 
 
@@ -2092,12 +2092,13 @@ marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df
 
 
 
+//------------------------------BEGIN CLUSTER CENTRES-----------------------------------------//
+var centres = L.layerGroup()
 
 var marker_4e04ec412ebbe5159291256662355559 = L.marker(
     [43.6609822129815, -79.31488395907925],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
-
+).addTo(centres);
 
 var icon_653bbe46b3b7027862dcf5bd5fdd36f9 = L.AwesomeMarkers.icon(
     { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": "red", "prefix": "fa" }
@@ -2109,7 +2110,7 @@ var popup_651926a3cd0b07f66e49e1e3962499b3 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_2ee483442992980adb42a402845fb35e = $(`<div id="html_2ee483442992980adb42a402845fb35e" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 1.07016149e-05 -4.55350003e-06]  [-4.55350003e-06  8.33972029e-06]]</div>`)[0];
+var html_2ee483442992980adb42a402845fb35e = $(`<div id="html_2ee483442992980adb42a402845fb35e" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 1.07016149e-05 -4.55350003e-06]  [-4.55350003e-06  8.33972029e-06]]</div>`)[0];
 popup_651926a3cd0b07f66e49e1e3962499b3.setContent(html_2ee483442992980adb42a402845fb35e);
 
 
@@ -2123,7 +2124,7 @@ marker_4e04ec412ebbe5159291256662355559.bindPopup(popup_651926a3cd0b07f66e49e1e3
 var marker_611b31bd3b4798caacb89377f4b4476a = L.marker(
     [43.640257565425685, -79.45536951775787],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_22e2df49f69f4131d8f8b98e07086abb = L.AwesomeMarkers.icon(
@@ -2136,7 +2137,7 @@ var popup_a9f45fce01fff26ba204f40ef4fad56e = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a740642a529f311b8ce4742614b522d4 = $(`<div id="html_a740642a529f311b8ce4742614b522d4" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[1.00314545e-06 1.90988078e-09]  [1.90988078e-09 1.07148128e-06]]</div>`)[0];
+var html_a740642a529f311b8ce4742614b522d4 = $(`<div id="html_a740642a529f311b8ce4742614b522d4" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[1.00314545e-06 1.90988078e-09]  [1.90988078e-09 1.07148128e-06]]</div>`)[0];
 popup_a9f45fce01fff26ba204f40ef4fad56e.setContent(html_a740642a529f311b8ce4742614b522d4);
 
 
@@ -2150,7 +2151,7 @@ marker_611b31bd3b4798caacb89377f4b4476a.bindPopup(popup_a9f45fce01fff26ba204f40e
 var marker_6fdc7b35f08625b2cdce6c69b64f2728 = L.marker(
     [43.70221934989353, -79.60930627386766],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_a342a3be270427f59811b944d3a81e00 = L.AwesomeMarkers.icon(
@@ -2163,7 +2164,7 @@ var popup_3885e0c72985c891b351f5dc30214d3d = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_4b3cf0b3ca2843fdca4dba862cfe5b13 = $(`<div id="html_4b3cf0b3ca2843fdca4dba862cfe5b13" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 1.23417525e-06 -2.55198590e-07]  [-2.55198590e-07  1.28411664e-06]]</div>`)[0];
+var html_4b3cf0b3ca2843fdca4dba862cfe5b13 = $(`<div id="html_4b3cf0b3ca2843fdca4dba862cfe5b13" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 1.23417525e-06 -2.55198590e-07]  [-2.55198590e-07  1.28411664e-06]]</div>`)[0];
 popup_3885e0c72985c891b351f5dc30214d3d.setContent(html_4b3cf0b3ca2843fdca4dba862cfe5b13);
 
 
@@ -2177,7 +2178,7 @@ marker_6fdc7b35f08625b2cdce6c69b64f2728.bindPopup(popup_3885e0c72985c891b351f5dc
 var marker_19357f056d175d04fce2778e648356c1 = L.marker(
     [43.64728496319392, -79.3860786851719],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_3c6c5d655357015d42e58de015b66d24 = L.AwesomeMarkers.icon(
@@ -2190,7 +2191,7 @@ var popup_cf3f6c6b0944ee7493fb0bdf69d7f07e = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_447c8753afd4b0ab9dcce0e38f1ac05a = $(`<div id="html_447c8753afd4b0ab9dcce0e38f1ac05a" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 5.75606972e-06 -2.00481796e-06]  [-2.00481796e-06  1.22997281e-05]]</div>`)[0];
+var html_447c8753afd4b0ab9dcce0e38f1ac05a = $(`<div id="html_447c8753afd4b0ab9dcce0e38f1ac05a" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 5.75606972e-06 -2.00481796e-06]  [-2.00481796e-06  1.22997281e-05]]</div>`)[0];
 popup_cf3f6c6b0944ee7493fb0bdf69d7f07e.setContent(html_447c8753afd4b0ab9dcce0e38f1ac05a);
 
 
@@ -2204,7 +2205,7 @@ marker_19357f056d175d04fce2778e648356c1.bindPopup(popup_cf3f6c6b0944ee7493fb0bdf
 var marker_5b0b5b385cf044f3ceedb40e176526de = L.marker(
     [43.65072861436692, -79.34841534050757],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_e32d426a3e6fd052e743bdb403ab9ca6 = L.AwesomeMarkers.icon(
@@ -2217,7 +2218,7 @@ var popup_7950de594ef74c2f58c6044890e8149a = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_d0ca82410c7acd20cea7dd208968a3e6 = $(`<div id="html_d0ca82410c7acd20cea7dd208968a3e6" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[5.19341184e-06 1.35812683e-06]  [1.35812683e-06 1.91872041e-06]]</div>`)[0];
+var html_d0ca82410c7acd20cea7dd208968a3e6 = $(`<div id="html_d0ca82410c7acd20cea7dd208968a3e6" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[5.19341184e-06 1.35812683e-06]  [1.35812683e-06 1.91872041e-06]]</div>`)[0];
 popup_7950de594ef74c2f58c6044890e8149a.setContent(html_d0ca82410c7acd20cea7dd208968a3e6);
 
 
@@ -2231,7 +2232,7 @@ marker_5b0b5b385cf044f3ceedb40e176526de.bindPopup(popup_7950de594ef74c2f58c60448
 var marker_251c606bb1bc8c18a156df221d802e5b = L.marker(
     [43.60244662367551, -79.69468140720609],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_5416eb751c29b7dc6098140475831032 = L.AwesomeMarkers.icon(
@@ -2244,7 +2245,7 @@ var popup_8e89c22b6f92f617adb6556e4c17c983 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_b4048ff6a05f8a9bce2d6486c04575a6 = $(`<div id="html_b4048ff6a05f8a9bce2d6486c04575a6" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 2.20942873e-06 -9.12744690e-07]  [-9.12744690e-07  1.68883998e-06]]</div>`)[0];
+var html_b4048ff6a05f8a9bce2d6486c04575a6 = $(`<div id="html_b4048ff6a05f8a9bce2d6486c04575a6" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 2.20942873e-06 -9.12744690e-07]  [-9.12744690e-07  1.68883998e-06]]</div>`)[0];
 popup_8e89c22b6f92f617adb6556e4c17c983.setContent(html_b4048ff6a05f8a9bce2d6486c04575a6);
 
 
@@ -2258,7 +2259,7 @@ marker_251c606bb1bc8c18a156df221d802e5b.bindPopup(popup_8e89c22b6f92f617adb6556e
 var marker_878de2da586add0e0c911bb27dd71c48 = L.marker(
     [43.6464713531697, -79.4970561688193],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_e9d8c129a9e32c08faba5893c229b2aa = L.AwesomeMarkers.icon(
@@ -2271,7 +2272,7 @@ var popup_da0a5b5716223f0861ca18fc0a9dafe7 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_4e700ae69015924a493b1b8b0563f46d = $(`<div id="html_4e700ae69015924a493b1b8b0563f46d" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 3.54254519e-06 -9.39937437e-08]  [-9.39937437e-08  1.11909205e-06]]</div>`)[0];
+var html_4e700ae69015924a493b1b8b0563f46d = $(`<div id="html_4e700ae69015924a493b1b8b0563f46d" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 3.54254519e-06 -9.39937437e-08]  [-9.39937437e-08  1.11909205e-06]]</div>`)[0];
 popup_da0a5b5716223f0861ca18fc0a9dafe7.setContent(html_4e700ae69015924a493b1b8b0563f46d);
 
 
@@ -2285,7 +2286,7 @@ marker_878de2da586add0e0c911bb27dd71c48.bindPopup(popup_da0a5b5716223f0861ca18fc
 var marker_f21be6be6dcb39c0b5f4470e6976e28c = L.marker(
     [43.68045146268421, -79.4783396737794],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_ade0fba05f87d75ba86633809b28e332 = L.AwesomeMarkers.icon(
@@ -2298,7 +2299,7 @@ var popup_05a25c422c0b82ba9a33afcf0b075569 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_03d79ad9550f05d0f2b7b55838761303 = $(`<div id="html_03d79ad9550f05d0f2b7b55838761303" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[1.19343969e-06 2.58388743e-07]  [2.58388743e-07 1.42740420e-06]]</div>`)[0];
+var html_03d79ad9550f05d0f2b7b55838761303 = $(`<div id="html_03d79ad9550f05d0f2b7b55838761303" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[1.19343969e-06 2.58388743e-07]  [2.58388743e-07 1.42740420e-06]]</div>`)[0];
 popup_05a25c422c0b82ba9a33afcf0b075569.setContent(html_03d79ad9550f05d0f2b7b55838761303);
 
 
@@ -2312,7 +2313,7 @@ marker_f21be6be6dcb39c0b5f4470e6976e28c.bindPopup(popup_05a25c422c0b82ba9a33afcf
 var marker_2f052d4b29553bef081888e2de0e4bb7 = L.marker(
     [43.76001809797838, -79.47669106361678],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_c859e6775e70ee1a8b760c615aa433cc = L.AwesomeMarkers.icon(
@@ -2325,7 +2326,7 @@ var popup_0f6f239c86db7e69d47b66a590185f2d = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_f545384c09f1b459f404d940b1f61205 = $(`<div id="html_f545384c09f1b459f404d940b1f61205" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[2.04715613e-06 4.40922421e-07]  [4.40922421e-07 1.18565768e-06]]</div>`)[0];
+var html_f545384c09f1b459f404d940b1f61205 = $(`<div id="html_f545384c09f1b459f404d940b1f61205" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[2.04715613e-06 4.40922421e-07]  [4.40922421e-07 1.18565768e-06]]</div>`)[0];
 popup_0f6f239c86db7e69d47b66a590185f2d.setContent(html_f545384c09f1b459f404d940b1f61205);
 
 
@@ -2339,7 +2340,7 @@ marker_2f052d4b29553bef081888e2de0e4bb7.bindPopup(popup_0f6f239c86db7e69d47b66a5
 var marker_298c4b7c58bd61f2565e16031451561f = L.marker(
     [43.76014081467432, -79.58663611166247],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_fbaab2064c90178b3df57d7ced7d0d78 = L.AwesomeMarkers.icon(
@@ -2352,7 +2353,7 @@ var popup_e3b510a5a33a3b2b8a3e998075c8cf80 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_5cf42814c846fb6e6501ea3605f54e00 = $(`<div id="html_5cf42814c846fb6e6501ea3605f54e00" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[1.73136486e-05 3.57991556e-06]  [3.57991556e-06 1.78651970e-06]]</div>`)[0];
+var html_5cf42814c846fb6e6501ea3605f54e00 = $(`<div id="html_5cf42814c846fb6e6501ea3605f54e00" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[1.73136486e-05 3.57991556e-06]  [3.57991556e-06 1.78651970e-06]]</div>`)[0];
 popup_e3b510a5a33a3b2b8a3e998075c8cf80.setContent(html_5cf42814c846fb6e6501ea3605f54e00);
 
 
@@ -2366,7 +2367,7 @@ marker_298c4b7c58bd61f2565e16031451561f.bindPopup(popup_e3b510a5a33a3b2b8a3e9980
 var marker_1fd770580e3f587d5904257b6d1ef219 = L.marker(
     [43.655777566598616, -79.42609391476432],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_1bd29ddfd3f2c8d60dbe1aae284d7052 = L.AwesomeMarkers.icon(
@@ -2379,7 +2380,7 @@ var popup_6b4e3c1aad2ec74bd897f1f1be1b7afd = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_411993f2aa781a60f84b0a29cb8e73a9 = $(`<div id="html_411993f2aa781a60f84b0a29cb8e73a9" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[9.87571507e-06 1.00390898e-05]  [1.00390898e-05 1.71431133e-05]]</div>`)[0];
+var html_411993f2aa781a60f84b0a29cb8e73a9 = $(`<div id="html_411993f2aa781a60f84b0a29cb8e73a9" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[9.87571507e-06 1.00390898e-05]  [1.00390898e-05 1.71431133e-05]]</div>`)[0];
 popup_6b4e3c1aad2ec74bd897f1f1be1b7afd.setContent(html_411993f2aa781a60f84b0a29cb8e73a9);
 
 
@@ -2393,7 +2394,7 @@ marker_1fd770580e3f587d5904257b6d1ef219.bindPopup(popup_6b4e3c1aad2ec74bd897f1f1
 var marker_9c16a8795a5540e083aa7b1e04a34bca = L.marker(
     [43.66395749227685, -79.46294776656352],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_cdffa90403d28f6fdcd091cdcc30e903 = L.AwesomeMarkers.icon(
@@ -2406,7 +2407,7 @@ var popup_0cad25dc336f198ec0e4d04338915610 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_922057fb9057ddf5b9527ec1e6d48fed = $(`<div id="html_922057fb9057ddf5b9527ec1e6d48fed" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 4.46297234e-06 -4.28328255e-06]  [-4.28328255e-06  1.09852855e-05]]</div>`)[0];
+var html_922057fb9057ddf5b9527ec1e6d48fed = $(`<div id="html_922057fb9057ddf5b9527ec1e6d48fed" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 4.46297234e-06 -4.28328255e-06]  [-4.28328255e-06  1.09852855e-05]]</div>`)[0];
 popup_0cad25dc336f198ec0e4d04338915610.setContent(html_922057fb9057ddf5b9527ec1e6d48fed);
 
 
@@ -2420,7 +2421,7 @@ marker_9c16a8795a5540e083aa7b1e04a34bca.bindPopup(popup_0cad25dc336f198ec0e4d043
 var marker_bf5d83894839f99aaf810d53b1f9d5ff = L.marker(
     [43.62613501952093, -79.325425313885],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_243caf6518610e78eb312b84baedac4f = L.AwesomeMarkers.icon(
@@ -2433,7 +2434,7 @@ var popup_3be573501b8c2c213e8688f2ba6be52f = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_6c66626ce0c377b2967c28b76f1acfc1 = $(`<div id="html_6c66626ce0c377b2967c28b76f1acfc1" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 5.91940558e-06 -2.21098499e-06]  [-2.21098499e-06  2.70778697e-06]]</div>`)[0];
+var html_6c66626ce0c377b2967c28b76f1acfc1 = $(`<div id="html_6c66626ce0c377b2967c28b76f1acfc1" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 5.91940558e-06 -2.21098499e-06]  [-2.21098499e-06  2.70778697e-06]]</div>`)[0];
 popup_3be573501b8c2c213e8688f2ba6be52f.setContent(html_6c66626ce0c377b2967c28b76f1acfc1);
 
 
@@ -2447,7 +2448,7 @@ marker_bf5d83894839f99aaf810d53b1f9d5ff.bindPopup(popup_3be573501b8c2c213e8688f2
 var marker_e9cff465cd9add3094d2ad0ca19a7374 = L.marker(
     [43.63388608159098, -79.48078522287804],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_5877643b726fb0d30cdc41feba221126 = L.AwesomeMarkers.icon(
@@ -2460,7 +2461,7 @@ var popup_36bc573792838a50a4b2a9666e1d5c79 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_8afbcc4972ddc70b7a10a1131ae12683 = $(`<div id="html_8afbcc4972ddc70b7a10a1131ae12683" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 3.37696895e-05 -3.10619038e-06]  [-3.10619038e-06  3.05873992e-06]]</div>`)[0];
+var html_8afbcc4972ddc70b7a10a1131ae12683 = $(`<div id="html_8afbcc4972ddc70b7a10a1131ae12683" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 3.37696895e-05 -3.10619038e-06]  [-3.10619038e-06  3.05873992e-06]]</div>`)[0];
 popup_36bc573792838a50a4b2a9666e1d5c79.setContent(html_8afbcc4972ddc70b7a10a1131ae12683);
 
 
@@ -2474,7 +2475,7 @@ marker_e9cff465cd9add3094d2ad0ca19a7374.bindPopup(popup_36bc573792838a50a4b2a966
 var marker_404c8e57d3a2801e95a8edb42c51b6de = L.marker(
     [43.69944005496908, -79.32168098603697],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_1d9fbed61abf28f3bf51a7821286d072 = L.AwesomeMarkers.icon(
@@ -2487,7 +2488,7 @@ var popup_d94d38afaa38dc94c3a046cd857b1d83 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_3eeca30a54151ea1f652a4ac7219196b = $(`<div id="html_3eeca30a54151ea1f652a4ac7219196b" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[6.70844649e-05 9.67551767e-06]  [9.67551767e-06 1.06679766e-05]]</div>`)[0];
+var html_3eeca30a54151ea1f652a4ac7219196b = $(`<div id="html_3eeca30a54151ea1f652a4ac7219196b" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[6.70844649e-05 9.67551767e-06]  [9.67551767e-06 1.06679766e-05]]</div>`)[0];
 popup_d94d38afaa38dc94c3a046cd857b1d83.setContent(html_3eeca30a54151ea1f652a4ac7219196b);
 
 
@@ -2501,7 +2502,7 @@ marker_404c8e57d3a2801e95a8edb42c51b6de.bindPopup(popup_d94d38afaa38dc94c3a046cd
 var marker_7474571a61fa9917e26b620cea006e08 = L.marker(
     [43.661780939121456, -79.37953496912121],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_88cc62c273226f02b7f94023c74ee195 = L.AwesomeMarkers.icon(
@@ -2514,7 +2515,7 @@ var popup_1c851fd98fd0c1e254ee03441ae5d920 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_f16c47b8675ea0e6ee91d99b4181b5b7 = $(`<div id="html_f16c47b8675ea0e6ee91d99b4181b5b7" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[2.14819306e-05 7.24441208e-06]  [7.24441208e-06 2.15464449e-05]]</div>`)[0];
+var html_f16c47b8675ea0e6ee91d99b4181b5b7 = $(`<div id="html_f16c47b8675ea0e6ee91d99b4181b5b7" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[2.14819306e-05 7.24441208e-06]  [7.24441208e-06 2.15464449e-05]]</div>`)[0];
 popup_1c851fd98fd0c1e254ee03441ae5d920.setContent(html_f16c47b8675ea0e6ee91d99b4181b5b7);
 
 
@@ -2528,7 +2529,7 @@ marker_7474571a61fa9917e26b620cea006e08.bindPopup(popup_1c851fd98fd0c1e254ee0344
 var marker_80828135e9ed5d00dcc3cbe6373882bc = L.marker(
     [43.66013504544914, -79.39817308812921],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_bf05ab4aea384f37075837e565480d25 = L.AwesomeMarkers.icon(
@@ -2541,7 +2542,7 @@ var popup_80ff3389eb7ea5475a2ba10c351c3282 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_1f344418a36daab2ad55e6226ddeebcb = $(`<div id="html_1f344418a36daab2ad55e6226ddeebcb" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[2.54917402e-06 9.09044444e-07]  [9.09044444e-07 2.08636675e-06]]</div>`)[0];
+var html_1f344418a36daab2ad55e6226ddeebcb = $(`<div id="html_1f344418a36daab2ad55e6226ddeebcb" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[2.54917402e-06 9.09044444e-07]  [9.09044444e-07 2.08636675e-06]]</div>`)[0];
 popup_80ff3389eb7ea5475a2ba10c351c3282.setContent(html_1f344418a36daab2ad55e6226ddeebcb);
 
 
@@ -2555,7 +2556,7 @@ marker_80828135e9ed5d00dcc3cbe6373882bc.bindPopup(popup_80ff3389eb7ea5475a2ba10c
 var marker_b64c01465b51d2b1395be67f78f0331c = L.marker(
     [43.63028605913878, -79.42410807334603],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_a958a29d4d07dbd473b8b3be9a12a85b = L.AwesomeMarkers.icon(
@@ -2568,7 +2569,7 @@ var popup_4c48d24ce156787b68ee3584b1998378 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_11182c3e804ec3d0f2c7d4c13337de01 = $(`<div id="html_11182c3e804ec3d0f2c7d4c13337de01" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 7.62830652e-06 -5.44498687e-07]  [-5.44498687e-07  1.07267797e-06]]</div>`)[0];
+var html_11182c3e804ec3d0f2c7d4c13337de01 = $(`<div id="html_11182c3e804ec3d0f2c7d4c13337de01" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 7.62830652e-06 -5.44498687e-07]  [-5.44498687e-07  1.07267797e-06]]</div>`)[0];
 popup_4c48d24ce156787b68ee3584b1998378.setContent(html_11182c3e804ec3d0f2c7d4c13337de01);
 
 
@@ -2582,7 +2583,7 @@ marker_b64c01465b51d2b1395be67f78f0331c.bindPopup(popup_4c48d24ce156787b68ee3584
 var marker_22411fffef831989a469d4324fe7c0e6 = L.marker(
     [43.663504532199376, -79.35597687114524],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_310bc60e561d21c6277f70d93607cc9d = L.AwesomeMarkers.icon(
@@ -2595,7 +2596,7 @@ var popup_888eb4f79a8678f448813fc84ae48dd5 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_bec3eb653bca860f1d02c5ec30875dea = $(`<div id="html_bec3eb653bca860f1d02c5ec30875dea" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[4.81156161e-06 8.40369304e-06]  [8.40369304e-06 3.70965565e-05]]</div>`)[0];
+var html_bec3eb653bca860f1d02c5ec30875dea = $(`<div id="html_bec3eb653bca860f1d02c5ec30875dea" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[4.81156161e-06 8.40369304e-06]  [8.40369304e-06 3.70965565e-05]]</div>`)[0];
 popup_888eb4f79a8678f448813fc84ae48dd5.setContent(html_bec3eb653bca860f1d02c5ec30875dea);
 
 
@@ -2609,7 +2610,7 @@ marker_22411fffef831989a469d4324fe7c0e6.bindPopup(popup_888eb4f79a8678f448813fc8
 var marker_ef283d85b614d8f307cf72903eb6c474 = L.marker(
     [43.63891283110544, -79.39695118532208],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_5542072591bcc963e01e16f88d9fd60e = L.AwesomeMarkers.icon(
@@ -2622,7 +2623,7 @@ var popup_0f996322f2ec9aaf6e04ae85afefde1b = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_5599a83604cc1f68c082c2b297eed678 = $(`<div id="html_5599a83604cc1f68c082c2b297eed678" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 2.66482835e-06 -3.04584794e-06]  [-3.04584794e-06  2.23247238e-05]]</div>`)[0];
+var html_5599a83604cc1f68c082c2b297eed678 = $(`<div id="html_5599a83604cc1f68c082c2b297eed678" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 2.66482835e-06 -3.04584794e-06]  [-3.04584794e-06  2.23247238e-05]]</div>`)[0];
 popup_0f996322f2ec9aaf6e04ae85afefde1b.setContent(html_5599a83604cc1f68c082c2b297eed678);
 
 
@@ -2636,7 +2637,7 @@ marker_ef283d85b614d8f307cf72903eb6c474.bindPopup(popup_0f996322f2ec9aaf6e04ae85
 var marker_8b01a6259206d5cde1f31b5397e31dee = L.marker(
     [43.64377048187203, -79.37094197258506],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_10ed718aef1ef3ebab41c13f1699c860 = L.AwesomeMarkers.icon(
@@ -2649,7 +2650,7 @@ var popup_8b9572662468ee365bbe36cd563f6198 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_7fb60d4e119de13460c0d7e8adaca2b4 = $(`<div id="html_7fb60d4e119de13460c0d7e8adaca2b4" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[7.19617062e-06 3.92221988e-06]  [3.92221988e-06 5.84961160e-06]]</div>`)[0];
+var html_7fb60d4e119de13460c0d7e8adaca2b4 = $(`<div id="html_7fb60d4e119de13460c0d7e8adaca2b4" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[7.19617062e-06 3.92221988e-06]  [3.92221988e-06 5.84961160e-06]]</div>`)[0];
 popup_8b9572662468ee365bbe36cd563f6198.setContent(html_7fb60d4e119de13460c0d7e8adaca2b4);
 
 
@@ -2663,7 +2664,7 @@ marker_8b01a6259206d5cde1f31b5397e31dee.bindPopup(popup_8b9572662468ee365bbe36cd
 var marker_8419a0800cf6e598d1fdce3d6d4d82e0 = L.marker(
     [43.62155765439328, -79.47609387728994],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_b9335fb9738f917498ff99609617c374 = L.AwesomeMarkers.icon(
@@ -2676,7 +2677,7 @@ var popup_d62f04e4f995bb013649a64a61adb1ad = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_9d93ee6322aa6bccbfc7419362bedc9b = $(`<div id="html_9d93ee6322aa6bccbfc7419362bedc9b" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 5.54141376e-06 -1.33723641e-07]  [-1.33723641e-07  2.50863480e-06]]</div>`)[0];
+var html_9d93ee6322aa6bccbfc7419362bedc9b = $(`<div id="html_9d93ee6322aa6bccbfc7419362bedc9b" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 5.54141376e-06 -1.33723641e-07]  [-1.33723641e-07  2.50863480e-06]]</div>`)[0];
 popup_d62f04e4f995bb013649a64a61adb1ad.setContent(html_9d93ee6322aa6bccbfc7419362bedc9b);
 
 
@@ -2690,7 +2691,7 @@ marker_8419a0800cf6e598d1fdce3d6d4d82e0.bindPopup(popup_d62f04e4f995bb013649a64a
 var marker_af6dffbc73142797aedb6bcd94214798 = L.marker(
     [43.6613014384565, -79.33738907754966],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_e34860022caeafa01a7bcd2647295362 = L.AwesomeMarkers.icon(
@@ -2703,7 +2704,7 @@ var popup_5db58123e9f37bf384a8c8ee3464099b = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_d3080a8c99ab5b32c34c6711326ccc56 = $(`<div id="html_d3080a8c99ab5b32c34c6711326ccc56" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[5.77735767e-05 1.56625103e-05]  [1.56625103e-05 2.17024875e-05]]</div>`)[0];
+var html_d3080a8c99ab5b32c34c6711326ccc56 = $(`<div id="html_d3080a8c99ab5b32c34c6711326ccc56" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[5.77735767e-05 1.56625103e-05]  [1.56625103e-05 2.17024875e-05]]</div>`)[0];
 popup_5db58123e9f37bf384a8c8ee3464099b.setContent(html_d3080a8c99ab5b32c34c6711326ccc56);
 
 
@@ -2717,7 +2718,7 @@ marker_af6dffbc73142797aedb6bcd94214798.bindPopup(popup_5db58123e9f37bf384a8c8ee
 var marker_f686f3949237a93274f2af58e8ee17ce = L.marker(
     [43.65982546336681, -79.32248976022521],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_87f056626fe8492e81d9238cabc71ad3 = L.AwesomeMarkers.icon(
@@ -2730,7 +2731,7 @@ var popup_da69069c33a64f21eb14749fccae3775 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_a4e915396657f5dee74d341ccb859493 = $(`<div id="html_a4e915396657f5dee74d341ccb859493" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[1.29254686e-05 8.32568482e-06]  [8.32568482e-06 1.84264388e-05]]</div>`)[0];
+var html_a4e915396657f5dee74d341ccb859493 = $(`<div id="html_a4e915396657f5dee74d341ccb859493" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[1.29254686e-05 8.32568482e-06]  [8.32568482e-06 1.84264388e-05]]</div>`)[0];
 popup_da69069c33a64f21eb14749fccae3775.setContent(html_a4e915396657f5dee74d341ccb859493);
 
 
@@ -2744,7 +2745,7 @@ marker_f686f3949237a93274f2af58e8ee17ce.bindPopup(popup_da69069c33a64f21eb14749f
 var marker_cd7b55fc3ce321da68c04ff327f6999f = L.marker(
     [43.65345834880105, -79.45836424293748],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_5937ca967448533e638d9c263c000bc0 = L.AwesomeMarkers.icon(
@@ -2757,7 +2758,7 @@ var popup_e2efb67af79333f53e34ce18bde34e5a = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_2970487e7cacd94a6e36d21c718045d1 = $(`<div id="html_2970487e7cacd94a6e36d21c718045d1" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[2.32243334e-05 5.47055648e-06]  [5.47055648e-06 5.41469371e-06]]</div>`)[0];
+var html_2970487e7cacd94a6e36d21c718045d1 = $(`<div id="html_2970487e7cacd94a6e36d21c718045d1" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[2.32243334e-05 5.47055648e-06]  [5.47055648e-06 5.41469371e-06]]</div>`)[0];
 popup_e2efb67af79333f53e34ce18bde34e5a.setContent(html_2970487e7cacd94a6e36d21c718045d1);
 
 
@@ -2771,7 +2772,7 @@ marker_cd7b55fc3ce321da68c04ff327f6999f.bindPopup(popup_e2efb67af79333f53e34ce18
 var marker_c524d4b8956aa06d74edfc1a71be748f = L.marker(
     [43.65270671038704, -79.470687826455],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_f08994b7f873ad8b60d7592f64c63382 = L.AwesomeMarkers.icon(
@@ -2784,7 +2785,7 @@ var popup_11647e0afda33be9b284fbf3b27cd645 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_aa2e68311dc51dc6b6b65d48d1531b80 = $(`<div id="html_aa2e68311dc51dc6b6b65d48d1531b80" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 1.19516510e-06 -3.54194856e-07]  [-3.54194856e-07  6.22357819e-06]]</div>`)[0];
+var html_aa2e68311dc51dc6b6b65d48d1531b80 = $(`<div id="html_aa2e68311dc51dc6b6b65d48d1531b80" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 1.19516510e-06 -3.54194856e-07]  [-3.54194856e-07  6.22357819e-06]]</div>`)[0];
 popup_11647e0afda33be9b284fbf3b27cd645.setContent(html_aa2e68311dc51dc6b6b65d48d1531b80);
 
 
@@ -2798,7 +2799,7 @@ marker_c524d4b8956aa06d74edfc1a71be748f.bindPopup(popup_11647e0afda33be9b284fbf3
 var marker_c68e1644e68aff553c569d819625062f = L.marker(
     [43.70038058408137, -79.60257990326771],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_6840be0d886815c2250c8e92e65607c4 = L.AwesomeMarkers.icon(
@@ -2811,7 +2812,7 @@ var popup_d66fe41f91ab6b4de14c1003eb397c84 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_e64707b4fb382197f160c8b6d86cf255 = $(`<div id="html_e64707b4fb382197f160c8b6d86cf255" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 2.63499235e-06 -2.11915990e-07]  [-2.11915990e-07  1.14839057e-06]]</div>`)[0];
+var html_e64707b4fb382197f160c8b6d86cf255 = $(`<div id="html_e64707b4fb382197f160c8b6d86cf255" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 2.63499235e-06 -2.11915990e-07]  [-2.11915990e-07  1.14839057e-06]]</div>`)[0];
 popup_d66fe41f91ab6b4de14c1003eb397c84.setContent(html_e64707b4fb382197f160c8b6d86cf255);
 
 
@@ -2825,7 +2826,7 @@ marker_c68e1644e68aff553c569d819625062f.bindPopup(popup_d66fe41f91ab6b4de14c1003
 var marker_88d3eadd9b9330f3e4fc4f031a19871f = L.marker(
     [43.64087179704384, -79.4910405064668],
     {}
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+).addTo(centres);
 
 
 var icon_5f124f6a6c4a1c22c432d028b051e334 = L.AwesomeMarkers.icon(
@@ -2838,7 +2839,7 @@ var popup_6a8d9636af4d52c95504b3d7d6a3a4b7 = L.popup({ "maxWidth": "100%" });
 
 
 
-var html_8004ed5cbce9982e9113ea57967ae7c3 = $(`<div id="html_8004ed5cbce9982e9113ea57967ae7c3" style="width: 100.0%; height: 100.0%;">Potential source with cov: [[ 1.07821842e-06 -2.89026734e-08]  [-2.89026734e-08  1.01120464e-06]]</div>`)[0];
+var html_8004ed5cbce9982e9113ea57967ae7c3 = $(`<div id="html_8004ed5cbce9982e9113ea57967ae7c3" style="width: 100.0%; height: 100.0%;">Potential source of emissions with cov: [[ 1.07821842e-06 -2.89026734e-08]  [-2.89026734e-08  1.01120464e-06]]</div>`)[0];
 popup_6a8d9636af4d52c95504b3d7d6a3a4b7.setContent(html_8004ed5cbce9982e9113ea57967ae7c3);
 
 
@@ -2846,6 +2847,25 @@ popup_6a8d9636af4d52c95504b3d7d6a3a4b7.setContent(html_8004ed5cbce9982e9113ea579
 marker_88d3eadd9b9330f3e4fc4f031a19871f.bindPopup(popup_6a8d9636af4d52c95504b3d7d6a3a4b7)
     ;
 
+//---------------------------------END CLUSTER CENTRES-----------------------------------------//
+
+var clicked = document.getElementById("show_cluster_centres")
+var showing = 0
+clicked.addEventListener('click', toggle_cluster_centres)
+
+function toggle_cluster_centres() {
+    if (showing==0) {
+        map_c0a827379a3e92ac42793ff5128f9960.addLayer(centres)
+        showing = 1
+    }
+    else if (showing==1) {
+        map_c0a827379a3e92ac42793ff5128f9960.removeLayer(centres)
+        showing = 0
+    }
+}
+function hide_cluster_centres() {
+    
+}
 
 
 

@@ -52,6 +52,22 @@ a {
   padding: 0vw 3vw 3vw;
 }
 
+#show_cluster_centres {
+  border: none;
+  outline: none;
+  margin: 0;
+  font-size: 2.25vw;
+  font-weight: 700;
+  color: #123785;
+  background-color: #B5D4FB;
+  text-align: center;
+	padding: 1vw;
+}
+
+#show_cluster_centres:hover {
+  background-color: rgba(0, 0, 0, .25);
+}
+
 /* navigation menus */
 .navbar{
   background-color: #B5D4FB;
@@ -220,6 +236,30 @@ table {
   top: 0.5vw;
   left: 2.5vw;
   bottom: 2.5vw;
+}
+
+.cluster-map {
+  width: 50%;
+  height: 100%;
+  top: 0.5vw;
+  left: 2.5vw;
+  bottom: 2.5vw;
+}
+
+.text-section-cluster-map {
+  align-items: right;
+  padding: 4vw;
+  font-size: 1.25vw;
+}
+
+.text-section-cluster-map td {
+  background-color: rgb(222, 222, 222);
+  padding: 1vw;
+}
+
+.text-section-cluster-map h4 {
+  font-size: 2.5vw;
+  text-align: center;
 }
 
 .info {
