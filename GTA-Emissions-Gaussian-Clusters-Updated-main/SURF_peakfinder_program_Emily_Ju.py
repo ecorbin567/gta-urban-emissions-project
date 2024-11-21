@@ -569,7 +569,7 @@ class data_analy():
             for ii in range(block[0],block[1]):
                 length.append(largeur)
                 largeur = largeur + distance_between(latitude[ii], longitude[ii], latitude[ii+1], longitude[ii+1])
-                area = abs(scipy.integrate.trapezoid(anomaly[block[0]:block[1]],x=length))
+                area = abs(scipy.integrate.trapz(anomaly[block[0]:block[1]],x=length))
 
 
             #position of peak at max amplitude

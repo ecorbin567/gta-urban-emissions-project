@@ -19,7 +19,7 @@ Runtime on Jupyterlab is quite long; Spyder and Pycharm work better.
 
 Packages to install:
 folium, sklearn, pandas, numpy, matplotlib, scipy 
-# note: sklearn is called scikit-learn now
+# note: sklearn is called scikit-learn now - Elise Corbin 2024
 
 # Content
 

@@ -191,24 +191,20 @@ function initializeMap() {
       wind_markers = L.layerGroup();
 
      
-  //Call the map tile to be used. This is from 'mapbox'
+  //Call the map tile to be used. This is from 'mapbox'. Note: the street imagery does not work on this tile, so we use the OpenStreetMap tile instead (below).
   var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
                         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+                        'Satellite imagery © <a href="http://mapbox.com">Mapbox</a>',
       mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWNvcmIiLCJhIjoiY20zbnk3NGlyMWlqbDJrb28zODNqMGdjbSJ9.6CgLunTKPU_ozomb_I0RRA';
 
-  var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-      streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+  var streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
       satellite = L.tileLayer(mbUrl, {id: "mapbox.satellite", attribution: mbAttr});
-
 
 
   // Dictionary of base maps
   var baseMaps = {
       "Streets": streets,
-      "Grayscale": grayscale,
       "Satellite": satellite
-//      "Terrain": terrain
   };
   
   // Dictionary of mutually exclusive base layers
@@ -238,6 +234,12 @@ function initializeMap() {
   L.control.layers(baseMaps).addTo(map);
   L.control.scale().addTo(map);
 
+  // Adding the street tile that actually works :))
+  L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
   //Initialize info control
   info.onAdd = function(map) {
     div2.innerHTML = ''
@@ -253,7 +255,7 @@ function initializeMap() {
   legend.addTo(map);
 
   $.ajax({                                     // Do one initial poll using ajax, that way the first dots show up 
-      url: "./gta-emissions-webpage-master/LiveMaps/script/datasource.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
+      url: "datasource.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
       cache: false,                            // data to processdata(). Next, we do the same thing iteratively with
       success: function(data) {
         processData(map, baseLayers, overlays, data);
@@ -268,7 +270,7 @@ function initializeMap() {
     setTimeout(function() {
       j = j + 1
       $.ajax({                                    // This block does the bulk of the work:
-        url: "./gta-emissions-webpage-master/LiveMaps/script/datasource.txt",                    // "Ajax" tells the browser to perform these tasks
+        url: "datasource.txt",                    // "Ajax" tells the browser to perform these tasks
         cache: false,                             // behind the scenes. If successful, the information
         success: function(data) {                 // polled from datasource.txt is passed to the processData
           processData(map, baseLayers, overlays, data);     // function.

@@ -9,10 +9,30 @@ var map_c0a827379a3e92ac42793ff5128f9960 = L.map(
     }
 );
 
-var tile_layer_34d8e790dd10b3bfe4f64971077015e4 = L.tileLayer(
-    "https://stamen-tiles-{s}.a.ssl.fastly.net/toner/{z}/{x}/{y}.png",
-    { "attribution": "Map tiles by \u003ca target=\"_blank\" href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false }
-).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+//Call the map tile to be used. This is from 'mapbox'. Note: the street imagery does not work on this tile, so we use the OpenStreetMap tile instead (below).
+var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+    '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+    'Satellite imagery © <a href="http://mapbox.com">Mapbox</a>',
+    mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWNvcmIiLCJhIjoiY20zbnk3NGlyMWlqbDJrb28zODNqMGdjbSJ9.6CgLunTKPU_ozomb_I0RRA';
+
+var streets = L.tileLayer(mbUrl, { id: 'mapbox.streets', attribution: mbAttr }),
+    satellite = L.tileLayer(mbUrl, { id: "mapbox.satellite", attribution: mbAttr });
+
+
+// Dictionary of base maps
+var baseMaps = {
+    "Streets": streets,
+    "Satellite": satellite
+};
+
+// Allowing the user to control layers
+L.control.layers(baseMaps).addTo(map_c0a827379a3e92ac42793ff5128f9960);
+
+// Adding the street tile that actually works :))
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
 var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
@@ -2854,17 +2874,17 @@ var showing = 0
 clicked.addEventListener('click', toggle_cluster_centres)
 
 function toggle_cluster_centres() {
-    if (showing==0) {
+    if (showing == 0) {
         map_c0a827379a3e92ac42793ff5128f9960.addLayer(centres)
         showing = 1
     }
-    else if (showing==1) {
+    else if (showing == 1) {
         map_c0a827379a3e92ac42793ff5128f9960.removeLayer(centres)
         showing = 0
     }
 }
 function hide_cluster_centres() {
-    
+
 }
 
 
