@@ -171,24 +171,20 @@ function initializeMap() {
       wind_markers = L.layerGroup();
 
      
-  //Call the map tile to be used. This is from 'mapbox'
+  //Call the map tile to be used. This is from 'mapbox'. Note: the street imagery does not work on this tile, so we use the OpenStreetMap tile instead (below).
   var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
                         '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                        'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-      mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw';
+                        'Satellite imagery © <a href="http://mapbox.com">Mapbox</a>',
+      mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoiZWNvcmIiLCJhIjoiY20zbnk3NGlyMWlqbDJrb28zODNqMGdjbSJ9.6CgLunTKPU_ozomb_I0RRA';
 
-  var grayscale   = L.tileLayer(mbUrl, {id: 'mapbox.light', attribution: mbAttr}),
-      streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
+  var streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
       satellite = L.tileLayer(mbUrl, {id: "mapbox.satellite", attribution: mbAttr});
-//      terrain = L.tileLayer(mbUrl, {id: "mapbox.mapbox-outdoors-v10", attribution: mbAttr});
 
 
   // Dictionary of base maps
   var baseMaps = {
       "Streets": streets,
-      "Grayscale": grayscale,
       "Satellite": satellite
-//      "Terrain": terrain
   };
   
   // Dictionary of mutually exclusive base layers
@@ -208,16 +204,23 @@ function initializeMap() {
      "Facilities": targets
   };
   
-  
+
   // Initialize the map itself and the layers which appear by default
   var map = L.map('map', {
-      layers: [streets, CH4_markers]
-  });
+    layers: [streets]
+}).setView([43.660452, -79.398440], 13);
 
-  // Add the map tiles control and a scale to the map 
-  L.control.layers(baseMaps).addTo(map);
-  L.control.scale().addTo(map);
+// Add the map tiles control and a scale to the map 
+L.control.layers(baseMaps).addTo(map);
+L.control.scale().addTo(map);
 
+// Adding the street tile that actually works :))
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19,
+  attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+
+CH4_markers.addTo(map);
 
 
   //Initialize legend by creating div element

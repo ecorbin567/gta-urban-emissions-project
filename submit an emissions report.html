@@ -1,5 +1,3 @@
-<!-- FORM EDIT LINK: https://www.jotform.com/build/243206987924063?iak=a91cbecb9b9ae36ac2d3d90e7d02737c-188f411f5ff4f8ef -->
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +5,16 @@
 	<title>GTA Urban Emissions Project | Submit an Emissions Report</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script type="text/javascript"
+          src="https://maps.googleapis.com/maps/api/js?key="></script>
+  	<script src="https://unpkg.com/location-picker/dist/location-picker.min.js"></script>
+  	<style type="text/css">
+    	#googlemap {
+      		width: 80%;
+      		height: 28vw;
+    	}
+  	</style>
 
 	<!-- general stylesheet -->
 	<link rel="stylesheet" type="text/css" href="./style.css">
@@ -37,7 +45,72 @@
 </header>
 
 <body>
-	<script type="text/javascript" src="https://form.jotform.com/jsform/243206987924063"></script>
+	<div class="text-section">
+		<h3>Submit an Emissions Report</h3>
+		<div class="imp">IMPORTANT: If you suspect a gas leak or other dangerous source of methane, please call 
+		311 or 911 immediately. You may also want to report the leak to Enbridge's 24/7 
+		emergency hotline: 1-866-763-5427.</div>
+		<br>
+			<b>Please drag the map so that the red marker is centred on where you observed the enhancement [high level of methane emissions].
+				<br>
+				When you are finished, click "Confirm Position".</b>
+			<br><br>
+			<div id="googlemap"></div>
+			<br>
+			<button id="confirmPosition">Confirm Position</button>
+			<br>
+			<p id="position">Position: <span id="onClickPositionView"></span></p>
+		<form name="emissionsReport">
+			<br>
+			<div class="field">
+				<label for="date-observed"><b>Please enter the date that you observed the enhancement.</b></label>
+				<br>
+				<input type="date" id="date-observed" name="date-observed">
+			</div>
+			<br>
+			<div class="field">
+				<label for="time-observed"><b>Please enter the approximate time of day that you observed the enhancement.</b></label>
+				<br>
+				<input type="time" id="time-observed" name="time-observed">
+			</div>
+			<br>
+			<div class="field">
+				<label><b>Please select the severity of the smell associated with the enhancement.</b></label>
+				<br>
+				<input type="radio" id="no-smell" name="smell-severity" value="no-smell">
+				<label for="no-smell">No smell</label>
+				<br>
+				<input type="radio" id="mild" name="smell-severity" value="mild">
+				<label for="mild">Mild</label>
+				<br>
+				<input type="radio" id="moderate" name="smell-severity" value="moderate">
+				<label for="moderate">Moderate</label>
+				<br>
+				<input type="radio" id="severe" name="smell-severity" value="severe">
+				<label for="severe">Severe</label>
+			</div>
+			<br>
+			<div class="field">
+				<label for="describe"><b>(Optional) Please describe the enhancement-- how you noticed it, what you observed, 
+					anything else you want to include.</b></label>
+				<br>
+				<textarea id="describe" name="describe" rows="4" cols="150" placeholder="Enter text"></textarea>
+			</div>
+			<br>
+			<div class="field">
+				<label for="cause"><b>(Optional) If you have any ideas about what is causing the enhancement, please 
+					enter them here. You are also welcome to fill out a Cause Report form, which is available 
+					in the "Enhancement Reporting Tool" drop-down menu.</b></label>
+				<br>
+				<textarea id="cause" name="cause" rows="4" cols="150" placeholder="Enter text"></textarea>
+			</div>
+			<br>
+			<div class="field">
+				<button type="button" id="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+	<script src="form.js"></script>
 </body>
 
 <footer>

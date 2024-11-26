@@ -227,7 +227,7 @@ function initializeMap() {
   
   // Initialize the map itself and the layers which appear by default
   var map = L.map('map', {
-      layers: [streets, CH4_markers]
+      layers: [streets]
   }).setView([43.660452, -79.398440], 13);
 
   // Add the map tiles control and a scale to the map 
@@ -239,6 +239,8 @@ function initializeMap() {
     maxZoom: 19,
     attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
   }).addTo(map);
+
+  CH4_markers.addTo(map);
 
   //Initialize info control
   info.onAdd = function(map) {
@@ -255,7 +257,7 @@ function initializeMap() {
   legend.addTo(map);
 
   $.ajax({                                     // Do one initial poll using ajax, that way the first dots show up 
-      url: "datasource.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
+      url: "../datasource_2017_07_07.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
       cache: false,                            // data to processdata(). Next, we do the same thing iteratively with
       success: function(data) {
         processData(map, baseLayers, overlays, data);
@@ -270,7 +272,7 @@ function initializeMap() {
     setTimeout(function() {
       j = j + 1
       $.ajax({                                    // This block does the bulk of the work:
-        url: "datasource.txt",                    // "Ajax" tells the browser to perform these tasks
+        url: "../datasource_2017_07_07.txt",                    // "Ajax" tells the browser to perform these tasks
         cache: false,                             // behind the scenes. If successful, the information
         success: function(data) {                 // polled from datasource.txt is passed to the processData
           processData(map, baseLayers, overlays, data);     // function.
