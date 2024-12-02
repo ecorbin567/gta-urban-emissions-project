@@ -2,7 +2,6 @@
 // Get element references
 var confirmBtn = document.getElementById('confirmPosition');
 var onClickPositionView = document.getElementById('onClickPositionView');
-var onIdlePositionView = document.getElementById('onIdlePositionView');
 var location_confirmed = false;
 var latitude = 0;
 var longitude = 0;
@@ -29,7 +28,7 @@ confirmBtn.onclick = function () {
 // form submission
 var submitBtn = document.getElementById('submit');
 
-submitBtn.onclick = function() {
+submitBtn.onclick = function () {
     if (validateForm() == true) {
         alert("Submitted, thank you!")
         lat = latitude;
@@ -49,18 +48,18 @@ function validateForm() {
     }
     let date = document.forms["emissionsReport"]["date-observed"].value;
     if (date == "") {
-      alert("Please enter the date you observed the enhancement");
-      return false;
+        alert("Please enter the date you observed the enhancement");
+        return false;
     }
     let time = document.forms["emissionsReport"]["time-observed"].value;
     if (time == "") {
-      alert("Please enter the approximate time you observed the enhancement");
-      return false;
+        alert("Please enter the approximate time you observed the enhancement");
+        return false;
     }
     let smell = document.forms["emissionsReport"]["smell-severity"].value;
     if (smell == "") {
-      alert("Please enter the severity of the smell associated with the enhancement");
-      return false;
+        alert("Please enter the severity of the smell associated with the enhancement");
+        return false;
     }
     return true;
 }
@@ -85,13 +84,6 @@ function sendData() {
     // set the PHP page you want to send data to
     xhr.open("POST", "proces.php", true);
     xhr.setRequestHeader("Content-Type", "application/json");
-
-    // what to do when you receive a response
-    xhr.onreadystatechange = function () {
-        if (xhr.readyState == XMLHttpRequest.DONE) {
-            alert(xhr.responseText);
-        }
-    };
 
     // send the data
     xhr.send(JSON.stringify(data));

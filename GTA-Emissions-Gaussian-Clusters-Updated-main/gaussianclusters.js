@@ -2883,10 +2883,6 @@ function toggle_cluster_centres() {
         showing = 0
     }
 }
-function hide_cluster_centres() {
-
-}
-
 
 
 var circle_12021db780713e190cb76eea90f4e777 = L.circle(
