@@ -7,9 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- stylesheets -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -43,44 +45,72 @@
 	<div class="text-section">
 		<br>
 		<h3>Emissions Reporting Tool Map</h3>
-		This is a map of methane emissions reported by citizens on the emissions reporting tool.
+		This is a map of methane emissions reported by citizens on the <a
+			href="./submit an emissions report.html">emissions reporting tool.</a>
 	</div>
-    <table>
-		<tr>
-			<td class="cluster-map" id="ert_map">
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			</td>
-			<td class="text-section-cluster-map">
-				<table>
-					<tr>
-						<td colspan="2">
-							<h4>Map Information</h4>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/circle.png">
-						</td>
-						<td>
-							One circle represents a high level of methane measured in that spot, and a larger 
-							circle means a higher level of methane. A set of circles that are all the same colour 
-							represents a cluster. Clicking on each circle will show you the date that measurement was taken.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/blueicon.png">
-						</td>
-						<td>
-							A light blue icon represents a known source of methane emissions. Clicking on each 
-							icon will tell you the name of the source and the type of emitter it is.  
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-    <br><br> 
+	<div class="flex-container">
+		<div class="cluster-map" id="ert_map"></div>
+		<div class="text-section-cluster-map">
+			<table>
+				<tr>
+					<td colspan="4">
+						<h4>Map Information</h4>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4">
+						One icon represents a methane enhancement (high level of methane) reported in that spot.
+						The severity of the smell is represented by the colour of the icon.
+						Clicking on each icon will tell you when the enhancement was reported
+						and how the user noticed it.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/blueicon.png" width="75" height="75"
+							alt="A blue icon that signifies no smell.">
+					</td>
+					<td>
+						<img src="images/greenicon.png" width="75" height="75"
+							alt="A green icon that signifies a mild smell.">
+					</td>
+					<td>
+						<img src="images/orangeicon.png" width="75" height="75"
+							alt="An orange icon that signifies a moderate smell.">
+					</td>
+					<td>
+						<img src="images/redicon.png" width="75" height="75"
+							alt="A red icon that signifies a severe smell.">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						No smell
+					</td>
+					<td>
+						Mild smell
+					</td>
+					<td>
+						Moderate smell
+					</td>
+					<td>
+						Severe smell
+					</td>
+				</tr>
+				<tr>
+					<td colspan="1">
+						<img src="images/emittericon.png" width="75" height="75"
+							alt="A dark purple icon that signifies a known source of methane emissions.">
+					</td>
+					<td colspan="3">
+						A dark purple icon represents a known source of methane emissions. Clicking on each
+						icon will tell you the name of the source and the type of emitter it is.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br><br>
 </body>
 
 <footer>
@@ -92,7 +122,8 @@
 				<br>University of Toronto
 				<br>Department of Physics, Rm 707A
 				<br>60 St. George Street Toronto, ON M5S 1A7
-				<br>Website: <a href="https://sites.physics.utoronto.ca/debrawunch">https://sites.physics.utoronto.ca/debrawunch</a>
+				<br>Website: <a
+					href="https://sites.physics.utoronto.ca/debrawunch">https://sites.physics.utoronto.ca/debrawunch</a>
 				<br>Phone: (416) 946-0408
 				<br>Fax: (416) 978-8905
 				<br>Email: dwunch@atmosp.physics.utoronto.ca

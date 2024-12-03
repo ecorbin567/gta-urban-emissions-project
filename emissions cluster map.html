@@ -7,9 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- stylesheets -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+	<link rel="stylesheet"
+		href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -41,52 +43,51 @@
 	<div class="text-section">
 		<br>
 		<h3>Emissions Cluster Map</h3>
-		This map is a visual representation of the places we have consistently found methane 
-		emissions in the GTA. Clusters are computed based on the entire archive of data from 
+		This map is a visual representation of the places we have consistently found methane
+		emissions in the GTA. Clusters are computed based on the entire archive of data from
 		the GTA Urban Emissions Project's bike surveys.
 		<br><br>
-		A cluster not near a downward triangle may indicate an unknown (to us) source of methane 
-		emissions. If you live in the area and/or have any information about what the source of 
-		a cluster might be, please submit a cause report.
+		A cluster not near a downward triangle may indicate an unknown (to us) source of methane
+		emissions. If you live in the area and/or have any information about what the source of
+		a cluster might be, please <a href="./submit a cause report.html">submit a cause report.</a>
+		<br><br>
+		The "Show/Hide Cluster Centres" button toggles the centres of the clusters, which helps with
+		visualizing where the clusters may be originating from.
 		<br><br>
 		<button id="show_cluster_centres">Show/Hide Cluster Centres</button>
 	</div>
-    <table>
-		<tr>
-			<td class="cluster-map" id="map_c0a827379a3e92ac42793ff5128f9960">
-				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-			</td>
-			<td class="text-section-cluster-map">
-				<table>
-					<tr>
-						<td colspan="2">
-							<h4>Map Information</h4>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/circle.png">
-						</td>
-						<td>
-							One circle represents a high level of methane measured in that spot, and a larger 
-							circle means a higher level of methane. A set of circles that are all the same colour 
-							represents a cluster. Clicking on each circle will show you the date that measurement was taken.
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="images/blueicon.png">
-						</td>
-						<td>
-							A light blue icon represents a known source of methane emissions. Clicking on each 
-							icon will tell you the name of the source and the type of emitter it is.  
-						</td>
-					</tr>
-				</table>
-			</td>
-		</tr>
-	</table>
-    <br><br> 
+	<div class="flex-container">
+		<div class="cluster-map" id="map_c0a827379a3e92ac42793ff5128f9960"></div>
+		<div class="text-section-cluster-map">
+			<table>
+				<tr>
+					<td colspan="2">
+						<h4>Map Information</h4>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/circle.png">
+					</td>
+					<td>
+						One circle represents a high level of methane measured in that spot, and a larger
+						circle means a higher level of methane. A set of circles that are all the same colour
+						represents a cluster. Clicking on each circle will show you the date that measurement was taken.
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<img src="images/emittericon.png">
+					</td>
+					<td>
+						A dark purple icon represents a known source of methane emissions. Clicking on each
+						icon will tell you the name of the source and the type of emitter it is.
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<br><br>
 </body>
 
 <footer>
@@ -98,7 +99,8 @@
 				<br>University of Toronto
 				<br>Department of Physics, Rm 707A
 				<br>60 St. George Street Toronto, ON M5S 1A7
-				<br>Website: <a href="https://sites.physics.utoronto.ca/debrawunch">https://sites.physics.utoronto.ca/debrawunch</a>
+				<br>Website: <a
+					href="https://sites.physics.utoronto.ca/debrawunch">https://sites.physics.utoronto.ca/debrawunch</a>
 				<br>Phone: (416) 946-0408
 				<br>Fax: (416) 978-8905
 				<br>Email: dwunch@atmosp.physics.utoronto.ca

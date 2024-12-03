@@ -42,7 +42,7 @@ var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
 
 
 var icon_7bd4b7ab6d4cfd1415190083787ffc9c = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_a105190ea1b936998cdc0c55d4281fe9.setIcon(icon_7bd4b7ab6d4cfd1415190083787ffc9c);
 
@@ -68,7 +68,7 @@ var marker_d125e1ed520a180d3a7a566f69eb8907 = L.marker(
 
 
 var icon_67d44ece1e6835a40911d944afdb80a6 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_d125e1ed520a180d3a7a566f69eb8907.setIcon(icon_67d44ece1e6835a40911d944afdb80a6);
 
@@ -95,7 +95,7 @@ var marker_670d57d116df3478cd22befb149cb017 = L.marker(
 
 
 var icon_15a67c391d8b42eb515b90d5c4a2d1f6 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_670d57d116df3478cd22befb149cb017.setIcon(icon_15a67c391d8b42eb515b90d5c4a2d1f6);
 
@@ -122,7 +122,7 @@ var marker_e556e7b10495d991f716734ea0f1bf26 = L.marker(
 
 
 var icon_1ff85af1e64315fa4f616f6f94e905d9 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_e556e7b10495d991f716734ea0f1bf26.setIcon(icon_1ff85af1e64315fa4f616f6f94e905d9);
 
@@ -149,7 +149,7 @@ var marker_03b13d149f780397bdae1a77e778deb0 = L.marker(
 
 
 var icon_4fff60a8034d8b63000f1c9e6e3f8279 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_03b13d149f780397bdae1a77e778deb0.setIcon(icon_4fff60a8034d8b63000f1c9e6e3f8279);
 
@@ -176,7 +176,7 @@ var marker_9f6cebad337dbd5c3cae5a24e1ba48fd = L.marker(
 
 
 var icon_19a60256d592e47022c4e2fb6b0d77cf = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_9f6cebad337dbd5c3cae5a24e1ba48fd.setIcon(icon_19a60256d592e47022c4e2fb6b0d77cf);
 
@@ -203,7 +203,7 @@ var marker_90191773ae52212daf712702ad9466ac = L.marker(
 
 
 var icon_3d53de056acd8d45d0d0037e5b633dd0 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_90191773ae52212daf712702ad9466ac.setIcon(icon_3d53de056acd8d45d0d0037e5b633dd0);
 
@@ -230,7 +230,7 @@ var marker_0c7fec7fca6d3514039351c2b123d583 = L.marker(
 
 
 var icon_c3fe4d0b23bcc02a2f11ffded8975d31 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_0c7fec7fca6d3514039351c2b123d583.setIcon(icon_c3fe4d0b23bcc02a2f11ffded8975d31);
 
@@ -257,7 +257,7 @@ var marker_315acbf16fc8d7cb5e761244783974e2 = L.marker(
 
 
 var icon_0005561ddc960c5a993d4424000eef0b = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_315acbf16fc8d7cb5e761244783974e2.setIcon(icon_0005561ddc960c5a993d4424000eef0b);
 
@@ -284,7 +284,7 @@ var marker_e935b6700c865a6c9abd216f14b39dc1 = L.marker(
 
 
 var icon_3e395b39addb62fb031f95e73676a0a5 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_e935b6700c865a6c9abd216f14b39dc1.setIcon(icon_3e395b39addb62fb031f95e73676a0a5);
 
@@ -311,7 +311,7 @@ var marker_1bb4f6dbe4410b2b5372acf51906cf9e = L.marker(
 
 
 var icon_3fab6fe15114b990c188b56798f66ff3 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_1bb4f6dbe4410b2b5372acf51906cf9e.setIcon(icon_3fab6fe15114b990c188b56798f66ff3);
 
@@ -338,7 +338,7 @@ var marker_ade143d7b8c61f6087773168214d2f3b = L.marker(
 
 
 var icon_b32513b385bf990d49d017bce1d99d33 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_ade143d7b8c61f6087773168214d2f3b.setIcon(icon_b32513b385bf990d49d017bce1d99d33);
 
@@ -365,7 +365,7 @@ var marker_22ba02f6716400d74f51820eb64d4706 = L.marker(
 
 
 var icon_592807468386e26fb75d0d10681d83bc = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_22ba02f6716400d74f51820eb64d4706.setIcon(icon_592807468386e26fb75d0d10681d83bc);
 
@@ -392,7 +392,7 @@ var marker_44e5f426f814afa630f7364169083ba1 = L.marker(
 
 
 var icon_d63fbfb171661dd3c0f1314b7342399b = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_44e5f426f814afa630f7364169083ba1.setIcon(icon_d63fbfb171661dd3c0f1314b7342399b);
 
@@ -419,7 +419,7 @@ var marker_6c6a3174abccffa0b632151df9af3399 = L.marker(
 
 
 var icon_7fa3267d30f0bc1126b12679a03a457b = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_6c6a3174abccffa0b632151df9af3399.setIcon(icon_7fa3267d30f0bc1126b12679a03a457b);
 
@@ -446,7 +446,7 @@ var marker_697ca2080f8d0c59d902ffd191e5cbdc = L.marker(
 
 
 var icon_d336f22fba948ea692df91ffa85cc889 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_697ca2080f8d0c59d902ffd191e5cbdc.setIcon(icon_d336f22fba948ea692df91ffa85cc889);
 
@@ -473,7 +473,7 @@ var marker_37e647333bd5cb97445b07dcd812edf5 = L.marker(
 
 
 var icon_a3440428c7f032a14e79ac10ff7d1195 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_37e647333bd5cb97445b07dcd812edf5.setIcon(icon_a3440428c7f032a14e79ac10ff7d1195);
 
@@ -500,7 +500,7 @@ var marker_49d7bfa806b1f3ad4678f8c673ad9ac2 = L.marker(
 
 
 var icon_a827eef5706b56abfabdd55983bbc1d9 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_49d7bfa806b1f3ad4678f8c673ad9ac2.setIcon(icon_a827eef5706b56abfabdd55983bbc1d9);
 
@@ -527,7 +527,7 @@ var marker_bf47f6d467b3beecb2d337bd8a3f0e3c = L.marker(
 
 
 var icon_d11e15b41c0240529a5b8a9efe5f5110 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_bf47f6d467b3beecb2d337bd8a3f0e3c.setIcon(icon_d11e15b41c0240529a5b8a9efe5f5110);
 
@@ -554,7 +554,7 @@ var marker_5563805400318b5bc234eeb44553bfc7 = L.marker(
 
 
 var icon_747c49e5183981f831acd78d8d39cb4d = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_5563805400318b5bc234eeb44553bfc7.setIcon(icon_747c49e5183981f831acd78d8d39cb4d);
 
@@ -581,7 +581,7 @@ var marker_983843ef63ec22c247f15f2ec8192172 = L.marker(
 
 
 var icon_dcf231893e0f81d35c201bdf69c31c1a = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_983843ef63ec22c247f15f2ec8192172.setIcon(icon_dcf231893e0f81d35c201bdf69c31c1a);
 
@@ -608,7 +608,7 @@ var marker_daa7c5e79ff74f0091af8057ec993e1e = L.marker(
 
 
 var icon_cac58cc1ce9acc0cee1e54e2e0f16a32 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_daa7c5e79ff74f0091af8057ec993e1e.setIcon(icon_cac58cc1ce9acc0cee1e54e2e0f16a32);
 
@@ -635,7 +635,7 @@ var marker_687fac006401e78e4a8788ae7b794f6e = L.marker(
 
 
 var icon_13ef18de726b02920103dbeaa8ac3cd5 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_687fac006401e78e4a8788ae7b794f6e.setIcon(icon_13ef18de726b02920103dbeaa8ac3cd5);
 
@@ -662,7 +662,7 @@ var marker_3992ff5b58e6eb8889caa3caa8828e97 = L.marker(
 
 
 var icon_a849114d77df076e55f5fc27b31a0ece = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3992ff5b58e6eb8889caa3caa8828e97.setIcon(icon_a849114d77df076e55f5fc27b31a0ece);
 
@@ -689,7 +689,7 @@ var marker_9e83cdaf7e8f51b02f7205fc1f512840 = L.marker(
 
 
 var icon_2ceb5fc4c8d36bfdbcde3a001d40de11 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_9e83cdaf7e8f51b02f7205fc1f512840.setIcon(icon_2ceb5fc4c8d36bfdbcde3a001d40de11);
 
@@ -716,7 +716,7 @@ var marker_3ebba67633dd7f0bed0847eeee60834b = L.marker(
 
 
 var icon_751adc500a2684c0426f371482433718 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3ebba67633dd7f0bed0847eeee60834b.setIcon(icon_751adc500a2684c0426f371482433718);
 
@@ -743,7 +743,7 @@ var marker_3a7df0817837f66f1bd3ab27e5e885c4 = L.marker(
 
 
 var icon_1daff854e9b254c867c4d73238a6ae2f = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3a7df0817837f66f1bd3ab27e5e885c4.setIcon(icon_1daff854e9b254c867c4d73238a6ae2f);
 
@@ -770,7 +770,7 @@ var marker_8fff0ff3fbb8eac4216e6352bcdca94b = L.marker(
 
 
 var icon_b82cafcaec9c4d85380a182539325c41 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_8fff0ff3fbb8eac4216e6352bcdca94b.setIcon(icon_b82cafcaec9c4d85380a182539325c41);
 
@@ -797,7 +797,7 @@ var marker_85068135ddf3097a72ed3310583ed8de = L.marker(
 
 
 var icon_21775de2a962c5c00df829660d65de57 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_85068135ddf3097a72ed3310583ed8de.setIcon(icon_21775de2a962c5c00df829660d65de57);
 
@@ -824,7 +824,7 @@ var marker_54f03a3bff3ea3306d0806d709f35aca = L.marker(
 
 
 var icon_08b5e277ecd35eafc0a9bf99d4e30685 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_54f03a3bff3ea3306d0806d709f35aca.setIcon(icon_08b5e277ecd35eafc0a9bf99d4e30685);
 
@@ -851,7 +851,7 @@ var marker_3d2c427def9147c811ef787abf894271 = L.marker(
 
 
 var icon_8d0156b9a3508eb5be93337ac2356b99 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3d2c427def9147c811ef787abf894271.setIcon(icon_8d0156b9a3508eb5be93337ac2356b99);
 
@@ -878,7 +878,7 @@ var marker_0454dcff8ea7b3907fbbc1ed9c424f46 = L.marker(
 
 
 var icon_c5f4e20193eb0a434e1b9027f52c05af = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_0454dcff8ea7b3907fbbc1ed9c424f46.setIcon(icon_c5f4e20193eb0a434e1b9027f52c05af);
 
@@ -905,7 +905,7 @@ var marker_0ea5504a283d6060d35db2bb3f897b85 = L.marker(
 
 
 var icon_6812db7a8ed1d04527540bfee4e3fc5e = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_0ea5504a283d6060d35db2bb3f897b85.setIcon(icon_6812db7a8ed1d04527540bfee4e3fc5e);
 
@@ -932,7 +932,7 @@ var marker_fe0bff9cb34466c3b740972bce53e9b5 = L.marker(
 
 
 var icon_937b1ed276d752d883c6819f4d0b6d36 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_fe0bff9cb34466c3b740972bce53e9b5.setIcon(icon_937b1ed276d752d883c6819f4d0b6d36);
 
@@ -959,7 +959,7 @@ var marker_cd28306140acb74b743feb38a48b0d91 = L.marker(
 
 
 var icon_28a084010728313192f1caf1ecff52a9 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cd28306140acb74b743feb38a48b0d91.setIcon(icon_28a084010728313192f1caf1ecff52a9);
 
@@ -986,7 +986,7 @@ var marker_1c558b15425aee69c92f16a51f217d8d = L.marker(
 
 
 var icon_6c447cb45b38fffb23b54cac8c2f1f2d = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_1c558b15425aee69c92f16a51f217d8d.setIcon(icon_6c447cb45b38fffb23b54cac8c2f1f2d);
 
@@ -1013,7 +1013,7 @@ var marker_24f5937b4403de7228913c391521af6b = L.marker(
 
 
 var icon_7b620a766fe078cc523395ef47751fe9 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_24f5937b4403de7228913c391521af6b.setIcon(icon_7b620a766fe078cc523395ef47751fe9);
 
@@ -1040,7 +1040,7 @@ var marker_d7f00792d86d52ea459977451ebb9b12 = L.marker(
 
 
 var icon_70da1f2bbd03aa54cf6926fa7ef599cb = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_d7f00792d86d52ea459977451ebb9b12.setIcon(icon_70da1f2bbd03aa54cf6926fa7ef599cb);
 
@@ -1067,7 +1067,7 @@ var marker_5c8b74cfffcbc5cf36e8f8a59d7576c9 = L.marker(
 
 
 var icon_279993dec580b6da3828f204d79e0690 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_5c8b74cfffcbc5cf36e8f8a59d7576c9.setIcon(icon_279993dec580b6da3828f204d79e0690);
 
@@ -1094,7 +1094,7 @@ var marker_49a8a0e587d2fa644e02d0ba3641713f = L.marker(
 
 
 var icon_9605b06a272022500590513336d07d0b = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_49a8a0e587d2fa644e02d0ba3641713f.setIcon(icon_9605b06a272022500590513336d07d0b);
 
@@ -1121,7 +1121,7 @@ var marker_0edbee082b4fb76fc3997dfbbe69fea4 = L.marker(
 
 
 var icon_152d0ff2eaf703d00035cf85720ab42d = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_0edbee082b4fb76fc3997dfbbe69fea4.setIcon(icon_152d0ff2eaf703d00035cf85720ab42d);
 
@@ -1148,7 +1148,7 @@ var marker_d717d9a1169db1e41b5da1d347dc92da = L.marker(
 
 
 var icon_90deee77d3de0dc56061713b031e742f = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_d717d9a1169db1e41b5da1d347dc92da.setIcon(icon_90deee77d3de0dc56061713b031e742f);
 
@@ -1175,7 +1175,7 @@ var marker_415f7d6425bea3159a003a8a3e838814 = L.marker(
 
 
 var icon_4fbc02b1ba286cc4cd98d906f4f68471 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_415f7d6425bea3159a003a8a3e838814.setIcon(icon_4fbc02b1ba286cc4cd98d906f4f68471);
 
@@ -1202,7 +1202,7 @@ var marker_1efa75f836630f35c55940ace923d9ef = L.marker(
 
 
 var icon_0d5c3ab98a162aa240ea67bf82fd232c = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_1efa75f836630f35c55940ace923d9ef.setIcon(icon_0d5c3ab98a162aa240ea67bf82fd232c);
 
@@ -1229,7 +1229,7 @@ var marker_373babbedf223ee89bf5f87918083a61 = L.marker(
 
 
 var icon_6c7c55d186a3e9c5764cb10b987c7593 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_373babbedf223ee89bf5f87918083a61.setIcon(icon_6c7c55d186a3e9c5764cb10b987c7593);
 
@@ -1256,7 +1256,7 @@ var marker_ec6aa329f39143b6c7ce6f0125893164 = L.marker(
 
 
 var icon_33e1635d505d30fc95f3c602b4a6a7d0 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_ec6aa329f39143b6c7ce6f0125893164.setIcon(icon_33e1635d505d30fc95f3c602b4a6a7d0);
 
@@ -1283,7 +1283,7 @@ var marker_7ed643a34fad6bd42f6f054c9004c71a = L.marker(
 
 
 var icon_565bb582c0137138a2b790cf626fdb02 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_7ed643a34fad6bd42f6f054c9004c71a.setIcon(icon_565bb582c0137138a2b790cf626fdb02);
 
@@ -1310,7 +1310,7 @@ var marker_3f5da4f0be44878ebd222aaf1a8c9ed9 = L.marker(
 
 
 var icon_82758329a05df15bcd65da151270d6df = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3f5da4f0be44878ebd222aaf1a8c9ed9.setIcon(icon_82758329a05df15bcd65da151270d6df);
 
@@ -1337,7 +1337,7 @@ var marker_cdaa7e4b43ce3938cf074eef0f2a779d = L.marker(
 
 
 var icon_1a28fc28e89f4ea475f60035433f84f5 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cdaa7e4b43ce3938cf074eef0f2a779d.setIcon(icon_1a28fc28e89f4ea475f60035433f84f5);
 
@@ -1364,7 +1364,7 @@ var marker_5d8d7bbeffbf87cac029ac8173669e29 = L.marker(
 
 
 var icon_6a204ff05e81dbe0825c9ce82818aaa4 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_5d8d7bbeffbf87cac029ac8173669e29.setIcon(icon_6a204ff05e81dbe0825c9ce82818aaa4);
 
@@ -1391,7 +1391,7 @@ var marker_cecde8cc4b5b0e31c2299ace8a999e01 = L.marker(
 
 
 var icon_7450a24f0d211582de9489b25a2a2324 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cecde8cc4b5b0e31c2299ace8a999e01.setIcon(icon_7450a24f0d211582de9489b25a2a2324);
 
@@ -1418,7 +1418,7 @@ var marker_60c73448ba318ad4c3028f50276c9c50 = L.marker(
 
 
 var icon_cd728349293f94ccd836178e065fc8b6 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_60c73448ba318ad4c3028f50276c9c50.setIcon(icon_cd728349293f94ccd836178e065fc8b6);
 
@@ -1445,7 +1445,7 @@ var marker_931e7bfe56b79dfc82366ecb2687864b = L.marker(
 
 
 var icon_1ed53ba41da92a97963aaac876788ef7 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_931e7bfe56b79dfc82366ecb2687864b.setIcon(icon_1ed53ba41da92a97963aaac876788ef7);
 
@@ -1472,7 +1472,7 @@ var marker_c70ee7f4c7e2e35682c676b9772262ee = L.marker(
 
 
 var icon_84be8ecd4f3b5200aff7df864f83753e = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_c70ee7f4c7e2e35682c676b9772262ee.setIcon(icon_84be8ecd4f3b5200aff7df864f83753e);
 
@@ -1499,7 +1499,7 @@ var marker_14a94d435a23bc93d3ef545095a8f835 = L.marker(
 
 
 var icon_38d95270246b6dc68a3381108cc43836 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_14a94d435a23bc93d3ef545095a8f835.setIcon(icon_38d95270246b6dc68a3381108cc43836);
 
@@ -1526,7 +1526,7 @@ var marker_cd77afd2ced8857eaeef94bdc86063fb = L.marker(
 
 
 var icon_7947103645b00fbce8a1d896b8bb5c71 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cd77afd2ced8857eaeef94bdc86063fb.setIcon(icon_7947103645b00fbce8a1d896b8bb5c71);
 
@@ -1553,7 +1553,7 @@ var marker_2b037cbacb7a7f500b904a1dc260cf81 = L.marker(
 
 
 var icon_df42fa912fad25b9127244c337ef2ddf = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_2b037cbacb7a7f500b904a1dc260cf81.setIcon(icon_df42fa912fad25b9127244c337ef2ddf);
 
@@ -1580,7 +1580,7 @@ var marker_3c16a97eab93438463f2e0765d2c9548 = L.marker(
 
 
 var icon_3a12605a28160a5be2113713f8456c0c = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3c16a97eab93438463f2e0765d2c9548.setIcon(icon_3a12605a28160a5be2113713f8456c0c);
 
@@ -1607,7 +1607,7 @@ var marker_3bfd7fb67cbb1e1912ad943da64da24f = L.marker(
 
 
 var icon_39279069707b0e113db04b0b11bef6a8 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3bfd7fb67cbb1e1912ad943da64da24f.setIcon(icon_39279069707b0e113db04b0b11bef6a8);
 
@@ -1634,7 +1634,7 @@ var marker_4d4be2bfb5d5ec68838d26afcdfe3dfb = L.marker(
 
 
 var icon_a32f9f7550157b33601fe611a68541ef = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_4d4be2bfb5d5ec68838d26afcdfe3dfb.setIcon(icon_a32f9f7550157b33601fe611a68541ef);
 
@@ -1661,7 +1661,7 @@ var marker_58619fdcf3f4a7488fda8c70875ac1b1 = L.marker(
 
 
 var icon_7e0b99d4a91110e1705d3982901c3ff1 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_58619fdcf3f4a7488fda8c70875ac1b1.setIcon(icon_7e0b99d4a91110e1705d3982901c3ff1);
 
@@ -1688,7 +1688,7 @@ var marker_d8339a13831c7676192713806ad4f9a3 = L.marker(
 
 
 var icon_950bd504948493cd3fdbe4a82680556e = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_d8339a13831c7676192713806ad4f9a3.setIcon(icon_950bd504948493cd3fdbe4a82680556e);
 
@@ -1715,7 +1715,7 @@ var marker_3358022ed028f2bf0c89a0e9ac74c65d = L.marker(
 
 
 var icon_7a99c1f69a25ac2e1c0b46855fb69fae = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3358022ed028f2bf0c89a0e9ac74c65d.setIcon(icon_7a99c1f69a25ac2e1c0b46855fb69fae);
 
@@ -1742,7 +1742,7 @@ var marker_ed0c14717535944854aae3ad4509f7f9 = L.marker(
 
 
 var icon_c8241cd450acb5703494176f258b4579 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_ed0c14717535944854aae3ad4509f7f9.setIcon(icon_c8241cd450acb5703494176f258b4579);
 
@@ -1769,7 +1769,7 @@ var marker_c5d6da643cb70d793eb3d1b904faf93a = L.marker(
 
 
 var icon_2b910cf070af39b9eb253565a5188d8c = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_c5d6da643cb70d793eb3d1b904faf93a.setIcon(icon_2b910cf070af39b9eb253565a5188d8c);
 
@@ -1796,7 +1796,7 @@ var marker_256b5ce73cf42162c2ae172eedef3a46 = L.marker(
 
 
 var icon_d8d8c5019426b6fcc5bc35ce3b5f0ac7 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_256b5ce73cf42162c2ae172eedef3a46.setIcon(icon_d8d8c5019426b6fcc5bc35ce3b5f0ac7);
 
@@ -1823,7 +1823,7 @@ var marker_cbd6f228f41bbc05ed2abac63d0f138e = L.marker(
 
 
 var icon_713db25dc16c67940e53309af7699f0c = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cbd6f228f41bbc05ed2abac63d0f138e.setIcon(icon_713db25dc16c67940e53309af7699f0c);
 
@@ -1850,7 +1850,7 @@ var marker_aacfab020c355050f9ed84a43c7ef068 = L.marker(
 
 
 var icon_1f97fb4fed0bd30f9cc0cedcce57463d = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_aacfab020c355050f9ed84a43c7ef068.setIcon(icon_1f97fb4fed0bd30f9cc0cedcce57463d);
 
@@ -1877,7 +1877,7 @@ var marker_9664c3f08f08558a5c8cfcefae1a1559 = L.marker(
 
 
 var icon_52b1b22682da8aa18fe3b77900d4b03b = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_9664c3f08f08558a5c8cfcefae1a1559.setIcon(icon_52b1b22682da8aa18fe3b77900d4b03b);
 
@@ -1904,7 +1904,7 @@ var marker_44d833f2c089dcea6eb19ca1ff62386f = L.marker(
 
 
 var icon_af0d5f1875862e9ecdc7e751730ecf87 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_44d833f2c089dcea6eb19ca1ff62386f.setIcon(icon_af0d5f1875862e9ecdc7e751730ecf87);
 
@@ -1931,7 +1931,7 @@ var marker_d4641f66b890b2df2d9743081279e44a = L.marker(
 
 
 var icon_95ee733dff091b832c140cde26785568 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_d4641f66b890b2df2d9743081279e44a.setIcon(icon_95ee733dff091b832c140cde26785568);
 
@@ -1958,7 +1958,7 @@ var marker_3defdc86b6c01f0d181dc8f003a0c5ba = L.marker(
 
 
 var icon_cca93a6518b5ccae3b43eca3eee0b404 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_3defdc86b6c01f0d181dc8f003a0c5ba.setIcon(icon_cca93a6518b5ccae3b43eca3eee0b404);
 
@@ -1985,7 +1985,7 @@ var marker_9ae9de801029f5d76b1ea831c3f14e8e = L.marker(
 
 
 var icon_ecdc05c1abe38bd52b1a653bab194b43 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_9ae9de801029f5d76b1ea831c3f14e8e.setIcon(icon_ecdc05c1abe38bd52b1a653bab194b43);
 
@@ -2012,7 +2012,7 @@ var marker_a6c03fffdb96aa30c0dfbf0625aad21b = L.marker(
 
 
 var icon_8771518ef9100e6e00da5f54369e836f = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_a6c03fffdb96aa30c0dfbf0625aad21b.setIcon(icon_8771518ef9100e6e00da5f54369e836f);
 
@@ -2039,7 +2039,7 @@ var marker_734a0a5fee519027fee29f7d0da72195 = L.marker(
 
 
 var icon_c5fc839e5d999a97e6a6194d6244adf8 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_734a0a5fee519027fee29f7d0da72195.setIcon(icon_c5fc839e5d999a97e6a6194d6244adf8);
 
@@ -2066,7 +2066,7 @@ var marker_0a7ba8b52db5898187958c54e8515945 = L.marker(
 
 
 var icon_bc8829bf6bfa6601dcd93c3cd83e20c5 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_0a7ba8b52db5898187958c54e8515945.setIcon(icon_bc8829bf6bfa6601dcd93c3cd83e20c5);
 
@@ -2093,7 +2093,7 @@ var marker_cc1c0f49dac3928cecc3a87d26a1d098 = L.marker(
 
 
 var icon_bfdcf52704ff02325fd57b35f25ae961 = L.AwesomeMarkers.icon(
-    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon" }
+    { "extraClasses": "fa-rotate-0", "icon": "ok-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon" }
 );
 marker_cc1c0f49dac3928cecc3a87d26a1d098.setIcon(icon_bfdcf52704ff02325fd57b35f25ae961);
 
@@ -9355,7 +9355,7 @@ circle_906f5146994b3dd730029724aa1697db.bindPopup(popup_fe6740edab9cdef16fabffeb
 
 var circle_694a4b8fb734ef746d63abb05b6a9635 = L.circle(
     [43.769359786420665, -79.46496800978778],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9376,7 +9376,7 @@ circle_694a4b8fb734ef746d63abb05b6a9635.bindPopup(popup_e8c6cac8955cba8d70cbbf34
 
 var circle_337bea488ca0143c7e0edf31a1a11f47 = L.circle(
     [43.782370202317225, -79.47885982268008],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9397,7 +9397,7 @@ circle_337bea488ca0143c7e0edf31a1a11f47.bindPopup(popup_4638739600a6c1338a953ee7
 
 var circle_d6225017003a5708070db5386226d5f9 = L.circle(
     [43.682138765717966, -79.50900931613751],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9418,7 +9418,7 @@ circle_d6225017003a5708070db5386226d5f9.bindPopup(popup_890c2fc116430fd93db58394
 
 var circle_421935450bc8f147d64305d396ae9935 = L.circle(
     [43.67668441675285, -79.36558428164135],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9439,7 +9439,7 @@ circle_421935450bc8f147d64305d396ae9935.bindPopup(popup_e22016ed9461cda0409454a0
 
 var circle_4da308eb67e2c4170c28a3040146c296 = L.circle(
     [43.64569526619967, -79.41112401947886],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9460,7 +9460,7 @@ circle_4da308eb67e2c4170c28a3040146c296.bindPopup(popup_08b5ee0a802e44c42b0340fc
 
 var circle_b13b43367c366bdecb0c0446b83ef723 = L.circle(
     [0.0, 0.0],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9481,7 +9481,7 @@ circle_b13b43367c366bdecb0c0446b83ef723.bindPopup(popup_b7dd5b7fd7172508510f13d3
 
 var circle_aa6576ebe2a43c01a1dc21d3907f2afe = L.circle(
     [0.0, 0.0],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9502,7 +9502,7 @@ circle_aa6576ebe2a43c01a1dc21d3907f2afe.bindPopup(popup_72a6170b171b7b8a85ab9956
 
 var circle_f76050f704c3ea242de2eeacf8f888d3 = L.circle(
     [0.0, 0.0],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9523,7 +9523,7 @@ circle_f76050f704c3ea242de2eeacf8f888d3.bindPopup(popup_838fc6c3410d64f783d6012a
 
 var circle_dd8306e62d49929a7677a5c1a8058877 = L.circle(
     [0.0, 0.0],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9544,7 +9544,7 @@ circle_dd8306e62d49929a7677a5c1a8058877.bindPopup(popup_5ca40608abc0795f1b07ce65
 
 var circle_f0b0e6ba3ebe146e703e1b1d42113e2c = L.circle(
     [0.0, 0.0],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9565,7 +9565,7 @@ circle_f0b0e6ba3ebe146e703e1b1d42113e2c.bindPopup(popup_8df1a8e60443f15bcc103dec
 
 var circle_110ee12140e4bca342b9696d170cc925 = L.circle(
     [43.691315138604736, -79.39095953230354],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
@@ -9586,7 +9586,7 @@ circle_110ee12140e4bca342b9696d170cc925.bindPopup(popup_8a6106225fdf48a71a19f2e1
 
 var circle_7078088189bc6f8d93f13cf30e3fe428 = L.circle(
     [43.679968692683936, -79.37890869421025],
-    { "bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
+    { "bubblingMouseEvents": true, "color": "darkpurple", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "darkpurple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }
 ).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 
