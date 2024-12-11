@@ -1,3 +1,7 @@
+// JS code that displays the emissions cluster map. most of this was forked from the original Wunch lab website
+// to update the clusters, run the scripts in ./GTA-Emissions-Gaussian-Clusters-Updated-main
+
+// initialize map
 var map_c0a827379a3e92ac42793ff5128f9960 = L.map(
     "map_c0a827379a3e92ac42793ff5128f9960",
     {
@@ -18,7 +22,6 @@ var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</
 var streets = L.tileLayer(mbUrl, { id: 'mapbox.streets', attribution: mbAttr }),
     satellite = L.tileLayer(mbUrl, { id: "mapbox.satellite", attribution: mbAttr });
 
-
 // Dictionary of base maps
 var baseMaps = {
     "Streets": streets,
@@ -34,7 +37,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
-
+// adding known emitters
 var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
     [43.658941999999996, -79.317386],
     {}
@@ -2112,7 +2115,7 @@ marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df
 
 
 
-//------------------------------BEGIN CLUSTER CENTRES-----------------------------------------//
+// adding cluster centres. they're in a layer group so we can toggle their visibility
 var centres = L.layerGroup()
 
 var marker_4e04ec412ebbe5159291256662355559 = L.marker(
@@ -2867,8 +2870,8 @@ popup_6a8d9636af4d52c95504b3d7d6a3a4b7.setContent(html_8004ed5cbce9982e9113ea579
 marker_88d3eadd9b9330f3e4fc4f031a19871f.bindPopup(popup_6a8d9636af4d52c95504b3d7d6a3a4b7)
     ;
 
-//---------------------------------END CLUSTER CENTRES-----------------------------------------//
 
+// toggle visibility of cluster centres
 var clicked = document.getElementById("show_cluster_centres")
 var showing = 0
 clicked.addEventListener('click', toggle_cluster_centres)
@@ -2884,7 +2887,7 @@ function toggle_cluster_centres() {
     }
 }
 
-
+// adding circles
 var circle_12021db780713e190cb76eea90f4e777 = L.circle(
     [43.64632693031661, -79.38853196805027],
     { "bubblingMouseEvents": true, "color": "#62BA6B", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#62BA6B", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3 }

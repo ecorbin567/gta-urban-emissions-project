@@ -1,11 +1,9 @@
-// map/location picker
-// Get element references
-var confirmBtn = document.getElementById('confirmPosition');
-var onClickPositionView = document.getElementById('onClickPositionView');
-var location_confirmed = false;
-var latitude = 0;
-var longitude = 0;
+// JS code that runs the location picker and form submission for the emissions report form,
+// as well as sending the form data to methane-enhancement-reports.csv
 
+// location picker
+
+// initialize map
 var report_map = L.map(
     "report_map",
     {
@@ -26,7 +24,6 @@ var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</
 var streets = L.tileLayer(mbUrl, { id: 'mapbox.streets', attribution: mbAttr }),
     satellite = L.tileLayer(mbUrl, { id: "mapbox.satellite", attribution: mbAttr });
 
-
 // Dictionary of base maps
 var baseMaps = {
     "Streets": streets,
@@ -42,6 +39,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(report_map);
 
+// draggable marker
 var marker = new L.marker([43.656997372, -79.390331772],{
     draggable: true,
     autoPan: true
@@ -52,9 +50,15 @@ var icon = L.AwesomeMarkers.icon(
 );
 marker.setIcon(icon);
 
-// Listen to button onclick event
+// buttons and other variables necessary to confirm the location and get the position of the marker
+var confirmBtn = document.getElementById('confirmPosition');
+var onClickPositionView = document.getElementById('onClickPositionView');
+var location_confirmed = false;
+var latitude = 0;
+var longitude = 0;
+
+// when "confirm position" is clicked, display position latitude and longitude and save them to variables
 confirmBtn.onclick = function () {
-    // Get current location and show it in HTML
     location_confirmed = true;
     var location = marker.getLatLng();
     onClickPositionView.innerHTML = location.lat + ',' + location.lng;
@@ -101,12 +105,14 @@ function validateForm() {
     return true;
 }
 
+// initialize variables we are going to send
 var lat = latitude;
 var lng = longitude;
 var date = document.forms["emissionsReport"]["date-observed"].value;
 var time = document.forms["emissionsReport"]["time-observed"].value;
 var smell = document.forms["emissionsReport"]["smell-severity"].value;
 
+// send data to methane-enhancement-reports.csv using data_to_csv.php
 function sendData() {
     var data = {
         lat: lat,
@@ -119,7 +125,7 @@ function sendData() {
     var xhr = new XMLHttpRequest();
 
     // set the PHP page you want to send data to
-    xhr.open("POST", "proces.php", true);
+    xhr.open("POST", "data_to_csv.php", true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     // send the data

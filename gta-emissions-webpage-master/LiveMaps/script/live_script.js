@@ -1,6 +1,7 @@
 /* 
 ****---------------------------------------------****
 Authors: Colin Arrowsmith, Sajjan Heerah, Debra Wunch
+updated by Elise Corbin
 
 This javascript provides the GTA Emissions website with interactive live mapping features.
 
@@ -200,7 +201,6 @@ function initializeMap() {
   var streets  = L.tileLayer(mbUrl, {id: 'mapbox.streets',   attribution: mbAttr}),
       satellite = L.tileLayer(mbUrl, {id: "mapbox.satellite", attribution: mbAttr});
 
-
   // Dictionary of base maps
   var baseMaps = {
       "Streets": streets,
@@ -223,7 +223,6 @@ function initializeMap() {
      "Wind": wind_markers,
      "Facilities": targets
   };
-  
   
   // Initialize the map itself and the layers which appear by default
   var map = L.map('map', {

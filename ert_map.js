@@ -1,11 +1,6 @@
-// getting the date for display purposes
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
+// JS code that displays the enhancement reporting tool map
 
-today = yyyy + '-' + mm + '-' + dd;
-
+// Initialize map
 var ert_map = L.map(
     "ert_map",
     {
@@ -17,7 +12,7 @@ var ert_map = L.map(
     }
 );
 
-//Call the map tile to be used. This is from 'mapbox'. Note: the street imagery does not work on this tile, so we use the OpenStreetMap tile instead (below).
+// Call the map tile to be used. This is from 'mapbox'. Note: the street imagery does not work on this tile, so we use the OpenStreetMap tile instead (below).
 var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
     '<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
     'Satellite imagery © <a href="http://mapbox.com">Mapbox</a>',
@@ -25,7 +20,6 @@ var mbAttr = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</
 
 var streets = L.tileLayer(mbUrl, { id: 'mapbox.streets', attribution: mbAttr }),
     satellite = L.tileLayer(mbUrl, { id: "mapbox.satellite", attribution: mbAttr });
-
 
 // Dictionary of base maps
 var baseMaps = {
@@ -42,6 +36,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(ert_map);
 
+// adding markers with all the known emitters to the map
 // -----------------------BEGIN KNOWN EMITTERS---------------------------
 var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
     [43.658941999999996, -79.317386],
@@ -2118,10 +2113,24 @@ popup_4055271ca3022e2e4f2bb6df7852fe99.setContent(html_5826dc3a137699425f1fbeda8
 marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df7852fe99)
     ;
 //---------------------END KNOWN EMITTERS--------------------------
+// get and display data from methane-enhancement-reports.csv
+
 var ert_data = [];
+
+// get today's date for the default display
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = yyyy + '-' + mm + '-' + dd;
+
+// default display
 dates = [today];
 range_is_today = true;
 fetchData();
+
+// custom date range display
 var submitBtn = document.getElementById('submit');
 submitBtn.onclick = function () {
     range_is_today = false;
@@ -2129,9 +2138,9 @@ submitBtn.onclick = function () {
     date_to = document.forms["displayPastDates"]["date-to"].value;
     dates = getDaysArray(date_from, date_to);
     fetchData();
-    // this is only working for one day!
 }
 
+// get array of days between date_from and date_to
 const getDaysArray = function(start, end) {
     const arr = [];
     for(const dt=new Date(start); dt<=new Date(end); dt.setDate(dt.getDate()+1)){
@@ -2140,8 +2149,9 @@ const getDaysArray = function(start, end) {
     return arr;
 };
 
+// get data from csv file using data_from_csv.php
 function fetchData() {
-    fetch("ert_data.php")
+    fetch("data_from_csv.php")
     .then((response) => {
         if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
             // check for any errors.
@@ -2151,11 +2161,13 @@ function fetchData() {
         return response.json(); // Parse the JSON data.
     })
     .then((data) => {
-        // This is where you handle what to do with the response.
+        // all the actual displaying is done here
         ert_data = data;
         var layers = [];
+        // cycle through dates in the date range
         for (let j = 0; j < dates.length; j++) {
             var temp_layer = L.layerGroup();
+            // cycle through reports in the csv file and display all the reports in the date range
             for (let i = 0; i < ert_data.length; i++) {
                 if (ert_data[i][" Date Observed"] == dates[j]) {
                     // setting smell rating colour
@@ -2164,7 +2176,8 @@ function fetchData() {
                     else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
                     else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
                     else colour = "blue";
-        
+                    
+                    // making a marker with the data corresponding to this report
                     var temp_marker = L.marker(
                         [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
                         {}
@@ -2187,6 +2200,7 @@ function fetchData() {
                 }
             }
         }
+        // adding layers to map
         if (layers.length == 0 && range_is_today == false) {
             alert("No reports were found for that date range, sorry!");
         }
