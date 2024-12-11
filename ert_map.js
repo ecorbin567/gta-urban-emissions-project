@@ -1,3 +1,11 @@
+// getting the date for display purposes
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = yyyy + '-' + mm + '-' + dd;
+
 var ert_map = L.map(
     "ert_map",
     {
@@ -34,7 +42,7 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(ert_map);
 
-// -----------------------ADDING KNOWN EMITTERS---------------------------
+// -----------------------BEGIN KNOWN EMITTERS---------------------------
 var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
     [43.658941999999996, -79.317386],
     {}
@@ -2111,48 +2119,86 @@ marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df
     ;
 //---------------------END KNOWN EMITTERS--------------------------
 var ert_data = [];
+dates = [today];
+range_is_today = true;
+fetchData();
+var submitBtn = document.getElementById('submit');
+submitBtn.onclick = function () {
+    range_is_today = false;
+    date_from = document.forms["displayPastDates"]["date-from"].value;
+    date_to = document.forms["displayPastDates"]["date-to"].value;
+    dates = getDaysArray(date_from, date_to);
+    fetchData();
+    // this is only working for one day!
+}
 
-fetch("ert_data.php")
-        .then((response) => {
-            if(!response.ok){ // Before parsing (i.e. decoding) the JSON data,
-                              // check for any errors.
-                // In case of an error, throw.
-                throw new Error("Something went wrong!");
+const getDaysArray = function(start, end) {
+    const arr = [];
+    for(const dt=new Date(start); dt<=new Date(end); dt.setDate(dt.getDate()+1)){
+        arr.push(new Date(dt).toISOString().slice(0,10));
+    }
+    return arr;
+};
+
+function fetchData() {
+    fetch("ert_data.php")
+    .then((response) => {
+        if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
+            // check for any errors.
+            // In case of an error, throw.
+            throw new Error("Something went wrong!");
+        }
+        return response.json(); // Parse the JSON data.
+    })
+    .then((data) => {
+        // This is where you handle what to do with the response.
+        ert_data = data;
+        var layers = [];
+        for (let j = 0; j < dates.length; j++) {
+            var temp_layer = L.layerGroup();
+            for (let i = 0; i < ert_data.length; i++) {
+                if (ert_data[i][" Date Observed"] == dates[j]) {
+                    // setting smell rating colour
+                    colour = "";
+                    if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
+                    else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
+                    else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
+                    else colour = "blue";
+        
+                    var temp_marker = L.marker(
+                        [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
+                        {}
+                    ).addTo(temp_layer);
+        
+                    var temp_icon = L.AwesomeMarkers.icon(
+                        { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": colour, "prefix": "fa" }
+                    );
+                    temp_marker.setIcon(temp_icon);
+        
+                    var temp_popup = L.popup({ "maxWidth": "100%" });
+        
+                    var popup_text = "Emissions Report <br> Observed: " + ert_data[i][" Date Observed"] + " " + ert_data[i][" Time Observed"];
+                    var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">` + popup_text + `</div>`)[0];
+                    temp_popup.setContent(temp_html);
+        
+                    temp_marker.bindPopup(temp_popup);
+        
+                    layers.push(temp_layer);
+                }
             }
-            return response.json(); // Parse the JSON data.
-        })
-        .then((data) => {
-             // This is where you handle what to do with the response.
-             ert_data = data;
+        }
+        if (layers.length == 0 && range_is_today == false) {
+            alert("No reports were found for that date range, sorry!");
+        }
+        document.getElementById("reports").innerHTML="Reports in this date range: "+layers.length;
+        for (let i = 0; i < layers.length; i++) {
+            var layer = layers[i];
+            layer.addTo(ert_map);
+        } 
+    })
+    .catch((error) => {
+        alert(error);
+        // This is where you handle errors.
+    });
 
-             for (let i=0; i<ert_data.length; i++) {
-                // setting smell rating colour
-                colour = "";
-                if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
-                else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
-                else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
-                else colour = "blue";
-
-                var temp_marker = L.marker(
-                    [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
-                    {}
-                ).addTo(ert_map);
-                
-                var temp_icon = L.AwesomeMarkers.icon(
-                    { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": colour, "prefix": "fa" }
-                );
-                temp_marker.setIcon(temp_icon);
-                
-                var temp_popup = L.popup({ "maxWidth": "100%" });
-                
-                var popup_text = "Emissions Report <br> Observed: "+ert_data[i][" Date Observed"]+" "+ert_data[i][" Time Observed"];
-                var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">`+popup_text+`</div>`)[0];
-                temp_popup.setContent(temp_html);
-                
-                temp_marker.bindPopup(temp_popup);
-             }
-        })
-        .catch((error) => {
-            alert(error);
-             // This is where you handle errors.
-        });
+}

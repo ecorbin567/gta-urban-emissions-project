@@ -47,6 +47,9 @@
 		<h3>Emissions Reporting Tool Map</h3>
 		This is a map of methane emissions reported by citizens on the <a
 			href="./submit an emissions report.html">emissions reporting tool.</a>
+		<br>
+		By default, only reports from today (Toronto time) are shown. If you want to see
+		reports from the past, scroll down to "Display Past Dates".
 	</div>
 	<div class="flex-container">
 		<div class="cluster-map" id="ert_map"></div>
@@ -111,6 +114,27 @@
 		</div>
 	</div>
 	<br><br>
+	<div class="text-section">
+		<div id="reports"></div>
+		<h3>Display Past Dates</h3>
+		<form name="displayPastDates">
+			<div class="field">
+				<label for="date-from"><b>From:</b></label>
+				<br>
+				<input type="date" id="date-from" name="date-from">
+			</div>
+			<br>
+			<div class="field">
+				<label for="date-to"><b>To:</b></label>
+				<br>
+				<input type="date" id="date-to" name="date-to">
+			</div>
+			<br>
+			<div class="field">
+				<button type="button" id="submit">Submit</button>
+			</div>
+		</form>
+	</div>
 </body>
 
 <footer>

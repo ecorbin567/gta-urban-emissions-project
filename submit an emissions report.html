@@ -6,18 +6,10 @@
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- location stuff -->
-	<script type="text/javascript"
-          src="https://maps.googleapis.com/maps/api/js?key="></script>
-  	<script src="https://unpkg.com/location-picker/dist/location-picker.min.js"></script>
-  	<style type="text/css">
-    	#googlemap {
-      		width: 80%;
-      		height: 28vw;
-    	}
-  	</style>
-
-	<!-- general stylesheet -->
+	<!-- stylesheets -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -53,11 +45,11 @@
 		311 or 911 immediately. You may also want to report the leak to Enbridge's 24/7 
 		emergency hotline: 1-866-763-5427.</div>
 		<br>
-			<b>Please drag the map so that the red marker is centred on where you observed the enhancement [high level of methane emissions].
+			<b>Please drag the red marker so it is centred on where you observed the enhancement [high level of methane emissions].
 				<br>
-				When you are finished, click "Confirm Position".</b>
+				When you are finished, click "Confirm Position". (You can move it as many times as you need after clicking.)</b>
 			<br><br>
-			<div id="googlemap"></div>
+			<div class="report_map" id="report_map"></div>
 			<br>
 			<button id="confirmPosition">Confirm Position</button>
 			<br>
@@ -112,8 +104,6 @@
 			</div>
 		</form>
 	</div>
-	<!-- form script -->
-	<script src="form.js"></script>
 </body>
 
 <footer>
@@ -141,5 +131,17 @@
 		</tr>
 	</table>
 </footer>
+
+<!-- scripts and js files -->
+<script>
+	L_NO_TOUCH = false;
+	L_DISABLE_3D = false;
+</script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<script src="https://requirejs.org/docs/release/2.3.7/minified/require.js"></script>
+<script src="./form.js"></script>
 
 </html>
