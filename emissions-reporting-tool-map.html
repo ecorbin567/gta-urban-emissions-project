@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<title>GTA Urban Emissions Project | Emissions Cluster Map</title>
+	<title>GTA Urban Emissions Project | ERT Map</title>
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,64 +22,90 @@
 		<div class="subnav">
 			<button class="subnavbtn">Maps<i class="fa fa-caret-down"></i></button>
 			<div class="subnav-content">
-				<a href="./live measurements.html">Live Measurements</a>
-				<a href="./past measurements.html">Past Measurements</a>
-				<a href="./emissions cluster map.html">Emissions Cluster Map</a>
-				<a href="./emissions reporting tool map.html">Emissions Reporting Tool Map</a>
+				<a href="./live-measurements.html">Live Measurements</a>
+				<a href="./past-measurements.html">Past Measurements</a>
+				<a href="./emissions-cluster-map.html">Emissions Cluster Map</a>
+				<a href="./emissions-reporting-tool-map.html">Emissions Reporting Tool Map</a>
 			</div>
 		</div>
 		<div class="subnav">
 			<button class="subnavbtn">Emissions Reporting Tool<i class="fa fa-caret-down"></i></button>
 			<div class="subnav-content">
-				<a href="./about the ert.html">About the ERT</a>
-				<a href="./submit an emissions report.html">Submit an Emissions Report</a>
-				<a href="./submit a cause report.html">Submit a Cause Report</a>
+				<a href="./about-the-ert.html">About the ERT</a>
+				<a href="./submit-an-emissions-report.html">Submit an Emissions Report</a>
+				<a href="./submit-a-cause-report.html">Submit a Cause Report</a>
 			</div>
 		</div>
 	</div>
 </header>
 
 <body>
+	<div id="test">
+	</div>
 	<div class="text-section">
 		<br>
-		<h3>Emissions Cluster Map</h3>
-		This map is a visual representation of the places we have consistently found methane
-		emissions in the GTA. Clusters are computed based on the entire archive of data from
-		the GTA Urban Emissions Project's bike surveys.
-		<br><br>
-		A cluster not near a downward triangle may indicate an unknown (to us) source of methane
-		emissions. If you live in the area and/or have any information about what the source of
-		a cluster might be, please <a href="./submit a cause report.html">submit a cause report.</a>
-		<br><br>
-		The "Show/Hide Cluster Centres" button toggles the centres of the clusters, which helps with
-		visualizing where the clusters may be originating from.
-		<br><br>
-		<button id="show_cluster_centres">Show/Hide Cluster Centres</button>
+		<h3>Emissions Reporting Tool Map</h3>
+		This is a map of methane emissions reported by citizens on the <a
+			href="./submit an emissions report.html">emissions reporting tool.</a>
+		<br>
+		By default, only reports from today (Toronto time) are shown. If you want to see
+		reports from the past, scroll down to "Display Past Dates".
 	</div>
 	<div class="flex-container">
-		<div class="cluster-map" id="map_c0a827379a3e92ac42793ff5128f9960"></div>
+		<div class="cluster-map" id="ert_map"></div>
 		<div class="text-section-cluster-map">
 			<table>
 				<tr>
-					<td colspan="2">
+					<td colspan="4">
 						<h4>Map Information</h4>
 					</td>
 				</tr>
 				<tr>
-					<td>
-						<img src="images/circle.png">
-					</td>
-					<td>
-						One circle represents a high level of methane measured in that spot, and a larger
-						circle means a higher level of methane. A set of circles that are all the same colour
-						represents a cluster. Clicking on each circle will show you the date that measurement was taken.
+					<td colspan="4">
+						One icon represents a methane enhancement (high level of methane) reported in that spot.
+						The severity of the smell is represented by the colour of the icon.
+						Clicking on each icon will tell you when the enhancement was reported
+						and how the user noticed it.
 					</td>
 				</tr>
 				<tr>
 					<td>
-						<img src="images/emittericon.png">
+						<img src="images/blueicon.png" width="75" height="75"
+							alt="A blue icon that signifies no smell.">
 					</td>
 					<td>
+						<img src="images/greenicon.png" width="75" height="75"
+							alt="A green icon that signifies a mild smell.">
+					</td>
+					<td>
+						<img src="images/orangeicon.png" width="75" height="75"
+							alt="An orange icon that signifies a moderate smell.">
+					</td>
+					<td>
+						<img src="images/redicon.png" width="75" height="75"
+							alt="A red icon that signifies a severe smell.">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						No smell
+					</td>
+					<td>
+						Mild smell
+					</td>
+					<td>
+						Moderate smell
+					</td>
+					<td>
+						Severe smell
+					</td>
+				</tr>
+				<tr>
+					<td colspan="1">
+						<img src="images/emittericon.png" width="75" height="75"
+							alt="A dark purple icon that signifies a known source of methane emissions.">
+					</td>
+					<td colspan="3">
 						A dark purple icon represents a known source of methane emissions. Clicking on each
 						icon will tell you the name of the source and the type of emitter it is.
 					</td>
@@ -88,6 +114,27 @@
 		</div>
 	</div>
 	<br><br>
+	<div class="text-section">
+		<div id="reports"></div>
+		<h3>Display Past Dates</h3>
+		<form name="displayPastDates">
+			<div class="field">
+				<label for="date-from"><b>From:</b></label>
+				<br>
+				<input type="date" id="date-from" name="date-from">
+			</div>
+			<br>
+			<div class="field">
+				<label for="date-to"><b>To:</b></label>
+				<br>
+				<input type="date" id="date-to" name="date-to">
+			</div>
+			<br>
+			<div class="field">
+				<button type="button" id="submit">Submit</button>
+			</div>
+		</form>
+	</div>
 </body>
 
 <footer>
@@ -124,6 +171,7 @@
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-<script src="./cluster_map.js"></script>
+<script src="https://requirejs.org/docs/release/2.3.7/minified/require.js"></script>
+<script src="./ert_map.js"></script>
 
 </html>

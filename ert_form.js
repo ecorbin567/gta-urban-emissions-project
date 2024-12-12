@@ -77,6 +77,10 @@ submitBtn.onclick = function () {
         date = document.forms["emissionsReport"]["date-observed"].value;
         time = document.forms["emissionsReport"]["time-observed"].value;
         smell = document.forms["emissionsReport"]["smell-severity"].value;
+        var temp_describe = document.forms["emissionsReport"]["describe"].value;
+        if (temp_describe != "") {describe = temp_describe;}
+        var temp_cause = document.forms["emissionsReport"]["cause"].value;
+        if (temp_cause != "") {cause = temp_cause;}
         sendData();
     }
 }
@@ -111,6 +115,8 @@ var lng = longitude;
 var date = document.forms["emissionsReport"]["date-observed"].value;
 var time = document.forms["emissionsReport"]["time-observed"].value;
 var smell = document.forms["emissionsReport"]["smell-severity"].value;
+var describe = "blank";
+var cause = "blank";
 
 // send data to methane-enhancement-reports.csv using data_to_csv.php
 function sendData() {
@@ -119,7 +125,9 @@ function sendData() {
         lng: lng,
         date: date,
         time: time,
-        smell: smell
+        smell: smell,
+        describe: describe,
+        cause: cause
     };
 
     var xhr = new XMLHttpRequest();
