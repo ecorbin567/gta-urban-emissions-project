@@ -256,9 +256,11 @@ function initializeMap() {
   legend.addTo(map);
 
   $.ajax({                                     // Do one initial poll using ajax, that way the first dots show up 
-      url: "../datasource_2017_07_07.txt",                   // as soon as the page is loaded. If successfull, we pass the polled
-      cache: false,                            // data to processdata(). Next, we do the same thing iteratively with
+      url: "./gta-emissions-webpage-master/LiveMaps/script/datasource_2017_07_07.txt&format=json",                   // as soon as the page is loaded. If successfull, we pass the polled
+      cache: false, 
+      async: false,                           // data to processdata(). Next, we do the same thing iteratively with
       success: function(data) {
+        alert(data);
         processData(map, baseLayers, overlays, data);
       },
       error: function() {
@@ -271,8 +273,9 @@ function initializeMap() {
     setTimeout(function() {
       j = j + 1
       $.ajax({                                    // This block does the bulk of the work:
-        url: "../datasource_2017_07_07.txt",                    // "Ajax" tells the browser to perform these tasks
-        cache: false,                             // behind the scenes. If successful, the information
+        url: "./gta-emissions-webpage-master/LiveMaps/script/datasource_2017_07_07.txt&format=json",                    // "Ajax" tells the browser to perform these tasks
+        cache: false,
+        async: false,                             // behind the scenes. If successful, the information
         success: function(data) {                 // polled from datasource.txt is passed to the processData
           processData(map, baseLayers, overlays, data);     // function.
         },
@@ -386,6 +389,7 @@ info.update = function(data) {
         for (var i = 2; l - i > -1; i++) {
           // if the last time is a nan, find the most recent valid time
           dataComponents = dataRows[l - i].split(",");
+          // alert(dataComponents[0]);
           if (dataComponents[0] === "nan") {
             continue;
            } else {

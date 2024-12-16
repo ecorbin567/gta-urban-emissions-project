@@ -6,7 +6,7 @@
     $header = array_shift($rows);
     
     // format the data the way we want it
-    $csv    = [];
+    $csv = [];
     foreach($rows as $row) {
         $csv[] = array_combine($header, $row);
     }
