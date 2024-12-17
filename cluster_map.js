@@ -3,7 +3,7 @@
 
 // initialize map
 var map_c0a827379a3e92ac42793ff5128f9960 = L.map(
-    "map_c0a827379a3e92ac42793ff5128f9960",
+    "cluster-map",
     {
         center: [43.656997372, -79.390331772],
         crs: L.CRS.EPSG3857,
@@ -34,7 +34,7 @@ L.control.layers(baseMaps).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 // Adding the street tile that actually works :))
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: mbAttr
 }).addTo(map_c0a827379a3e92ac42793ff5128f9960);
 
 // adding known emitters
@@ -2116,7 +2116,7 @@ marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df
 
 
 // adding cluster centres. they're in a layer group so we can toggle their visibility
-var centres = L.layerGroup()
+var centres = L.layerGroup();
 
 var marker_4e04ec412ebbe5159291256662355559 = L.marker(
     [43.6609822129815, -79.31488395907925],

@@ -1,4 +1,4 @@
-// JS code that displays the enhancement reporting tool map
+// JS code that displays the past measurements map
 
 // Initialize map
 var past_measurements_map = L.map(
@@ -33,12 +33,13 @@ L.control.layers(baseMaps).addTo(past_measurements_map);
 // Adding the street tile that actually works :))
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: mbAttr
 }).addTo(past_measurements_map);
 
-// adding markers with all the known emitters to the map
+// adding markers with all the known emitters to a layer group where we can toggle their visibility
 // -----------------------BEGIN KNOWN EMITTERS---------------------------
-emitters = L.layerGroup()
+var emitters = L.layerGroup();
+
 var marker_a105190ea1b936998cdc0c55d4281fe9 = L.marker(
     [43.658941999999996, -79.317386],
     {}
@@ -2113,10 +2114,25 @@ popup_4055271ca3022e2e4f2bb6df7852fe99.setContent(html_5826dc3a137699425f1fbeda8
 
 marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df7852fe99)
     ;
-//---------------------END KNOWN EMITTERS--------------------------
-// get and display data from methane-enhancement-reports.csv
-var ert_data = [];
 
+//---------------------END KNOWN EMITTERS--------------------------
+// toggle visibility of emitters
+var clicked = document.getElementById("show_emitters");
+var showing = 0;
+clicked.addEventListener('click', toggle_emitters);
+
+function toggle_emitters() {
+    if (showing == 0) {
+        past_measurements_map.addLayer(emitters);
+        showing = 1;
+    }
+    else if (showing == 1) {
+        past_measurements_map.removeLayer(emitters);
+        showing = 0;
+    }
+}
+
+// display map data
 // get today's date for the default display
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -2124,24 +2140,6 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 today = yyyy + '-' + mm + '-' + dd;
-
-// default display
-dates = ["./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_"+today+".csv"];
-range_is_today = true;
-fetchData();
-
-// custom date range display
-var submitBtn = document.getElementById('submit');
-submitBtn.onclick = function () {
-    range_is_today = false;
-    date_from = document.forms["displayPastDates"]["date-from"].value;
-    date_to = document.forms["displayPastDates"]["date-to"].value;
-    dates = getDaysArray(date_from, date_to);
-    for (let j = 0; j < dates.length; j++) {
-        dates[j] = "./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_"+dates[j]+".csv"
-    }
-    fetchData();
-}
 
 // get array of days between date_from and date_to
 const getDaysArray = function(start, end) {
@@ -2152,17 +2150,32 @@ const getDaysArray = function(start, end) {
     return arr;
 };
 
-// get data from csv file using data_from_csv.php
+// default display
+dates = ["methane", "./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_"+today+".csv"];
+range_is_today = true;
+fetchData();
+
+// custom date range display
+var submitBtn = document.getElementById('submit');
+submitBtn.onclick = function () {
+    range_is_today = false;
+    date_from = document.forms["displayPastDates"]["date-from"].value;
+    date_to = document.forms["displayPastDates"]["date-to"].value;
+    plotvar = document.forms["displayPastDates"]["variable"].value;
+    dates = []
+    dates.push(plotvar);
+    days_arr = getDaysArray(date_from, date_to);
+    for (let j = 0; j < days_arr.length; j++) {
+        // turn each date into a url where the data can be accessed
+        dates.push("./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_"+days_arr[j]+".csv"
+        );
+    }
+    fetchData();
+}
+
+// send array of dates and variable to be plotted to dates_to_from_csv.php,
+// which sends back data from the files corresponding to the dates and variable
 function fetchData() {
-    // var xhr = new XMLHttpRequest();
-
-    // // set the PHP page you want to send data to
-    // xhr.open("POST", "dates_to_from_csv.php", true);
-    // xhr.setRequestHeader("Content-Type", "application/json");
-
-    // // send the data
-    // xhr.send(JSON.stringify(dates));
-
     fetch('dates_to_from_csv.php', {
         method: 'POST',
         headers: {
@@ -2179,58 +2192,12 @@ function fetchData() {
         return response.json(); // Parse the JSON data.
     })
     .then((data) => {
-        // // all the actual displaying is done here
-        // ert_data = data;
-        // var layers = [];
-        // // cycle through dates in the date range
-        // for (let j = 0; j < dates.length; j++) {
-        //     var temp_layer = L.layerGroup();
-        //     // cycle through reports in the csv file and display all the reports in the date range
-        //     for (let i = 0; i < ert_data.length; i++) {
-        //         if (ert_data[i][" Date Observed"] == dates[j]) {
-        //             // setting smell rating colour
-        //             colour = "";
-        //             if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
-        //             else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
-        //             else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
-        //             else colour = "blue";
-                    
-        //             // making a marker with the data corresponding to this report
-        //             var temp_marker = L.marker(
-        //                 [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
-        //                 {}
-        //             ).addTo(temp_layer);
-        
-        //             var temp_icon = L.AwesomeMarkers.icon(
-        //                 { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": colour, "prefix": "fa" }
-        //             );
-        //             temp_marker.setIcon(temp_icon);
-        
-        //             var temp_popup = L.popup({ "maxWidth": "100%" });
-        
-        //             var popup_text = "Emissions Report <br> Observed: " + ert_data[i][" Date Observed"] + " " + ert_data[i][" Time Observed"];
-        //             var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">` + popup_text + `</div>`)[0];
-        //             temp_popup.setContent(temp_html);
-        
-        //             temp_marker.bindPopup(temp_popup);
-        
-        //             layers.push(temp_layer);
-        //         }
-        //     }
-        // }
-        // // adding layers to map
-        // if (layers.length == 0 && range_is_today == false) {
-        //     alert("No reports were found for that date range, sorry!");
-        // }
-        // document.getElementById("reports").innerHTML="Reports in this date range: "+layers.length;
-        // for (let i = 0; i < layers.length; i++) {
-        //     var layer = layers[i];
-        //     layer.addTo(ert_map);
-        // } 
+        alert(JSON.stringify(data));
     })
     .catch((error) => {
-        alert(error);
-        // This is where you handle errors.
+        alert("There was an error processing data. Try entering a smaller date range.");
+        // most likely there is an error because the number of files processed
+        // exhausted the program's memory, so it is usually fixed by entering a smaller date range.
     });
 
 }

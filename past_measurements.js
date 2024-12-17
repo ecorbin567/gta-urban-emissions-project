@@ -37,7 +37,6 @@ legendDict = {
 }
 var path = window.location.pathname;
 var variable = path.split("/").slice(-2, -1)[0];
-var date = document.getElementById("date").innerHTML;
 
 // Define now many points will be plotted
 var pltNum = 10000;

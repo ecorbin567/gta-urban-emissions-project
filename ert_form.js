@@ -36,7 +36,7 @@ L.control.layers(baseMaps).addTo(report_map);
 // Adding the street tile that actually works :))
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: mbAttr
 }).addTo(report_map);
 
 // draggable marker

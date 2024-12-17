@@ -33,7 +33,7 @@ L.control.layers(baseMaps).addTo(ert_map);
 // Adding the street tile that actually works :))
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
-    attribution: 'Street imagery &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: mbAttr
 }).addTo(ert_map);
 
 // adding markers with all the known emitters to the map
