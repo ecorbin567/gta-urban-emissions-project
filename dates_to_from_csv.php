@@ -5,8 +5,14 @@
     // if calibrated data is available for that date and variable, return the calibrated data
 
     $dates = json_decode(file_get_contents("php://input"), true);
+    
     $plotvar = "";
     $result = [];
+    $lat = [];
+    $lng = [];
+    $windspeed = [];
+    $winddir = [];
+    $time = [];
     
     foreach($dates as $date) {
         if ($date == $dates[0]) {
@@ -48,10 +54,7 @@
                 if ($is_calibrated) {$col = 14;}
                 else {$col = 12;}
             }
-            else if ($plotvar == "temp") {
-                if ($is_calibrated) {$col = 24;}
-                else {$col = 24;}
-            }
+            else if ($plotvar == "temp") {{$col = 3;}}
             else if ($plotvar == "pressure") {
                 if ($is_calibrated) {$col = 19;}
                 else {$col = 17;}
@@ -66,8 +69,37 @@
             }
             fclose($file);
 
+            // get data we will need regardless of variable: time, latitude, longitude, wind speed and direction
+            $file = fopen($date, "r");
+            $i = 0;
+            if ($is_calibrated) {
+                $lngcol = 18;
+                $latcol = 17;
+                $windspeedcol = 28;
+                $winddircol = 26;
+            }
+            else {
+                $lngcol = 16;
+                $latcol = 15;
+                $windspeedcol = 26;
+                $winddircol = 24;
+            }
+            while(! feof($file))
+            {   
+                $temp_result = fgetcsv($file, $num_col, ',', '\'', '\\');
+                if($temp_result != false) {
+                    $lat[] = $temp_result[$latcol];
+                    $lng[] = $temp_result[$lngcol];
+                    $windspeed[] = $temp_result[$windspeedcol];
+                    $winddir[] = $temp_result[$winddircol];
+                    $time[] = substr($temp_result[1], 0, 19);
+                } // at the end of the file it will return false and screw everything up, so we have this condition
+            }
+            fclose($file);
         }
     }
+    // squish all columns into one array
+    $result = [$result, $lat, $lng, $windspeed, $winddir, $time];
     // send data out into the void
     echo(json_encode($result));
 ?>
