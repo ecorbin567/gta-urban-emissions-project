@@ -1,8 +1,9 @@
-// JS code that displays the past measurements map
+// JS code that displays the live measurements map. 
+// currently it displays nothing, so the code that displays live data needs to be added here.
 
 // Initialize map
-var past_measurements_map = L.map(
-    "past_measurements_map",
+var live_measurements_map = L.map(
+    "live_measurements_map",
     {
         center: [43.656997372, -79.390331772],
         crs: L.CRS.EPSG3857,
@@ -28,15 +29,14 @@ var baseMaps = {
 };
 
 // Allowing the user to control layers
-L.control.layers(baseMaps).addTo(past_measurements_map);
+L.control.layers(baseMaps).addTo(live_measurements_map);
 
 // Adding the street tile that actually works :))
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: mbAttr
-}).addTo(past_measurements_map);
+}).addTo(live_measurements_map);
 
-var legend = L.control({ position: 'bottomright' });
 
 // adding markers with all the known emitters to a layer group where we can toggle their visibility
 // -----------------------BEGIN KNOWN EMITTERS---------------------------
@@ -2125,283 +2125,13 @@ clicked.addEventListener('click', toggle_emitters);
 
 function toggle_emitters() {
     if (showing == 0) {
-        past_measurements_map.addLayer(emitters);
+        live_measurements_map.addLayer(emitters);
         showing = 1;
     }
     else if (showing == 1) {
-        past_measurements_map.removeLayer(emitters);
+        live_measurements_map.removeLayer(emitters);
         showing = 0;
     }
 }
 
-// display map data
-// get today's date for the default display
-var today = new Date();
-var dd = String(today.getDate()).padStart(2, '0');
-var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-var yyyy = today.getFullYear();
-
-today = yyyy + '-' + mm + '-' + dd;
-
-// get array of days between date_from and date_to
-const getDaysArray = function (start, end) {
-    const arr = [];
-    for (const dt = new Date(start); dt <= new Date(end); dt.setDate(dt.getDate() + 1)) {
-        arr.push(new Date(dt).toISOString().slice(0, 10));
-    }
-    return arr;
-};
-
-// default display
-dates = ["methane", "./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_" + today + ".csv"];
-range_is_today = true;
-fetchData();
-
-// default values of varlabel and varunit for popups
-var varlabel = "Methane";
-var varunit = "ppm";
-
-// custom date range display
-var submitBtn = document.getElementById('submit');
-submitBtn.onclick = function () {
-    if (validateForm() == true) {
-        plotvar = "methane"; // default value of plotvar
-        range_is_today = false; // if there is no data, the user will be alerted
-        date_from = document.forms["displayPastDates"]["date-from"].value;
-        date_to = document.forms["displayPastDates"]["date-to"].value;
-        if (document.forms["displayPastDates"]["variable"].value != "") {plotvar = document.forms["displayPastDates"]["variable"].value;}
-        dates = []
-        dates.push(plotvar);
-        days_arr = getDaysArray(date_from, date_to);
-        for (let j = 0; j < days_arr.length; j++) {
-            // turn each date into a url where the data can be accessed
-            dates.push("./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike/sync_data_" + days_arr[j] + ".csv"
-            );
-        }
-        if (plotvar == "co2") { varlabel = "Carbon Dioxide"; }
-        else if (plotvar == "co") { varlabel = "Carbon Monoxide"; }
-        else if (plotvar == "h2o") { varlabel = "Water Vapour"; }
-        else if (plotvar == "pressure") {
-            varlabel = "Pressure";
-            varunit = "hPa";
-        }
-        else if (plotvar == "temperature") {
-            varlabel = "Temperature";
-            varunit = "degrees C";
-        }
-        else { varlabel = "Methane"; }
-        fetchData();
-    }
-}
-
-// form validation
-function validateForm() {
-    let start = document.forms["displayPastDates"]["date-from"].value;
-    if (isInvalidDate(start)) {
-        alert("Please enter a valid start date for the date range. If you want to view one day, enter the same day twice.");
-        return false;
-    }
-    let end = document.forms["displayPastDates"]["date-to"].value;
-    if (isInvalidDate(end)) {
-        alert("Please enter a valid end date for the date range. If you want to view one day, enter the same day twice.");
-        return false;
-    }
-    return true;
-}
-
-function isInvalidDate(dateStr) {
-    return isNaN(new Date(dateStr));
-}
-
-// send array of dates and variable to be plotted to dates_to_from_csv.php,
-// which sends back data from the files corresponding to the dates and variable
-function fetchData() {
-    fetch('dates_to_from_csv.php', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(dates)
-    })
-        .then((response) => {
-            if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
-                // check for any errors.
-                // In case of an error, throw.
-                throw new Error("Something went wrong!");
-            }
-            return response.json(); // Parse the JSON data.
-        })
-        .then((data) => {
-            // get all the arrays we need
-            var variable = data[0];
-            var lat = data[1];
-            var lng = data[2];
-            var windspeed = data[3];
-            var winddir = data[4];
-            var time = data[5];
-
-            // only plot if there is data
-            if (variable.length > 2) {
-                alert("Data loaded!");
-                for (let i = 1; i < variable.length; i++) { // start at 1 to avoid headers
-                    if (!(isNaN(+(lat[i])) || +(lat[i]) === 'nan' || isNaN(+(lng[i])) || +(lng[i]) === 'nan') && i % 5 == 0) { // only plot every 5 points so the map is less laggy
-                        var circleMarker = new L.circleMarker([+(lat[i]), +(lng[i])], {
-                            color: getColor(+(variable[i]), variable, plotvar),
-                            radius: 1,
-                            opacity: 0.9,
-                            fillOpacity: 0.9
-                        }).bindPopup(
-                            "<p>Time (UTC): " + time[i] + "</p>"
-                            + "<p>Wind Direction: " + checkifNaN(round(+(winddir[i]), 2)) + "</p>"
-                            + "<p>Wind Speed: " + checkifNaN(round(+(windspeed[i]), 2)) + " m/s</p>"
-                            + "<p>" + varlabel + ": " + checkifNaN(round(+(variable[i]), 2)) + " " + varunit + "</p>");
-
-                        circleMarker.addTo(past_measurements_map);
-                    }
-                }
-                // adding legend
-                legend.onAdd = function (past_measurements_map) {
-                    var div = L.DomUtil.create('div', 'info legend');
-
-                    var legendDict = {
-                        "pressure": "Pressure (hPa)",
-                        "co2": "Carbon Dioxide (ppm)",
-                        "co": "Carbon Monoxide (ppm)",
-                        "methane": "Methane (ppm)",
-                        "temp": "Temperature (degrees C)",
-                        "h2o": "Water Vapour (ppm)"
-                    }
-
-                    var grades = [];
-                    var intervals = 7;
-
-                    // see getColor for an explanation of these values
-                    if (plotvar == "methane") {
-                        var max = 2.31;
-                        var min = 1.95;
-                    }
-                    else if (plotvar == "co2") {
-                        var max = 468.46;
-                        var min = 398.99;
-                    }
-                    else if (plotvar == "co") {
-                        var max = 1.9;
-                        var min = 0;
-                    }
-                    else if (plotvar == "h2o") {
-                        var max = 23740.25;
-                        var min = 8420.56;
-                    }
-                    else if (plotvar == "pressure") {
-                        var max = 1011.9;
-                        var min = 993.5;
-                    }
-                    else { // temperature
-                        var max = 42.68;
-                        var min = 21.93;
-                    }
-                    gradeInterval = round((max - min) / intervals, 3),
-                        labels = [];
-
-                    // Create an array of grades by incrementally adding to the min value
-                    for (var i = 0; i < intervals + 1; i++) {
-                        grades.push(round((max - (gradeInterval * i)), 3));
-                    }
-                    // Add title to the legend
-                    div.innerHTML += "<b>" + legendDict[plotvar] + "</b><br>"
-                    for (var i = 0; i < intervals + 1; i++) {
-                        if (i === 0) {
-                            div.innerHTML +=
-                                '<i style="background:' + getColor(grades[i], variable, plotvar) + '"></i> ' + grades[i] + " +<br>";
-                        }
-                        else {
-                            div.innerHTML +=
-                                '<i style="background:' + getColor(grades[i], variable, plotvar) + '"></i> ' + grades[i] + (grades[i + 1] ? '<br>' : '');
-                        }
-
-                    }
-                    return div;
-                }
-                legend.addTo(past_measurements_map);
-            }
-            else if (range_is_today == false) { alert("No reports were found for that date range, sorry!"); }
-        })
-        .catch((error) => {
-            alert(error);
-            alert("There was an error processing data. Try entering a smaller date range.");
-            // most likely there is an error because the number of files processed
-            // exhausted the program's memory, so it is usually fixed by entering a smaller date range.
-            // for example, one month typically works, but one year typically does not
-        });
-
-}
-
-// functions used in plotting values
-function round(number, decimals) {
-    return (Math.round(number * Math.pow(10, decimals))) / Math.pow(10, decimals);
-}
-
-function checkifNaN(value) {
-    if (isNaN(value) || value === 'nan') {
-        return "Unknown"
-    }
-    else {
-        return value
-    }
-}
-
-// get colour of data points and legend backgrounds
-function getColor(d, array, plotvar) {
-    if (d === NaN) {
-        color = 'grey'
-    }
-
-    if (array.length > 1) {
-        // max and min for each variable computed by calculating the 97.5th percentile and 2.5th percentile
-        // of data of that variable from 2018 to 2020.
-        // we use values from a constant set of past years, rather than updating it every day or month or year,
-        // to avoid shifting baseline syndrome
-        // to see the Excel sheets where these values were computed, visit the max-min-values folder
-        if (plotvar == "methane") {
-            var max = 2.31;
-            var min = 1.95;
-        }
-        else if (plotvar == "co2") {
-            var max = 468.46;
-            var min = 398.99;
-        }
-        else if (plotvar == "co") {
-            var max = 1.9;
-            var min = 0;
-        }
-        else if (plotvar == "h2o") {
-            var max = 23740.25;
-            var min = 8420.56;
-        }
-        else if (plotvar == "pressure") {
-            var max = 1011.9;
-            var min = 993.5;
-        }
-        else { // temperature
-            var max = 42.68;
-            var min = 21.93;
-        }
-        // set colour based on max and min
-        var delta = (max - min)
-        var x = ((d - min) / delta)
-        var r = Math.floor(x * 255.)
-        var g = 0
-        var b = 255. - Math.floor(x * 255.)
-        color = "rgb(" + r + " ," + g + "," + b + ")"
-        if (d > max) {
-            color = "red"
-        }
-        if (d < min) {
-            color = "blue"
-        }
-
-    } else if (array.length < 2) {
-        color = 'white'
-    }
-    return color;
-}
+// Code to update live measurement map goes here!

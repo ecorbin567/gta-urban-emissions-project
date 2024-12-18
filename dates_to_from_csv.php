@@ -2,12 +2,12 @@
     // PHP code that gets array of dates from past_measurements.js, accesses
     // the corresponding bike survey files, and returns data corresponding to the plotted 
     // variable to past_measurements.js
-    // if calibrated data is available for that date and variable, return the calibrated data
+    // if calibrated data is available for that date and variable, returns the calibrated data
 
     $dates = json_decode(file_get_contents("php://input"), true);
     
     $plotvar = "";
-    $result = [];
+    $variable = [];
     $lat = [];
     $lng = [];
     $windspeed = [];
@@ -36,7 +36,7 @@
             fclose($file);
             $is_calibrated =  $arr[0] == "ch4cal";
 
-            // determining which column to read
+            // determine which column to read
             $col = 0;
             if ($plotvar == "methane") {
                 if ($is_calibrated) {$col = 6;}
@@ -59,13 +59,13 @@
                 if ($is_calibrated) {$col = 19;}
                 else {$col = 17;}
             }  
-            // put data into an array called $result
+            // put data for the target variable into an array called $variable
             $file = fopen($date,"r");          
             $i = 0;
             while(! feof($file))
             {   
                 $temp_result = fgetcsv($file, $num_col, ',', '\'', '\\');
-                if($temp_result != false) {$result[] = $temp_result[$col];} // at the end of the file it will return false and screw everything up, so we have this condition
+                if($temp_result != false) {$variable[] = $temp_result[$col];} // at the end of the file it will return false and screw everything up, so we have this condition
             }
             fclose($file);
 
@@ -99,7 +99,7 @@
         }
     }
     // squish all columns into one array
-    $result = [$result, $lat, $lng, $windspeed, $winddir, $time];
+    $variable = [$variable, $lat, $lng, $windspeed, $winddir, $time];
     // send data out into the void
-    echo(json_encode($result));
+    echo(json_encode($variable));
 ?>

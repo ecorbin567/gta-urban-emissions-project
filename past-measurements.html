@@ -10,8 +10,6 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" />
 	<link rel="stylesheet"
 		href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
-	<link rel="stylesheet"
-		href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" />
 	<link rel="stylesheet" type="text/css" href="./style.css">
 </head>
 
@@ -50,12 +48,14 @@
 		surveys from the past, scroll down to "Display Past Dates".
 		<br><br>
 		<button type="button" id="show_emitters">Show/Hide Emitters</button>
-		<button type="button" id="wind">Show/Hide Wind Direction</button>
+		<!-- <button type="button" id="wind">Show/Hide Wind Direction</button> -->
 	</div>
 	<div class="map" id="past_measurements_map"></div>
 	<br><br>
 	<div class="text-section">
 		<h3>Display Past Dates</h3>
+		We recommend using a date range of at most a month.
+		<br><br>
 		<form name="displayPastDates">
 			<div class="field">
 				<label for="date-from"><b>From:</b></label>
@@ -125,9 +125,7 @@
 <!-- js files -->
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-<script src="https://requirejs.org/docs/release/2.3.7/minified/require.js"></script>
-<script src="./past_measurements_2.js"></script>
+<script src="./past_measurements.js"></script>
 
 </html>

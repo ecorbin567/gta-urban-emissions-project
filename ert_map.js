@@ -2133,18 +2133,39 @@ fetchData();
 // custom date range display
 var submitBtn = document.getElementById('submit');
 submitBtn.onclick = function () {
-    range_is_today = false;
-    date_from = document.forms["displayPastDates"]["date-from"].value;
-    date_to = document.forms["displayPastDates"]["date-to"].value;
-    dates = getDaysArray(date_from, date_to);
-    fetchData();
+    if (validateForm() == true) {
+        range_is_today = false;
+        date_from = document.forms["displayPastDates"]["date-from"].value;
+        date_to = document.forms["displayPastDates"]["date-to"].value;
+        dates = getDaysArray(date_from, date_to);
+        fetchData();
+    }
+}
+
+// form validation
+function validateForm() {
+    let start = document.forms["displayPastDates"]["date-from"].value;
+    if (isInvalidDate(start)) {
+        alert("Please enter a valid start date for the date range. If you want to view one day, enter the same day twice.");
+        return false;
+    }
+    let end = document.forms["displayPastDates"]["date-to"].value;
+    if (isInvalidDate(end)) {
+        alert("Please enter a valid end date for the date range. If you want to view one day, enter the same day twice.");
+        return false;
+    }
+    return true;
+}
+
+function isInvalidDate(dateStr) {
+    return isNaN(new Date(dateStr));
 }
 
 // get array of days between date_from and date_to
-const getDaysArray = function(start, end) {
+const getDaysArray = function (start, end) {
     const arr = [];
-    for(const dt=new Date(start); dt<=new Date(end); dt.setDate(dt.getDate()+1)){
-        arr.push(new Date(dt).toISOString().slice(0,10));
+    for (const dt = new Date(start); dt <= new Date(end); dt.setDate(dt.getDate() + 1)) {
+        arr.push(new Date(dt).toISOString().slice(0, 10));
     }
     return arr;
 };
@@ -2152,67 +2173,67 @@ const getDaysArray = function(start, end) {
 // get data from csv file using data_from_csv.php
 function fetchData() {
     fetch("data_from_csv.php")
-    .then((response) => {
-        if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
-            // check for any errors.
-            // In case of an error, throw.
-            throw new Error("Something went wrong!");
-        }
-        return response.json(); // Parse the JSON data.
-    })
-    .then((data) => {
-        // all the actual displaying is done here
-        ert_data = data;
-        var layers = [];
-        // cycle through dates in the date range
-        for (let j = 0; j < dates.length; j++) {
-            var temp_layer = L.layerGroup();
-            // cycle through reports in the csv file and display all the reports in the date range
-            for (let i = 0; i < ert_data.length; i++) {
-                if (ert_data[i][" Date Observed"] == dates[j]) {
-                    // setting smell rating colour
-                    colour = "";
-                    if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
-                    else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
-                    else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
-                    else colour = "blue";
-                    
-                    // making a marker with the data corresponding to this report
-                    var temp_marker = L.marker(
-                        [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
-                        {}
-                    ).addTo(temp_layer);
-        
-                    var temp_icon = L.AwesomeMarkers.icon(
-                        { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": colour, "prefix": "fa" }
-                    );
-                    temp_marker.setIcon(temp_icon);
-        
-                    var temp_popup = L.popup({ "maxWidth": "100%" });
-        
-                    var popup_text = "Emissions Report <br> Observed: " + ert_data[i][" Date Observed"] + " " + ert_data[i][" Time Observed"];
-                    var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">` + popup_text + `</div>`)[0];
-                    temp_popup.setContent(temp_html);
-        
-                    temp_marker.bindPopup(temp_popup);
-        
-                    layers.push(temp_layer);
+        .then((response) => {
+            if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
+                // check for any errors.
+                // In case of an error, throw.
+                throw new Error("Something went wrong!");
+            }
+            return response.json(); // Parse the JSON data.
+        })
+        .then((data) => {
+            // all the actual displaying is done here
+            ert_data = data;
+            var layers = [];
+            // cycle through dates in the date range
+            for (let j = 0; j < dates.length; j++) {
+                var temp_layer = L.layerGroup();
+                // cycle through reports in the csv file and display all the reports in the date range
+                for (let i = 0; i < ert_data.length; i++) {
+                    if (ert_data[i][" Date Observed"] == dates[j]) {
+                        // setting smell rating colour
+                        colour = "";
+                        if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
+                        else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
+                        else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
+                        else colour = "blue";
+
+                        // making a marker with the data corresponding to this report
+                        var temp_marker = L.marker(
+                            [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
+                            {}
+                        ).addTo(temp_layer);
+
+                        var temp_icon = L.AwesomeMarkers.icon(
+                            { "extraClasses": "fa-rotate-0", "icon": "fa-question", "iconColor": "white", "markerColor": colour, "prefix": "fa" }
+                        );
+                        temp_marker.setIcon(temp_icon);
+
+                        var temp_popup = L.popup({ "maxWidth": "100%" });
+
+                        var popup_text = "Emissions Report <br> Observed: " + ert_data[i][" Date Observed"] + " " + ert_data[i][" Time Observed"];
+                        var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">` + popup_text + `</div>`)[0];
+                        temp_popup.setContent(temp_html);
+
+                        temp_marker.bindPopup(temp_popup);
+
+                        layers.push(temp_layer);
+                    }
                 }
             }
-        }
-        // adding layers to map
-        if (layers.length == 0 && range_is_today == false) {
-            alert("No reports were found for that date range, sorry!");
-        }
-        document.getElementById("reports").innerHTML="Reports in this date range: "+layers.length;
-        for (let i = 0; i < layers.length; i++) {
-            var layer = layers[i];
-            layer.addTo(ert_map);
-        } 
-    })
-    .catch((error) => {
-        alert(error);
-        // This is where you handle errors.
-    });
+            // adding layers to map
+            if (layers.length == 0 && range_is_today == false) {
+                alert("No reports were found for that date range, sorry!");
+            }
+            document.getElementById("reports").innerHTML = "Reports in this date range: " + layers.length;
+            for (let i = 0; i < layers.length; i++) {
+                var layer = layers[i];
+                layer.addTo(ert_map);
+            }
+        })
+        .catch((error) => {
+            alert(error);
+            // This is where you handle errors.
+        });
 
 }
