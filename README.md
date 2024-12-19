@@ -1,4 +1,4 @@
-# gta-urban-emissions-project *
+# gta-urban-emissions-project #
 ### https://gta-urban-emissions-project-6ac32fbc9854.herokuapp.com/index.html ###
 
 An updated website for the GTA Urban Emissions Project. Created by Elise Corbin.
