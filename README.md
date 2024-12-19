@@ -1,4 +1,6 @@
-# gta-urban-emissions-project
+# gta-urban-emissions-project *
+### https://gta-urban-emissions-project-6ac32fbc9854.herokuapp.com/index.html ###
+
 An updated website for the GTA Urban Emissions Project. Created by Elise Corbin.
 
 This website was created for ENV491 at the University of Toronto in Fall 2024. Special thanks to Profs. Robert Soden and Debra Wunch, without whose supervision and feedback this project would not exist.
@@ -8,7 +10,8 @@ This website's Emissions Cluster Map page uses Juliette Lavoie, Michael Raczkows
 The original GTA Urban Emissions Project website can be found here: https://www.atmosp.physics.utoronto.ca/GTA-Emissions/About/index.html. The github code can be found here: https://github.com/WunchLab/gta-emissions-webpage/blob/master/README.md. This website was created and edited in 2017 by Colin Arrowsmith, Sajjan Heerah, and Prof. Debra Wunch.
 
 ### Setup ###
-* This website is currently NOT LIVE. Note that this website must be run on a server with PHP capabilities.
+* This website is currently live, and automatically updated via this repository.
+* If you want to run this website remotely, note that it must be run on a server with PHP capabilities.
 * If you have VSCode, you can download this repository and run it using the PHP Server package.
 * Otherwise, find an equivalent server for your IDE.
 
@@ -16,6 +19,7 @@ The original GTA Urban Emissions Project website can be found here: https://www.
 * All dependencies, except PHP, are linked to in the HTML pages.
 
 ### What's in this repository? ###
+All of the following refers to the /web folder. The rest of the repository has to do with the live app deployment.
 ### Folders ###
 * GTA-Emissions-Gaussian-Clusters-Updated-main: See ./GTA-Emissions-Gaussian-Clusters-Updated-main/README.md.
 * images: All the static images displayed on the site.
