@@ -26,7 +26,7 @@ All of the following refers to the /web folder. The rest of the repository has t
 * max_min_values: Excel spreadsheets with the 2.5th and 97.5th percentiles of data from each plotted variable on the past measurements map. This helps calculate what colour each data point will be. More information can be found in ./past_measurements.js.
 ### HTML pages ###
 * index.html: The home page. Serves as an introduction to the website and what users can find on it.
-* about.html: The About page. Gives technical and background information about the project.
+* about.html: The About page. Gives technical and background information about the project. The "Funding" section is unpopulated, so if you have that information, please add it.
 * live-measurements.html: The Live Measurements page. Displays bike survey data that is currently being collected.
 * past-measurements.html: The Past Measurements page. Displays bike survey data from the past, from 2018 to 2023. (2024 still needs to be added.)
 * emissions-cluster-map.html: The Emissions Cluster Map page. Displays the Gaussian Clusters of bike survey data.
@@ -51,6 +51,7 @@ All of the following refers to the /web folder. The rest of the repository has t
 
 ### TO DO (viewers): ###
 * Include the code that displays live data in ./live_measurements.js.
+* Add information about lab funding to "About" page.
 * If new bike survey data is available, deposit it in the folder ./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike and make sure each filename is of the form 'sync_data_YYYY-MM-DD.csv'.
 * If you wish to update the Gaussian clusters with new bike survey data, visit ./GTA-Emissions-Gaussian-Clusters-Updated-main/README.md.
 * Do NOT add data from before 2017. The CSV files are formatted differently and the plotting will not work.
