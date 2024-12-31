@@ -2327,7 +2327,7 @@ function fetchData() {
             else if (range_is_today == false) { alert("No reports were found for that date range, sorry!"); }
         })
         .catch((error) => {
-            alert(error);
+            // alert(error); // uncomment this for debugging purposes
             alert("There was an error processing data. Try entering a smaller date range.");
             // most likely there is an error because the number of files processed
             // exhausted the program's memory, so it is usually fixed by entering a smaller date range.
