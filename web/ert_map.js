@@ -2225,7 +2225,7 @@ function fetchData() {
             if (layers.length == 0 && range_is_today == false) {
                 alert("No reports were found for that date range, sorry!");
             }
-            document.getElementById("reports").innerHTML = "Reports in this date range: " + layers.length;
+            else {document.getElementById("reports").innerHTML = "Reports in this date range: " + layers.length;}
             for (let i = 0; i < layers.length; i++) {
                 var layer = layers[i];
                 layer.addTo(ert_map);
