@@ -17,7 +17,7 @@ The original GTA Urban Emissions Project website can be found here: https://www.
 * Do NOT add data from before 2017. The CSV files are formatted differently and the plotting will not work.
 
 ### Setup ###
-* This website is currently live at gtamethane.org, and automatically updated via this repository.
+* This website is currently live at gtamethane.org and automatically updated via this repository.
 * If you want to run this website remotely, note that it must be run on a server with PHP capabilities.
 * If you have VSCode, you can download this repository and run it using the PHP Server package.
 * Otherwise, find an equivalent server for your IDE.
@@ -59,7 +59,6 @@ All of the following refers to the /web folder. The rest of the repository has t
 ### TO DO (Elise): ###
 * Plot arrows representing wind speed and direction on the past measurements map.
 * Once that is done, delete ./past_measurements_TO_DELETE.js.
-* Link cause report Jotform with email address.
 * Make the size of the circles on the emissions cluster map vary depending on the size of the enhancement they represent.
 
 ### Questions? ###
