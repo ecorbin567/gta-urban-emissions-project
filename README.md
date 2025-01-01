@@ -1,5 +1,5 @@
 # gta-urban-emissions-project #
-### https://gta-urban-emissions-project-6ac32fbc9854.herokuapp.com/index.html ###
+### gtamethane.org ###
 
 An updated website for the GTA Urban Emissions Project. Created by Elise Corbin.
 
@@ -9,8 +9,15 @@ This website's Emissions Cluster Map page uses Juliette Lavoie, Michael Raczkows
 
 The original GTA Urban Emissions Project website can be found here: https://www.atmosp.physics.utoronto.ca/GTA-Emissions/About/index.html. The github code can be found here: https://github.com/WunchLab/gta-emissions-webpage/blob/master/README.md. This website was created and edited in 2017 by Colin Arrowsmith, Sajjan Heerah, and Prof. Debra Wunch.
 
+### TO DO (viewers): ###
+* Include the code that displays live data in ./live_measurements.js.
+* Add information about lab funding to "About" page.
+* If new bike survey data is available, deposit it in the folder ./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike and make sure each filename is of the form 'sync_data_YYYY-MM-DD.csv'.
+* If you wish to update the Gaussian clusters with new bike survey data, visit ./GTA-Emissions-Gaussian-Clusters-Updated-main/README.md.
+* Do NOT add data from before 2017. The CSV files are formatted differently and the plotting will not work.
+
 ### Setup ###
-* This website is currently live, and automatically updated via this repository.
+* This website is currently live at gtamethane.org, and automatically updated via this repository.
 * If you want to run this website remotely, note that it must be run on a server with PHP capabilities.
 * If you have VSCode, you can download this repository and run it using the PHP Server package.
 * Otherwise, find an equivalent server for your IDE.
@@ -48,13 +55,6 @@ All of the following refers to the /web folder. The rest of the repository has t
 * style.css: The CSS style sheet for the entire website.
 * methane-enhancement-reports.csv: Stores responses from the Submit an Emissions Report form.
 * README.md: You are here!
-
-### TO DO (viewers): ###
-* Include the code that displays live data in ./live_measurements.js.
-* Add information about lab funding to "About" page.
-* If new bike survey data is available, deposit it in the folder ./GTA-Emissions-Gaussian-Clusters-Updated-main/dataBike and make sure each filename is of the form 'sync_data_YYYY-MM-DD.csv'.
-* If you wish to update the Gaussian clusters with new bike survey data, visit ./GTA-Emissions-Gaussian-Clusters-Updated-main/README.md.
-* Do NOT add data from before 2017. The CSV files are formatted differently and the plotting will not work.
 
 ### TO DO (Elise): ###
 * Plot arrows representing wind speed and direction on the past measurements map.
