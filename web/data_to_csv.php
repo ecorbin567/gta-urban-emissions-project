@@ -1,6 +1,5 @@
 <?php
     // PHP code that sends data from ert_form.js to methane-enhancement-reports.csv
-
     $data = json_decode(file_get_contents("php://input"), true);
 
     $filename = 'methane_enhancement_reports.csv';

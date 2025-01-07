@@ -5,6 +5,7 @@
 
     // Get the database URL from Heroku's environment variables
     $databaseUrl = getenv('DATABASE_URL');
+    file_put_contents("php://stderr", ''.$databaseUrl.'\n');
 
     if (!$databaseUrl) {
         die("DATABASE_URL environment variable is not set.");
