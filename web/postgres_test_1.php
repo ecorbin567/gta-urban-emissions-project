@@ -27,28 +27,39 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
-        // Define the table and data to append
-        $tableName = 'reports';
-        $data = [
-            'Latitude' => $responses['lat'],
-            'Longitude' => $responses['lng'],
-            'Date' => $responses['date'],
-            'Time' => $responses['time'],
-            'Smell Rating' => $responses['smell'],
-            'Description' => $responses['describe'],
-            'Possible Cause' => $responses['cause']
-        ];
-
-        // Prepare the SQL query for inserting data
-        $columns = implode(", ", array_keys($data));
-        $placeholders = ":" . implode(", :", array_keys($data));
-        $sql = "INSERT INTO $tableName ($columns) VALUES ($placeholders)";
-
-        // Prepare and execute the statement
+        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute($data);
+        $stmt->execute(['_Latitude' => $responses['lat'],
+            '_Longitude' => $responses['lng'],
+            '_Date' => $responses['date'],
+            '_Time' => $responses['time'],
+            '_Smell Rating' => $responses['smell'],
+            '_Description' => $responses['describe'],
+            '_Possible Cause' => $responses['cause']]);
 
-        file_put_contents("php://stderr", "Row successfully appended to $tableName.\n");
+
+        // // Define the table and data to append
+        // $tableName = 'reports';
+        // $data = [
+        //     'Latitude' => $responses['lat'],
+        //     'Longitude' => $responses['lng'],
+        //     'Date' => $responses['date'],
+        //     'Time' => $responses['time'],
+        //     'Smell Rating' => $responses['smell'],
+        //     'Description' => $responses['describe'],
+        //     'Possible Cause' => $responses['cause']
+        // ];
+
+        // // Prepare the SQL query for inserting data
+        // $columns = implode(", ", array_keys($data));
+        // $placeholders = ":" . implode(", :", array_keys($data));
+        // $sql = "INSERT INTO reports ($columns) VALUES ($placeholders)";
+
+        // // Prepare and execute the statement
+        // $stmt = $pdo->prepare($sql);
+        // $stmt->execute($data);
+
+        file_put_contents("php://stderr", "Row successfully appended\n");
     } catch (PDOException $e) {
         die("Error: " . $e->getMessage());
     }
