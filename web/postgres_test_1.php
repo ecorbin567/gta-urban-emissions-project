@@ -5,7 +5,6 @@
 
     // Get the database URL from Heroku's environment variables
     $databaseUrl = getenv('DATABASE_URL');
-    file_put_contents("php://stderr", ''.$databaseUrl.'\n');
 
     if (!$databaseUrl) {
         die("DATABASE_URL environment variable is not set.");
@@ -20,6 +19,7 @@
     $user = $dbopts["user"];
     $password = $dbopts["pass"];
     $dbname = ltrim($dbopts["path"], '/');
+    file_put_contents("php://stderr", "Host: ".$host." Port: ".$port." User: ".$user." Password: ".$password." Dbname: ".$dbname."\n");
 
     // Establish a connection to the PostgreSQL database
     $dsn = "pgsql:host=$host;port=$port;dbname=$dbname";
