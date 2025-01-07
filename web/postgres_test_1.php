@@ -29,13 +29,13 @@
         $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _SmellRating, _Description, _PossibleCause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_SmellRating, :_Description, :_PossibleCause)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
-            '_Latitude' => $responses['lat'],
-            '_Longitude' => $responses['lng'],
-            '_Date' => $responses['date'],
-            '_Time' => $responses['time'],
-            '_SmellRating' => $responses['smell'],
-            '_Description' => $responses['describe'],
-            '_PossibleCause' => $responses['cause']
+            ':_Latitude' => $responses['lat'],
+            ':_Longitude' => $responses['lng'],
+            ':_Date' => $responses['date'],
+            ':_Time' => $responses['time'],
+            ':_SmellRating' => $responses['smell'],
+            ':_Description' => $responses['describe'],
+            ':_PossibleCause' => $responses['cause']
         ]);
         
         file_put_contents("php://stderr", "Row successfully appended\n");
