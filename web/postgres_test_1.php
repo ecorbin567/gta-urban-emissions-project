@@ -26,7 +26,7 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
-        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _SmellRating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_SmellRating, :_Description, :_Possible Cause)";
+        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _SmellRating, _Description, _PossibleCause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_SmellRating, :_Description, :_PossibleCause)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             '_Latitude' => $responses['lat'],
@@ -35,7 +35,7 @@
             '_Time' => $responses['time'],
             '_SmellRating' => $responses['smell'],
             '_Description' => $responses['describe'],
-            '_Possible Cause' => $responses['cause']
+            '_PossibleCause' => $responses['cause']
         ]);
         
         file_put_contents("php://stderr", "Row successfully appended\n");
