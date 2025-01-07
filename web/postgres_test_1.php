@@ -26,14 +26,14 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
-        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
+        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _SmellRating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_SmellRating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
         $stmt->execute([
             '_Latitude' => $responses['lat'],
             '_Longitude' => $responses['lng'],
             '_Date' => $responses['date'],
             '_Time' => $responses['time'],
-            '_Smell Rating' => $responses['smell'],
+            '_SmellRating' => $responses['smell'],
             '_Description' => $responses['describe'],
             '_Possible Cause' => $responses['cause']
         ]);
