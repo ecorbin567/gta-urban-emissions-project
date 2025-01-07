@@ -26,19 +26,17 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
-        file_put_contents("php://stderr", "PDO worked\n");
-
         $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
-        file_put_contents("php://stderr", "Preparation worked\n");
         $stmt->execute(['_Latitude' => $responses['lat'],
-            '_Longitude' => $responses['lng'],
-            '_Date' => $responses['date'],
-            '_Time' => $responses['time'],
-            '_Smell Rating' => $responses['smell'],
-            '_Description' => $responses['describe'],
-            '_Possible Cause' => $responses['cause']]);
-
+            ':_Longitude' => $responses['lng'],
+            ':_Date' => $responses['date'],
+            ':_Time' => $responses['time'],
+            ':_Smell Rating' => $responses['smell'],
+            ':_Description' => $responses['describe'],
+            ':_Possible Cause' => $responses['cause']]);
+        
+        file_put_contents("php://stderr", "Row successfully appended\n");
 
         // // Define the table and data to append
         // $tableName = 'reports';
@@ -60,8 +58,6 @@
         // // Prepare and execute the statement
         // $stmt = $pdo->prepare($sql);
         // $stmt->execute($data);
-
-        file_put_contents("php://stderr", "Row successfully appended\n");
     } catch (PDOException $e) {
         die("Error: " . $e->getMessage());
     }
