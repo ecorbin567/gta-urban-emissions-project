@@ -26,17 +26,18 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
-        $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _SmellRating, _Description, _PossibleCause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_SmellRating, :_Description, :_PossibleCause)";
+        $sql = "INSERT INTO reports (\"latitude_entries\", \"longitude_entries\", \"date_entries\", \"time_entries\", \"smellRating_entries\", \"description_entries\", \"possibleCause_entries\") VALUES (:latitude_entries, :longitude_entries, :date_entries, :time_entries, :smellRating_entries, :description_entries, :possibleCause_entries)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute([
-            ':_Latitude' => $responses['lat'],
-            ':_Longitude' => $responses['lng'],
-            ':_Date' => $responses['date'],
-            ':_Time' => $responses['time'],
-            ':_SmellRating' => $responses['smell'],
-            ':_Description' => $responses['describe'],
-            ':_PossibleCause' => $responses['cause']
-        ]);
+
+        $stmt -> bindParam(':latitude_entries', $responses['lat']);
+        $stmt -> bindParam(':longitude_entries', $responses['lng']);
+        $stmt -> bindParam(':date_entries', $responses['date']);
+        $stmt -> bindParam(':time_entries', $responses['time']);
+        $stmt -> bindParam(':smellRating_entries', $responses['smell']);
+        $stmt -> bindParam(':description_entries', $responses['describe']);
+        $stmt -> bindParam(':possibleCause_entries', $responses['cause']);
+
+        $stmt->execute();
         
         file_put_contents("php://stderr", "Row successfully appended\n");
     } catch (PDOException $e) {
