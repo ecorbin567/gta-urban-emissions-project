@@ -1,6 +1,7 @@
 <?php
     // Get data from ert_form.js
     $responses = json_decode(file_get_contents("php://input"), true);
+    echo $responses['lng'];
 
     // Get the database URL from Heroku's environment variables
     $databaseUrl = getenv('DATABASE_URL');
@@ -47,7 +48,7 @@
         $stmt = $pdo->prepare($sql);
         $stmt->execute($data);
 
-        // echo "Row successfully appended to $tableName.";
+        echo "Row successfully appended to $tableName.";
     } catch (PDOException $e) {
         die("Error: " . $e->getMessage());
     }
