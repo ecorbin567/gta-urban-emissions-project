@@ -28,17 +28,19 @@
 
         $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute([':_Latitude' => $responses['lat'],
-            ':_Longitude' => $responses['lng'],
-            ':_Date' => $responses['date'],
-            ':_Time' => $responses['time'],
-            ':_Smell Rating' => $responses['smell'],
-            ':_Description' => $responses['describe'],
-            ':_Possible Cause' => $responses['cause']]);
+        $stmt->execute([
+            '_Latitude' => $responses['lat'],
+            '_Longitude' => $responses['lng'],
+            '_Date' => $responses['date'],
+            '_Time' => $responses['time'],
+            '_Smell Rating' => $responses['smell'],
+            '_Description' => $responses['describe'],
+            '_Possible Cause' => $responses['cause']
+        ]);
         
         file_put_contents("php://stderr", "Row successfully appended\n");
     } catch (PDOException $e) {
-        file_put_contents("php://stderr", "error\n");
+        file_put_contents("php://stderr", $e->getMessage());
         die("Error: " . $e->getMessage());
     }
 ?>
