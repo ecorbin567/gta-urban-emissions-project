@@ -28,7 +28,7 @@
 
         $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(['_Latitude' => $responses['lat'],
+        $stmt->execute([':_Latitude' => $responses['lat'],
             ':_Longitude' => $responses['lng'],
             ':_Date' => $responses['date'],
             ':_Time' => $responses['time'],
@@ -37,28 +37,8 @@
             ':_Possible Cause' => $responses['cause']]);
         
         file_put_contents("php://stderr", "Row successfully appended\n");
-
-        // // Define the table and data to append
-        // $tableName = 'reports';
-        // $data = [
-        //     'Latitude' => $responses['lat'],
-        //     'Longitude' => $responses['lng'],
-        //     'Date' => $responses['date'],
-        //     'Time' => $responses['time'],
-        //     'Smell Rating' => $responses['smell'],
-        //     'Description' => $responses['describe'],
-        //     'Possible Cause' => $responses['cause']
-        // ];
-
-        // // Prepare the SQL query for inserting data
-        // $columns = implode(", ", array_keys($data));
-        // $placeholders = ":" . implode(", :", array_keys($data));
-        // $sql = "INSERT INTO reports ($columns) VALUES ($placeholders)";
-
-        // // Prepare and execute the statement
-        // $stmt = $pdo->prepare($sql);
-        // $stmt->execute($data);
     } catch (PDOException $e) {
+        file_put_contents("php://stderr", "error\n");
         die("Error: " . $e->getMessage());
     }
 ?>
