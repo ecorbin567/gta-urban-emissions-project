@@ -1,7 +1,6 @@
 <?php
     // Get data from ert_form.js
     $responses = json_decode(file_get_contents("php://input"), true);
-    file_put_contents("php://stderr", $responses['lat']."\n");
 
     // Get the database URL from Heroku's environment variables
     $databaseUrl = getenv('DATABASE_URL');
@@ -27,25 +26,18 @@
             PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         ]);
 
+        file_put_contents("php://stderr", "PDO worked\n");
+
         $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
         $stmt = $pdo->prepare($sql);
-        $stmt->execute(['_Latitude' => 0.0,
-            '_Longitude' => 0.0,
-            '_Date' => 'asoigaosdig',
-            '_Time' => 'asoigaosdig',
-            '_Smell Rating' => 'asoigaosdig',
-            '_Description' => 'asoigaosdig',
-            '_Possible Cause' => 'asoigaosdig']);
-
-        // $sql = "INSERT INTO reports (_Latitude, _Longitude, _Date, _Time, _Smell Rating, _Description, _Possible Cause) VALUES (:_Latitude, :_Longitude, :_Date, :_Time, :_Smell Rating, :_Description, :_Possible Cause)";
-        // $stmt = $pdo->prepare($sql);
-        // $stmt->execute(['_Latitude' => $responses['lat'],
-        //     '_Longitude' => $responses['lng'],
-        //     '_Date' => $responses['date'],
-        //     '_Time' => $responses['time'],
-        //     '_Smell Rating' => $responses['smell'],
-        //     '_Description' => $responses['describe'],
-        //     '_Possible Cause' => $responses['cause']]);
+        file_put_contents("php://stderr", "Preparation worked\n");
+        $stmt->execute(['_Latitude' => $responses['lat'],
+            '_Longitude' => $responses['lng'],
+            '_Date' => $responses['date'],
+            '_Time' => $responses['time'],
+            '_Smell Rating' => $responses['smell'],
+            '_Description' => $responses['describe'],
+            '_Possible Cause' => $responses['cause']]);
 
 
         // // Define the table and data to append
