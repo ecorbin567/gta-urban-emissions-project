@@ -27,15 +27,15 @@
         ]);
 
         // Define the table and data to append
-        $tableName = 'reports'; // Replace with your table name
+        $tableName = 'reports';
         $data = [
-            'Latitude' => $responses[0], // Replace column names and values with your data
-            'Longitude' => $responses[1],
-            'Date' => $responses[2],
-            'Time' => $responses[3],
-            'Smell Rating' => $responses[4],
-            'Description' => $responses[5],
-            'Possible Cause' => $responses[6]
+            'Latitude' => $responses['lat'],
+            'Longitude' => $responses['lng'],
+            'Date' => $responses['date'],
+            'Time' => $responses['time'],
+            'Smell Rating' => $responses['smell'],
+            'Description' => $responses['describe'],
+            'Possible Cause' => $responses['cause']
         ];
 
         // Prepare the SQL query for inserting data
