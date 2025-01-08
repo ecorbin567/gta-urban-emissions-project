@@ -2113,7 +2113,7 @@ popup_4055271ca3022e2e4f2bb6df7852fe99.setContent(html_5826dc3a137699425f1fbeda8
 marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df7852fe99)
     ;
 //---------------------END KNOWN EMITTERS--------------------------
-// get and display data from methane-enhancement-reports.csv
+// get and display data from postgres
 
 var ert_data = [];
 
@@ -2170,7 +2170,7 @@ const getDaysArray = function (start, end) {
     return arr;
 };
 
-// get data from csv file using data_from_csv.php
+// get data from postgres using data_from_postgres.php
 function fetchData() {
     fetch("data_from_postgres.php")
         .then((response) => {
@@ -2188,19 +2188,19 @@ function fetchData() {
             // cycle through dates in the date range
             for (let j = 0; j < dates.length; j++) {
                 var temp_layer = L.layerGroup();
-                // cycle through reports in the csv file and display all the reports in the date range
+                // cycle through reports in the database and display all the reports in the date range
                 for (let i = 0; i < ert_data.length; i++) {
-                    if (ert_data[i][" Date Observed"] == dates[j]) {
+                    if (ert_data[i]["date_entries"] == dates[j]) {
                         // setting smell rating colour
                         colour = "";
-                        if (ert_data[i][" Smell Rating"] == "severe") colour = "red";
-                        else if (ert_data[i][" Smell Rating"] == "moderate") colour = "orange";
-                        else if (ert_data[i][" Smell Rating"] == "mild") colour = "green";
+                        if (ert_data[i]["smellRating_entries"] == "severe") colour = "red";
+                        else if (ert_data[i]["smellRating_entries"] == "moderate") colour = "orange";
+                        else if (ert_data[i]["smellRating_entries"] == "mild") colour = "green";
                         else colour = "blue";
 
                         // making a marker with the data corresponding to this report
                         var temp_marker = L.marker(
-                            [ert_data[i]["Latitude"], ert_data[i][" Longitude"]],
+                            [ert_data[i]["latitude_entries"], ert_data[i]["longitude_entries"]],
                             {}
                         ).addTo(temp_layer);
 
@@ -2211,7 +2211,7 @@ function fetchData() {
 
                         var temp_popup = L.popup({ "maxWidth": "100%" });
 
-                        var popup_text = "Emissions Report <br> Observed: " + ert_data[i][" Date Observed"] + " " + ert_data[i][" Time Observed"];
+                        var popup_text = "Emissions Report <br> Observed: " + ert_data[i]["date_entries"] + " " + ert_data[i]["time_entries"];
                         var temp_html = $(`<div id="temp_html" style="width: 100.0%; height: 100.0%;">` + popup_text + `</div>`)[0];
                         temp_popup.setContent(temp_html);
 

@@ -1,5 +1,5 @@
 // JS code that runs the location picker and form submission for the emissions report form,
-// as well as sending the form data to methane-enhancement-reports.csv
+// as well as sending the form data to postgres
 
 // location picker
 
@@ -118,7 +118,7 @@ var smell = document.forms["emissionsReport"]["smell-severity"].value;
 var describe = "blank";
 var cause = "blank";
 
-// send data to methane-enhancement-reports.csv using data_to_csv.php
+// send data to postgres using data_to_postgres.php
 function sendData() {
     var data = {
         lat: lat,

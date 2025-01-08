@@ -18,6 +18,7 @@ The original GTA Urban Emissions Project website can be found here: https://www.
 
 ### Setup ###
 * This website is currently live at gtamethane.org and automatically updated via this repository.
+* The site is live via Heroku and emissions reports are maintained via Heroku Postgres.
 * If you want to run this website remotely, note that it must be run on a server with PHP capabilities.
 * If you have VSCode, you can download this repository and run it using the PHP Server package.
 * Otherwise, find an equivalent server for your IDE.
@@ -48,12 +49,14 @@ All of the following refers to the /web folder. The rest of the repository has t
 * ert_map.js: Displays the Emissions Reporting Tool map. Interacts with data_from_csv.php.
 * ert_form.js: Collects form responses from the Submit an Emissions Report page. Interacts with data_to_csv.php.
 ### PHP pages ###
-* data_from_csv.php: Sends data from methane-enhancement-reports.csv to ert_map.js.
-* data_to_csv.php: Sends data from ert_form.js to methane-enhancement-reports.csv.
+* data_to_postgres.php: Sends data from ert_form.js to Heroku Postgres.
+* data_to_postgres.php: Sends data from Heroku Postgres to ert_map.js.
 * dates_to_from_csv.php: Gets array of dates from past_measurements.js, accesses the corresponding bike survey files, and returns data corresponding to the plotted variable to past_measurements.js. If calibrated data is available for that date and variable, returns the calibrated data.
+* data_to_csv.php: NOT IN USE. Sends data from ert_form.js to methane-enhancement-reports.csv.
+* data_from_csv.php: NOT IN USE. Sends data from methane-enhancement-reports.csv to ert_map.js.
 ### Other pages ###
 * style.css: The CSS style sheet for the entire website.
-* methane-enhancement-reports.csv: Stores responses from the Submit an Emissions Report form.
+* methane-enhancement-reports.csv: Backup method of storing responses from the Submit an Emissions Report form. Would be nice to have if you decide to move the site off Heroku.
 * README.md: You are here!
 
 ### TO DO (Elise): ###
