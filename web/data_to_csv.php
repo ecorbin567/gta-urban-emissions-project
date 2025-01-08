@@ -1,4 +1,5 @@
 <?php
+    // NOT IN USE. might be nice to have in case you decide to move the site off Heroku
     // PHP code that sends data from ert_form.js to methane-enhancement-reports.csv
     $data = json_decode(file_get_contents("php://input"), true);
 

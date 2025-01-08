@@ -133,8 +133,7 @@ function sendData() {
     var xhr = new XMLHttpRequest();
 
     // set the PHP page you want to send data to
-    // xhr.open("POST", "data_to_csv.php", true);
-    xhr.open("POST", "postgres_test_1.php", true);
+    xhr.open("POST", "data_to_postgres.php", true);
     xhr.setRequestHeader("Content-Type", "application/json");
 
     // send the data

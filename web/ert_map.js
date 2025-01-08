@@ -2172,7 +2172,7 @@ const getDaysArray = function (start, end) {
 
 // get data from csv file using data_from_csv.php
 function fetchData() {
-    fetch("data_from_csv.php")
+    fetch("data_from_postgres.php")
         .then((response) => {
             if (!response.ok) { // Before parsing (i.e. decoding) the JSON data,
                 // check for any errors.
