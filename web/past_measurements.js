@@ -2118,19 +2118,27 @@ marker_cc1c0f49dac3928cecc3a87d26a1d098.bindPopup(popup_4055271ca3022e2e4f2bb6df
     ;
 
 //---------------------END KNOWN EMITTERS--------------------------
-// toggle visibility of emitters
-var clicked = document.getElementById("show_emitters");
-var showing = 0;
-clicked.addEventListener('click', toggle_emitters);
+// button to clear marker data
+markers = L.layerGroup();
+var clear_data = document.getElementById("clear_data");
+clear_data.addEventListener('click', clear_marker_data);
+function clear_marker_data() {
+    markers.clearLayers();
+}
+
+// toggle visibility of emitters and wind direction arrows
+var clicked_emitters = document.getElementById("show_emitters");
+var showEmitters = 0;
+clicked_emitters.addEventListener('click', toggle_emitters);
 
 function toggle_emitters() {
-    if (showing == 0) {
+    if (showEmitters == 0) {
         past_measurements_map.addLayer(emitters);
-        showing = 1;
+        showEmitters = 1;
     }
-    else if (showing == 1) {
+    else if (showEmitters == 1) {
         past_measurements_map.removeLayer(emitters);
-        showing = 0;
+        showEmitters = 0;
     }
 }
 
@@ -2160,6 +2168,7 @@ fetchData();
 // default values of varlabel and varunit for popups
 var varlabel = "Methane";
 var varunit = "ppm";
+var showWind = false;
 
 // custom date range display
 var submitBtn = document.getElementById('submit');
@@ -2169,7 +2178,8 @@ submitBtn.onclick = function () {
         range_is_today = false; // if there is no data, the user will be alerted
         date_from = document.forms["displayPastDates"]["date-from"].value;
         date_to = document.forms["displayPastDates"]["date-to"].value;
-        if (document.forms["displayPastDates"]["variable"].value != "") {plotvar = document.forms["displayPastDates"]["variable"].value;}
+        if (document.forms["displayPastDates"]["variable"].value != "") { plotvar = document.forms["displayPastDates"]["variable"].value; }
+        if (document.forms["displayPastDates"]["wind"].value == "yes") { showWind = true; }
         dates = []
         dates.push(plotvar);
         days_arr = getDaysArray(date_from, date_to);
@@ -2242,7 +2252,6 @@ function fetchData() {
 
             // only plot if there is data
             if (variable.length > 2) {
-                alert("Data loaded!");
                 for (let i = 1; i < variable.length; i++) { // start at 1 to avoid headers
                     if (!(isNaN(+(lat[i])) || +(lat[i]) === 'nan' || isNaN(+(lng[i])) || +(lng[i]) === 'nan') && i % 5 == 0) { // only plot every 5 points so the map is less laggy
                         var circleMarker = new L.circleMarker([+(lat[i]), +(lng[i])], {
@@ -2256,11 +2265,27 @@ function fetchData() {
                             + "<p>Wind Speed: " + checkifNaN(round(+(windspeed[i]), 2)) + " m/s</p>"
                             + "<p>" + varlabel + ": " + checkifNaN(round(+(variable[i]), 2)) + " " + varunit + "</p>");
 
-                        circleMarker.addTo(past_measurements_map);
+                        circleMarker.addTo(markers);
+                        // plot wind direction arrows if necessary
+                        if (showWind) {
+                            var arrow_icon = L.icon({
+                                iconUrl: 'https://cdn1.iconfinder.com/data/icons/simple-arrow/512/arrow_24-128.png',
+                                iconSize: [50, scaleLength(+(windspeed[i]))],  // size of the icon [width,length]
+                                iconAnchor: [25, scaleLength(+(windspeed[i]))],    // Location on the icon which corresponts to its actual position (pixels in x-y coordinates from top left)
+                            });
+                            var pltTheta = +(winddir[i]) + 180;
+                            L.marker([+(lat[i]), +(lng[i])], {
+                                icon: arrow_icon,
+                                rotationAngle: pltTheta
+                            }).addTo(markers);
+                        }
                     }
                 }
+                alert("Data loaded! Click OK to continue");
+                past_measurements_map.addLayer(markers);
+
                 // adding legend
-                legend.onAdd = function (past_measurements_map) {
+                legend.onAdd = function() {
                     var div = L.DomUtil.create('div', 'info legend');
 
                     var legendDict = {
@@ -2327,8 +2352,8 @@ function fetchData() {
             else if (range_is_today == false) { alert("No reports were found for that date range, sorry!"); }
         })
         .catch((error) => {
-            // alert(error); // uncomment this for debugging purposes
-            alert("There was an error processing data. Try entering a smaller date range.");
+            alert(error); // uncomment this for debugging purposes
+            // alert("There was an error processing data. Try entering a smaller date range.");
             // most likely there is an error because the number of files processed
             // exhausted the program's memory, so it is usually fixed by entering a smaller date range.
             // for example, one month typically works, but one year typically does not
@@ -2340,6 +2365,15 @@ function fetchData() {
 function round(number, decimals) {
     return (Math.round(number * Math.pow(10, decimals))) / Math.pow(10, decimals);
 }
+
+function scaleLength(d) {
+    var max = 20.
+    var min = 0.
+    var delta = (max - min)
+    var x = ((d - min) / delta) * 150
+  
+    return x;
+  }
 
 function checkifNaN(value) {
     if (isNaN(value) || value === 'nan') {

@@ -49,7 +49,7 @@
 		surveys from the past, scroll down to "Display Past Dates".
 		<br><br>
 		<button type="button" id="show_emitters">Show/Hide Emitters</button>
-		<!-- <button type="button" id="wind">Show/Hide Wind Direction</button> -->
+		<button type="button" id="clear_data">Clear Data</button>
 	</div>
 	<div class="map" id="past_measurements_map"></div>
 	<br><br>
@@ -71,7 +71,7 @@
 			</div>
 			<br>
 			<div class="field">
-				<label><b>Please select the variable you would like to plot. (Default is methane.)</b></label>
+				<label><b>[OPTIONAL] Please select the variable you would like to plot. (Default is methane.)</b></label>
 				<br>
 				<input type="radio" id="methane" name="variable" value="methane">
 				<label for="methane">Methane</label>
@@ -90,6 +90,16 @@
 				<br>
 				<input type="radio" id="pressure" name="variable" value="pressure">
 				<label for="pressure">Pressure</label>
+			</div>
+			<br>
+			<div class="field">
+				<label><b>[OPTIONAL] Do you want to plot wind direction arrows as well? (Default is no.)</b></label>
+				<br>
+				<input type="radio" id="yes" name="wind" value="yes">
+				<label for="yes">Yes</label>
+				<br>
+				<input type="radio" id="no" name="wind" value="no">
+				<label for="no">No</label>
 			</div>
 			<br>
 			<div class="field">
@@ -127,6 +137,7 @@
 <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<script src="https://unpkg.com/leaflet-rotatedmarker@0.2.0/leaflet.rotatedMarker.js"></script>
 <script src="./past_measurements.js"></script>
 
 </html>
