@@ -31,9 +31,7 @@ try {
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Output the results as an array
-    echo "<pre>";
-    print_r($results);
-    echo "</pre>";
+    echo $results;
 
     file_put_contents("php://stderr", "Data successfully retrieved\n");
 } catch (PDOException $e) {
