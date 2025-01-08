@@ -31,9 +31,9 @@ try {
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     // Output the results as an array
-    echo $results;
+    echo json_encode($results);
 
-    file_put_contents("php://stderr", $results[0]."\n");
+    file_put_contents("php://stderr", json_encode($results)."\n");
 } catch (PDOException $e) {
     // write error message to Heroku logs
     file_put_contents("php://stderr", $e->getMessage());
