@@ -33,7 +33,7 @@ try {
     // Output the results as an array
     echo $results;
 
-    file_put_contents("php://stderr", "Data successfully retrieved\n");
+    file_put_contents("php://stderr", $results[0]."\n");
 } catch (PDOException $e) {
     // write error message to Heroku logs
     file_put_contents("php://stderr", $e->getMessage());
