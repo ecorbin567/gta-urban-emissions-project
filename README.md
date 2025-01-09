@@ -20,7 +20,7 @@ cluster_map.js to make the sizes of the circles on the emissions cluster map var
 ### Setup ###
 * This website is currently live at gtamethane.org and automatically updated via this repository.
 * The site is live via Heroku and citizen emissions reports are stored using Heroku Postgres.
-* If you want to run this website remotely, note that it must be run on a server with PHP capabilities.
+* If you want to run this website remotely, note that it must be run on a server with PHP capabilities. You must also use the files in the not_in_use folder instead of data_from_postgres.php and data_to_postgres.php.
 * If you have VSCode, you can download this repository and run it using the PHP Server package.
 * Otherwise, find an equivalent server for your IDE.
 
